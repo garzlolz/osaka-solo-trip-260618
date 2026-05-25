@@ -267,6 +267,8 @@ export const TRIP_DATA = {
             { type: "warn", text: "以早午餐為主，吃快一點就能收掉（ex: 明石燒）" },
           ],
           todo: "早午餐：待選（邊走邊吃）",
+          mapQuery: "黑門市場",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=黑門市場",
         },
         {
           time: "11:00–13:00",
@@ -276,6 +278,8 @@ export const TRIP_DATA = {
             { type: "warn", text: "上天守閣建議抓 1.5–2 小時" },
           ],
           todo: null,
+          mapQuery: "大阪城",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=大阪城",
         },
         {
           time: "13:15–14:00",
@@ -284,6 +288,8 @@ export const TRIP_DATA = {
             { type: "ok", text: "不需預約　保持短逛，避免壓縮後面行程" },
           ],
           todo: "逛街：電器 / 模型 / 廚具",
+          mapQuery: "日本橋電電街",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=日本橋電電街",
         },
         {
           time: "14:15–15:15",
@@ -293,6 +299,8 @@ export const TRIP_DATA = {
             { type: "warn", text: "上塔與拍照抓 1 小時較穩" },
           ],
           todo: "小食：新世界串炸（待選）",
+          mapQuery: "通天閣",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=通天閣",
         },
         {
           time: "15:30–18:30",
@@ -302,6 +310,8 @@ export const TRIP_DATA = {
             { type: "warn", text: "人潮極多；購物 / 晚餐留彈性，此段不要壓縮" },
           ],
           todo: "逛街：藥妝 / 雜貨 / 伴手禮\n晚餐：待選（大阪最後一頓正餐，建議吃好）",
+          mapQuery: "心齋橋筋商店街",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=心齋橋筋商店街",
         },
         {
           time: "20:00",
@@ -316,12 +326,16 @@ export const TRIP_DATA = {
             { type: "warn", text: "南海難波站 ≠ 地鐵難波站，需步行前往搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩" },
           ],
           todo: null,
+          mapQuery: "南海難波站",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=南海難波站",
         },
         {
           time: "21:44 左右",
           activity: "抵達關西機場 T1 → Aeroplaza",
           notes: [],
           todo: null,
+          mapQuery: "關西國際機場+第一航廈",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=關西國際機場+第一航廈",
         },
         {
           time: "22:15–23:00",
@@ -331,6 +345,8 @@ export const TRIP_DATA = {
             { type: "tip",  text: "若 NODOKA 拖太久，改用 Aeroplaza 付費淋浴作備案" },
           ],
           todo: null,
+          mapQuery: "KIX+Airport+Lounge+NODOKA",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=KIX+Airport+Lounge+NODOKA",
         },
         {
           time: "深夜",
@@ -340,6 +356,8 @@ export const TRIP_DATA = {
             { type: "warn", text: "深夜可能需搶位置" },
           ],
           todo: null,
+          mapQuery: "Aeroplaza",
+          mapLink: "https://www.google.com/maps/search/?api=1&query=Aeroplaza",
         },
       ],
     },
