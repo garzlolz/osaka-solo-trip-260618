@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 大阪獨旅 06/18 ~ 06/21</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              osk: {
+                orange: "#F4874B",
+                darkOrange: "#D96B28",
+                amber: "#F7C948",
+                cream: "#FFF3E8",
+                navy: "#2C3E6B",
+                teal: "#3AAFB9",
+                green: "#5CB87A",
+                red: "#E05555",
+                sand: "#FDF5EC",
+                purple: "#9B7ED9",
+              },
+            },
+            fontFamily: {
+              sans: ['"Noto Sans TC"', '"Microsoft JhengHei"', "sans-serif"],
+            },
+            boxShadow: {
+              card: "4px 4px 0px 0px rgba(0,0,0,0.08)",
+              "card-hover": "2px 2px 0px 0px rgba(0,0,0,0.08)",
+            },
+            animation: {
+              "float-slow": "float 7s ease-in-out infinite",
+              "float-medium": "float 5s ease-in-out infinite",
+              "float-fast": "float 3.5s ease-in-out infinite",
+              "spin-slow": "spin 18s linear infinite",
+              "spin-reverse": "spin 22s linear infinite reverse",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-18px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #FFE8D0; }
+      ::-webkit-scrollbar-thumb { background: #F4874B; border-radius: 8px; }
+      ::-webkit-scrollbar-thumb:hover { background: #D96B28; }
+
+      body {
+        background: linear-gradient(160deg, #FFF3E8 0%, #FFE5CC 60%, #FFDDB5 100%);
+        color: #2C3E6B;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(14px) scale(0.97); }
+        to   { opacity: 1; transform: translateY(0)   scale(1);    }
+      }
+
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+      .bg-decor {
+        position: fixed;
+        z-index: 0;
+        pointer-events: none;
+        user-select: none;
+        opacity: 0.18;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
