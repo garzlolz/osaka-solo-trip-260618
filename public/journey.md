@@ -54,14 +54,14 @@
 | 08:00 | 從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 換阪急京都線特急 → [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)（約 58 分，¥650） | 刷 ICOCA 即可，無需買紙票                                                                                                                                  | 早餐：[丸福珈琲店 千日前本店](https://maps.app.goo.gl/7Ch8e5ETpJLp98x37)（8點營業，出發前解決） |
 | 09:00 | 抵達 [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)                                                                             |                                                                                                                                                            |                                                     |
 | 09:15 | [清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5)                                                                                     | ⚠️ 趁人少；選「二年坂往上拍」清水舞台視角最佳                                                                                                              | ✔ 可提前購買電子票避免排隊                          |
-| 11:00 | [二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)                                                                            |                                                                                                                                                            | 午餐：奧丹豆腐料理 / 三年坂茶寮（建議提前記好店名） |
+| 11:00 | [二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)                                                                            |                                                                                                                                                            | 午餐：[奧丹豆腐料理](https://maps.app.goo.gl/6UnmkNvfcn14rcd28) / 三年坂茶寮（建議提前記好店名） |
 | 13:00 | 祇園、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步 | | |
 | 14:30 | [八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7) | | |
 | 15:15 | 搭京阪前往伏見稻荷 | 從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘 | |
 | 15:30 | [伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5) | 從大鳥居開始進去；⚠️ 建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘 | |
 | 17:30 | 搭京阪返回大阪 | ⚠️ 預留 5–10 分鐘容錯緩衝（梅雨季偶有延誤）；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪普通）→ 丹波橋換特急 → 淀屋橋下車，步行約 3–5 分至北濱站（堺筋線 K14）→ 搭堺筋線至日本橋（K17） | |
 | 18:30 | 抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)                                                                             |                                                                                                                                                            |                                                     |
-| 19:00 | [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐                                                                                 | 串家物語（自助炸串，無需預約）                                                                                                                             | 晚餐：待選                                          |
+| 19:00 | [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐                                                                                 | [串家物語 Namba Parks](https://maps.app.goo.gl/wCm3k29WWo5fgsPK8)（自助炸串，無需預約）                                                                    | 晚餐：待選                                          |
 
 ### 去程路線：日本橋 → 京都河原町（NAVITIME 確認版）
 
@@ -83,7 +83,7 @@
 | 1    | 阪急京都線特急（往大阪梅田）                | [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)    | [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)          | 約 35 分 |                  |
 | 2    | 阪急千里線 → 直通堺筋線（同車廂，坐著不動） | [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)          | [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)（K17） | 約 20 分 |                  |
 | 3    | 步行                                        | [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)（K17） | [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波 | 約 10 分 | 吃晚餐逛街       |
-| 4    | 步行                                        | [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波 | 日本橋飯店    | 約 8 分  | 逛完後步行回飯店 |
+| 4    | 步行                                        | [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波 | [日本橋飯店](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8) | 約 8 分  | 逛完後步行回飯店 |
 
 **總計：約 55 分鐘（不含逛街）　換乘 1 次（淡路站換月台）**
 
@@ -97,13 +97,13 @@
 | ----------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | 09:00       | 起床整理、打包行李                             |                                                                                                        |                                                                        |
 | 09:45       | 退房，寄放行李                                 |                                                                                                        |                                                                        |
-| 10:00–10:45 | 黑門市場                                       | ❌ 不需預約　⚠️ 以早午餐為主，吃快一點就能收掉（ex: 明石燒）                                           | 早午餐：待選（邊走邊吃）                                               |
-| 11:00–13:00 | 大阪城                                         | ❌ 公園免費開放　天守閣 9:00–18:00（最晚入場 17:30）　⚠️ 上天守閣建議抓 1.5–2 小時                     |                                                                        |
-| 13:15–14:00 | 日本橋電電街 / 千日前道具屋筋                  | ❌ 不需預約　保持短逛，避免壓縮後面行程                                                                | 逛街：電器 / 模型 / 廚具                                               |
-| 14:15–15:15 | 通天閣                                         | ❌ 不需預約　⚠️ 上塔與拍照抓 1 小時較穩                                                                | 小食：新世界串炸（待選）                                               |
-| 15:30–18:30 | 心齋橋 / 道頓堀                                | ❌ 不需預約　⚠️ 人潮極多；購物 / 晚餐留彈性，此段不要壓縮                                              | 逛街：藥妝 / 雜貨 / 伴手禮<br>晚餐：待選（大阪最後一頓正餐，建議吃好） |
+| 10:00–10:45 | [黑門市場](https://maps.app.goo.gl/zKjNxecm8j4Rrny89)                          | ❌ 不需預約　⚠️ 以早午餐為主，吃快一點就能收掉（ex: 明石燒）                                           | 早午餐：待選（邊走邊吃）                                               |
+| 11:00–13:00 | [大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)                            | ❌ 公園免費開放　天守閣 9:00–18:00（最晚入場 17:30）　⚠️ 上天守閣建議抓 1.5–2 小時                     |                                                                        |
+| 13:15–14:00 | [日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) / [千日前道具屋筋](https://maps.app.goo.gl/5gokAdbwdQ4Sp1gC6) | ❌ 不需預約　保持短逛，避免壓縮後面行程                                                                | 逛街：電器 / 模型 / 廚具                                               |
+| 14:15–15:15 | [通天閣](https://maps.app.goo.gl/eFswsy7cd3cw8VyA9)                            | ❌ 不需預約　⚠️ 上塔與拍照抓 1 小時較穩                                                                | <b>小食：新世界串炸（待選）</b>                                               |
+| 15:30–18:30 | [心齋橋](https://maps.app.goo.gl/pRQToFCrVxBBiFHs7) / [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) | ❌ 不需預約　⚠️ 人潮極多；購物 / 晚餐留彈性，此段不要壓縮                                              | 逛街：藥妝 / 雜貨 / 伴手禮<br>晚餐：待選（大阪最後一頓正餐，建議吃好） |
 | 20:00       | 回飯店拿行李                                   |                                                                                                        |                                                                        |
-| 21:00       | **南海難波站**搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場站 | ⚠️ 南海難波站 ≠ 地鐵難波站，需步行前往南海難波站搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩 |  |
+| 21:00       | [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場站 | ⚠️ 南海難波站 ≠ 地鐵難波站，需步行前往南海難波站搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩 |  |
 | 21:44 左右  | 抵達關西機場站，前往 Aeroplaza | 關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA |  |
 | 22:00–05:15 | NODOKA 洗澡／休息／整理行李 | ⚠️ 先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；NODOKA 位於 Aeroplaza 2F。<br>✔ 若淋浴間拖太久，改用 Aeroplaza 付費淋浴作為備案；與 1F 免費接駁巴士乘車處為同一建築上下樓 |  |
 
