@@ -199,8 +199,9 @@ export default {
 
   setup(props) {
     const activeDay = ref(props.days[0]?.day || 1);
+    const isRouteModalOpen = ref(false);
     const currentDay = () => props.days.find((d) => d.day === activeDay.value) || props.days[0];
-    return { activeDay, currentDay };
+    return { activeDay, currentDay, isRouteModalOpen };
   },
 
   template: `
@@ -212,7 +213,7 @@ export default {
         <button
           v-for="day in days"
           :key="day.day"
-          @click="activeDay = day.day"
+          @click="activeDay = day.day; isRouteModalOpen = false"
           :class="[
             'flex-shrink-0 flex flex-col items-center px-5 py-3 rounded-2xl border-2 text-sm font-bold transition-all',
             activeDay === day.day
@@ -281,17 +282,64 @@ export default {
 
           </div>
         </template>
+      </div>
 
-        <!-- Day 2 路線表 -->
-        <template v-if="currentDay().routes">
-          <div class="ml-14 space-y-4">
+      <!-- 交通與路線資訊浮動按鈕 (FAB) -->
+      <div
+        v-if="currentDay().routes && currentDay().routes.length"
+        class="fixed bottom-6 right-6 z-40"
+      >
+        <button
+          @click="isRouteModalOpen = !isRouteModalOpen"
+          :class="[
+            'flex items-center gap-2 px-5 py-3 rounded-full font-black shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-300 border-2 border-white/20 backdrop-blur-md text-sm',
+            isRouteModalOpen
+              ? 'bg-osk-orange text-white'
+              : 'bg-osk-teal text-white'
+          ]"
+        >
+          <span>🚇</span>
+          <span>{{ isRouteModalOpen ? '收起交通' : '交通資訊' }}</span>
+        </button>
+      </div>
+
+      <!-- 交通與路線資訊彈窗 (Modal) -->
+      <div
+        v-if="isRouteModalOpen && currentDay().routes && currentDay().routes.length"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fade-in"
+      >
+        <!-- 遮罩 -->
+        <div
+          @click="isRouteModalOpen = false"
+          class="absolute inset-0 bg-osk-navy/40 backdrop-blur-sm"
+        ></div>
+
+        <!-- 內容卡片 -->
+        <div
+          class="relative bg-white/95 backdrop-blur-md rounded-3xl border-4 border-white shadow-2xl max-w-xl w-full max-h-[80vh] overflow-y-auto p-6 z-10"
+        >
+          <button
+            @click="isRouteModalOpen = false"
+            class="absolute top-4 right-4 text-sm font-black text-osk-navy/60 hover:text-osk-navy hover:scale-110 transition-transform"
+          >
+            ❌
+          </button>
+          
+          <div class="mb-4 pr-8">
+            <h3 class="text-base font-black text-osk-navy flex items-center gap-2">
+              <span>🚇</span>
+              <span>Day {{ currentDay().day }} 交通與路線資訊</span>
+            </h3>
+          </div>
+
+          <div class="space-y-4">
             <RouteTable
               v-for="(route, ri) in currentDay().routes"
               :key="ri"
               :route="route"
             />
           </div>
-        </template>
+        </div>
       </div>
     </div>
   `,
