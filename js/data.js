@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 17:56",
+    updatedAt: "2026-05-26 18:05",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -322,7 +322,7 @@ export const TRIP_DATA = {
         },
         {
           time: "21:00",
-          activity: "南海難波站搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場 T1",
+          activity: "南海難波站搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場站",
           notes: [
             { type: "warn", text: "南海難波站 ≠ 地鐵難波站，需步行前往搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩" },
           ],
@@ -332,8 +332,10 @@ export const TRIP_DATA = {
         },
         {
           time: "21:44 左右",
-          activity: "抵達關西機場 T1 → Aeroplaza",
-          notes: [],
+          activity: "抵達關西機場站，前往 Aeroplaza 2F 的 NODOKA（洗澡、休息、安頓）",
+          notes: [
+            { type: "info", text: "關西機場站與 Aeroplaza 為相連動線" },
+          ],
           todo: null,
           mapQuery: "關西國際機場+第一航廈",
           mapLink: "https://www.google.com/maps/search/?api=1&query=關西國際機場+第一航廈",
@@ -343,7 +345,7 @@ export const TRIP_DATA = {
           activity: "NODOKA / Aeroplaza 安頓",
           notes: [
             { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位" },
-            { type: "tip",  text: "若 NODOKA 拖太久，改用 Aeroplaza 付費淋浴作備案" },
+            { type: "tip",  text: "若 NODOKA 拖太久，改用 Aeroplaza 付費淋浴作備案；NODOKA 位於 Aeroplaza 2F，與 1F 接駁車乘車處在同棟建築的上下樓" },
           ],
           todo: null,
           mapQuery: "KIX+Airport+Lounge+NODOKA",
@@ -377,15 +379,17 @@ export const TRIP_DATA = {
         },
         {
           time: "05:20",
-          activity: "接駁車",
-          notes: [],
+          activity: "由 Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
+          notes: [
+            { type: "info", text: "車程約 7～9 分鐘；乘車處與 2F NODOKA 為同一建築" },
+          ],
           todo: null,
         },
         {
           time: "05:40",
-          activity: "Peach 報到",
+          activity: "抵達第二航廈 T2 辦理 Peach 報到與後續流程",
           notes: [
-            { type: "warn", text: "可能排隊（但時間抓很安全）" },
+            { type: "warn", text: "可能排隊（但時間抓很安全）；回程機票以第二航廈 T2 為準" },
           ],
           todo: null,
         },
