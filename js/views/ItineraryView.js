@@ -195,6 +195,7 @@ export default {
 
   props: {
     days: { type: Array, required: true },
+    bottleneck: { type: String, default: "" },
   },
 
   setup(props) {
@@ -239,6 +240,20 @@ export default {
 
       <!-- 事件時間軸 -->
       <div class="max-w-2xl mx-auto animate-fade-in" :key="activeDay">
+        <!-- 瓶頸提醒 banner (只有在 Day 4 顯示) -->
+        <div
+          v-if="currentDay().day === 4 && bottleneck"
+          class="mb-6 bg-red-50/90 backdrop-blur-sm border-2 border-red-200 rounded-2xl p-4 flex gap-3 text-red-900 shadow-card"
+        >
+          <span class="text-xl flex-shrink-0">⚠️</span>
+          <div>
+            <h4 class="font-black text-sm text-red-950 mb-0.5">旅程核心瓶頸提醒 (Bottleneck)</h4>
+            <p class="text-xs font-semibold leading-relaxed text-red-800">
+              {{ bottleneck }}
+            </p>
+          </div>
+        </div>
+
         <EventCard
           v-for="(event, idx) in currentDay().events"
           :key="idx"

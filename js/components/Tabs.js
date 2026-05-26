@@ -1,17 +1,16 @@
-import { CalendarIcon, CheckSquareIcon, StarIcon, BrainIcon } from "./Icons.js";
+import { CalendarIcon, CheckSquareIcon, StarIcon } from "./Icons.js";
 
 export default {
   props: {
     activeTab: { type: String, required: true },
   },
   emits: ["tab-change"],
-  components: { CalendarIcon, CheckSquareIcon, StarIcon, BrainIcon },
+  components: { CalendarIcon, CheckSquareIcon, StarIcon },
   setup() {
     const tabs = [
       { id: "itinerary",  label: "行程",    icon: "CalendarIcon"    },
       { id: "checklist",  label: "準備清單", icon: "CheckSquareIcon" },
       { id: "actions",    label: "必要行動", icon: "StarIcon"        },
-      { id: "bottleneck", label: "Bottleneck", icon: "BrainIcon"    },
     ];
     return { tabs };
   },

@@ -6,10 +6,9 @@ import Tabs from "../components/Tabs.js";
 import ChecklistView from "./ChecklistView.js";
 import ItineraryView from "./ItineraryView.js";
 import ActionsView from "./ActionsView.js";
-import BottleneckView from "./BottleneckView.js";
 
 export default {
-  components: { PlaneIcon, BackgroundEffects, Tabs, ChecklistView, ItineraryView, ActionsView, BottleneckView },
+  components: { PlaneIcon, BackgroundEffects, Tabs, ChecklistView, ItineraryView, ActionsView },
 
   setup() {
     const activeTab = ref("itinerary");
@@ -89,10 +88,9 @@ export default {
         <Tabs :activeTab="activeTab" @tab-change="activeTab = $event" />
 
         <div class="animate-fade-in" :key="activeTab">
-          <ItineraryView  v-if="activeTab === 'itinerary'"  :days="TRIP_DATA.itinerary" />
+          <ItineraryView  v-if="activeTab === 'itinerary'"  :days="TRIP_DATA.itinerary" :bottleneck="TRIP_DATA.bottleneck" />
           <ChecklistView  v-if="activeTab === 'checklist'"  :items="TRIP_DATA.checklist" />
           <ActionsView    v-if="activeTab === 'actions'"    :actions="TRIP_DATA.requiredActions" />
-          <BottleneckView v-if="activeTab === 'bottleneck'" :bottleneck="TRIP_DATA.bottleneck" />
         </div>
       </div>
 
