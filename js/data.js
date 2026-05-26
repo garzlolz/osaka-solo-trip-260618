@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-25 17:30",
+    updatedAt: "2026-05-26 11:36",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -33,7 +33,7 @@ export const TRIP_DATA = {
           notes: [],
           todo: null,
           mapQuery: "桃園國際機場+第一航廈",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=桃園國際機場+第一航廈",
+          mapLink: "https://maps.app.goo.gl/dzmAMSbdhjswSMUd6",
         },
         {
           time: "22:00 左右",
@@ -43,13 +43,13 @@ export const TRIP_DATA = {
           ],
           todo: null,
           mapQuery: "關西國際機場+第二航廈",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=關西國際機場+第二航廈",
+          mapLink: "https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9",
         },
         {
           time: "22:30 左右",
           activity: "INNN 接駁專車（訂單 2026-1588178）→ 前往市區",
           notes: [
-            { type: "info", text: "出關後依序：➞ 前往 INNN 櫃台核銀（T2 國際線到達口左側黃色沙發區）➞ 等候接駁（每 30 分一班，發車前 10 分在櫃台集合）" },
+            { type: "info", text: "出關後依序：➞ 前往 INNN 櫃台核對（T2 國際線到達口左側黃色沙發區）➞ 等候接駁（每 30 分一班，發車前 10 分在櫃台集合）" },
             { type: "warn", text: "若錯過會順延至下一班；櫃台營業：07:00–00:10" },
           ],
           todo: null,
@@ -62,7 +62,7 @@ export const TRIP_DATA = {
           ],
           todo: null,
           mapQuery: "東橫INN+大阪日本橋文樂劇場前",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=東橫INN+大阪日本橋文樂劇場前",
+          mapLink: "https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8",
         },
         {
           time: "深夜",
@@ -72,7 +72,7 @@ export const TRIP_DATA = {
           ],
           todo: "宵夜：待選",
           mapQuery: "道頓堀",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=道頓堀",
+          mapLink: "https://maps.app.goo.gl/bvfxbKrwDbBgiV23A",
         },
       ],
       subsections: [
