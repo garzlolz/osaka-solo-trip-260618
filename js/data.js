@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 16:53",
+    updatedAt: "2026-05-26 17:56",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -322,7 +322,7 @@ export const TRIP_DATA = {
         },
         {
           time: "21:00",
-          activity: "南海難波站搭南海電鐵空港急行 → 關西機場 T1",
+          activity: "南海難波站搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場 T1",
           notes: [
             { type: "warn", text: "南海難波站 ≠ 地鐵難波站，需步行前往搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩" },
           ],
