@@ -10,20 +10,18 @@
     <div class="bg-decor animate-spin-slow"   style="top:50vh; left:1vw;  width:40px; height:40px; border-radius:8px; background:#F4874B18; transform-origin:center;"></div>
     <div class="bg-decor animate-spin-reverse" style="top:20vh; right:2vw; width:50px; height:50px; border-radius:12px; background:#F7C94822; transform-origin:center;"></div>
 
-    <!-- 點陣裝飾 -->
-    <div class="bg-decor" style="top:45vh; right:5vw;">
-      <svg width="60" height="60" viewBox="0 0 60 60" fill="#F4874B">
-        <circle cx="10" cy="10" r="4"/><circle cx="30" cy="10" r="4"/><circle cx="50" cy="10" r="4"/>
-        <circle cx="10" cy="30" r="4"/><circle cx="30" cy="30" r="4"/><circle cx="50" cy="30" r="4"/>
-        <circle cx="10" cy="50" r="4"/><circle cx="30" cy="50" r="4"/><circle cx="50" cy="50" r="4"/>
-      </svg>
+    <!-- 章魚燒裝飾 -->
+    <div class="bg-decor animate-float-slow"   style="top:42vh; right:3vw;  width:90px;  opacity:0.22;">
+      <img src="public/images/views/章魚燒2.png" alt="" style="width:100%; transform:rotate(12deg);" />
     </div>
-    <div class="bg-decor" style="top:10vh; left:45vw;">
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="#F7C948">
-        <circle cx="8"  cy="8"  r="3"/><circle cx="20" cy="8"  r="3"/><circle cx="32" cy="8"  r="3"/>
-        <circle cx="8"  cy="20" r="3"/><circle cx="20" cy="20" r="3"/><circle cx="32" cy="20" r="3"/>
-        <circle cx="8"  cy="32" r="3"/><circle cx="20" cy="32" r="3"/><circle cx="32" cy="32" r="3"/>
-      </svg>
+    <div class="bg-decor animate-float-medium" style="top:8vh;  left:42vw;  width:70px;  opacity:0.18;">
+      <img src="public/images/views/章魚燒2.png" alt="" style="width:100%; transform:rotate(-8deg);" />
+    </div>
+    <div class="bg-decor animate-float-fast"   style="top:68vh; left:2vw;   width:110px; opacity:0.20;">
+      <img src="public/images/views/章魚燒1.png" alt="" style="width:100%; transform:rotate(6deg);" />
+    </div>
+    <div class="bg-decor animate-float-slow"   style="top:15vh; right:1vw;  width:75px;  opacity:0.16;">
+      <img src="public/images/views/章魚燒2.png" alt="" style="width:100%; transform:rotate(-15deg);" />
     </div>
   </div>
 </template>
