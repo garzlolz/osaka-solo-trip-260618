@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 15:43",
+    updatedAt: "2026-05-26 16:46",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -153,7 +153,7 @@ export const TRIP_DATA = {
           notes: [],
           todo: null,
           mapQuery: "花見小路",
-          mapLink: "https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA",
+          mapLink: "https://maps.app.goo.gl/bBg7CRmmpaQE4KRVA",
         },
         {
           time: "14:30",
@@ -161,27 +161,28 @@ export const TRIP_DATA = {
           notes: [],
           todo: null,
           mapQuery: "八坂神社",
-          mapLink: "https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7",
+          mapLink: "https://maps.app.goo.gl/9K97GM4QDeAY6HA56",
         },
         {
           time: "15:15",
-          activity: "搭京阪前往伏見稻荷",
+          activity: "搭京阪本線 從祇園四條站搭京阪本線往大阪方向，坐到伏見稻荷站下車",
           notes: [
-            { type: "info", text: "從祇園四条站搭京阪，約 5 分鐘" },
+            { type: "info", text: "約 5 分鐘" },
           ],
           todo: null,
           mapQuery: "祇園四條站",
-          mapLink: "https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8",
+          mapLink: "https://maps.app.goo.gl/cG8VV8XZTLheFNFU7",
         },
         {
           time: "15:30",
           activity: "伏見稻荷大社",
           notes: [
+            { type: "info", text: "從伏見稻荷大社大鳥居開始進去" },
             { type: "warn", text: "建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘" },
           ],
           todo: null,
-          mapQuery: "伏見稻荷大社",
-          mapLink: "https://maps.app.goo.gl/gD9jP8W7eN6X1m5z9",
+          mapQuery: "伏見稻荷大社 大鳥居(入口)",
+          mapLink: "https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5",
         },
         {
           time: "17:30",
@@ -190,8 +191,8 @@ export const TRIP_DATA = {
             { type: "warn", text: "預留 5–10 分鐘容錯緩衝（梅雨季偶有延誤）；伏見稻荷（京阪普通）→ 丹波橋換特急 → 淀屋橋下車，步行約 3–5 分至北濱站（堺筋線 K14）→ 搭堺筋線至日本橋（K17）" },
           ],
           todo: null,
-          mapQuery: "伏見稻荷站+京阪",
-          mapLink: "https://maps.app.goo.gl/hU5kL3m9p4X2w7dZ6",
+          mapQuery: "伏見稻荷站",
+          mapLink: "https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6",
         },
         {
           time: "18:30",
