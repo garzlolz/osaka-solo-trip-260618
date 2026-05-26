@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 11:36",
+    updatedAt: "2026-05-26 15:43",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -98,7 +98,7 @@ export const TRIP_DATA = {
             },
             {
               title: "深夜不熟櫃台位置",
-              detail: "把櫃台位置（T2 國際線到達口左側黃色沙發區）截圖存入手機；飛機上先查好到達口路線，出關後直接前往。",
+              detail: "把櫃台位置（T2 國際線到達口左側黃色沙發區）截圖存入手機；飛機上先查好到達口路線，出關後直接前往櫃台位置。",
             },
           ],
         },
@@ -119,7 +119,7 @@ export const TRIP_DATA = {
           ],
           todo: "早餐：丸福珈琲店（千日前本店，8 點營業，出發前解決）",
           mapQuery: "丸福珈琲店+千日前本店",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=丸福珈琲店+千日前本店",
+          mapLink: "https://maps.app.goo.gl/7Ch8e5ETpJLp98x37",
         },
         {
           time: "09:00",
@@ -127,7 +127,7 @@ export const TRIP_DATA = {
           notes: [],
           todo: null,
           mapQuery: "京都河原町站",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=京都河原町站",
+          mapLink: "https://maps.app.goo.gl/APvfnTQbSnzSSRsQA",
         },
         {
           time: "09:15",
@@ -137,7 +137,7 @@ export const TRIP_DATA = {
           ],
           todo: "✔ 可提前購買電子票避免排隊",
           mapQuery: "清水寺",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=清水寺",
+          mapLink: "https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5",
         },
         {
           time: "11:00",
@@ -145,7 +145,7 @@ export const TRIP_DATA = {
           notes: [],
           todo: "午餐：奧丹豆腐料理 / 三年坂茶寮（建議提前記好店名）",
           mapQuery: "二寧坂",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=二寧坂",
+          mapLink: "https://maps.app.goo.gl/uoMtMkpQHuZc43J9A",
         },
         {
           time: "13:00",
@@ -153,7 +153,7 @@ export const TRIP_DATA = {
           notes: [],
           todo: null,
           mapQuery: "花見小路",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=花見小路",
+          mapLink: "https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA",
         },
         {
           time: "14:30",
@@ -161,7 +161,7 @@ export const TRIP_DATA = {
           notes: [],
           todo: null,
           mapQuery: "八坂神社",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=八坂神社",
+          mapLink: "https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7",
         },
         {
           time: "15:15",
@@ -171,7 +171,7 @@ export const TRIP_DATA = {
           ],
           todo: null,
           mapQuery: "祇園四條站",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=祇園四條站",
+          mapLink: "https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8",
         },
         {
           time: "15:30",
@@ -181,7 +181,7 @@ export const TRIP_DATA = {
           ],
           todo: null,
           mapQuery: "伏見稻荷大社",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=伏見稻荷大社",
+          mapLink: "https://maps.app.goo.gl/gD9jP8W7eN6X1m5z9",
         },
         {
           time: "17:30",
@@ -191,7 +191,7 @@ export const TRIP_DATA = {
           ],
           todo: null,
           mapQuery: "伏見稻荷站+京阪",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=伏見稻荷站+京阪",
+          mapLink: "https://maps.app.goo.gl/hU5kL3m9p4X2w7dZ6",
         },
         {
           time: "18:30",
@@ -199,7 +199,7 @@ export const TRIP_DATA = {
           notes: [],
           todo: null,
           mapQuery: "日本橋站+大阪",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=日本橋站+大阪",
+          mapLink: "https://maps.app.goo.gl/kCabn4TkMCpc28f2A",
         },
         {
           time: "19:00",
