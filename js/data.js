@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 16:46",
+    updatedAt: "2026-05-26 16:53",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -29,7 +29,7 @@ export const TRIP_DATA = {
       events: [
         {
           time: "18:15",
-          activity: "桃園 T1 搭乘 MM028 起飛",
+          activity: "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
           notes: [],
           todo: null,
           mapQuery: "桃園國際機場+第一航廈",
@@ -37,7 +37,7 @@ export const TRIP_DATA = {
         },
         {
           time: "22:00 左右",
-          activity: "抵達關西機場 T2，辦理入境 / 領行李",
+          activity: "抵達 [關西機場 T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9)，辦理入境 / 領行李",
           notes: [
             { type: "warn", text: "入境審查 20–60 分鐘浮動，遇高峰請多預留時間" },
           ],
@@ -56,7 +56,7 @@ export const TRIP_DATA = {
         },
         {
           time: "23:30 左右",
-          activity: "抵達飯店辦理入住",
+          activity: "抵達 [東橫INN大阪日本橋文樂劇場前](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8) 辦理入住",
           notes: [
             { type: "info", text: "視出關與等車時間而定" },
           ],
@@ -66,7 +66,7 @@ export const TRIP_DATA = {
         },
         {
           time: "深夜",
-          activity: "道頓堀",
+          activity: "[道頓堀](https://maps.app.goo.gl/bvfxbKrwDbBgiV23A)",
           notes: [
             { type: "ok", text: "不需預約／僅人多" },
           ],
@@ -113,17 +113,17 @@ export const TRIP_DATA = {
       events: [
         {
           time: "08:00",
-          activity: "從日本橋搭堺筋線 → 淡路換阪急京都線特急 → 京都河原町（約 58 分，¥650）",
+          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 搭乘堺筋線 → [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 轉乘阪急京都線特急 → [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)（約 58 分，¥650）",
           notes: [
             { type: "info", text: "刷 ICOCA 即可，無需買紙票" },
           ],
-          todo: "早餐：丸福珈琲店（千日前本店，8 點營業，出發前解決）",
+          todo: "早餐：[丸福珈琲店 千日前本店](https://maps.app.goo.gl/7Ch8e5ETpJLp98x37)（8 點營業，出發前解決）",
           mapQuery: "丸福珈琲店+千日前本店",
           mapLink: "https://maps.app.goo.gl/7Ch8e5ETpJLp98x37",
         },
         {
           time: "09:00",
-          activity: "抵達京都河原町",
+          activity: "抵達 [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)",
           notes: [],
           todo: null,
           mapQuery: "京都河原町站",
@@ -131,7 +131,7 @@ export const TRIP_DATA = {
         },
         {
           time: "09:15",
-          activity: "清水寺",
+          activity: "[清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5)",
           notes: [
             { type: "warn", text: "趁人少；選「二年坂往上拍」清水舞台視角最佳" },
           ],
@@ -141,7 +141,7 @@ export const TRIP_DATA = {
         },
         {
           time: "11:00",
-          activity: "二寧坂 / 三年坂",
+          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)",
           notes: [],
           todo: "午餐：奧丹豆腐料理 / 三年坂茶寮（建議提前記好店名）",
           mapQuery: "二寧坂",
@@ -149,25 +149,25 @@ export const TRIP_DATA = {
         },
         {
           time: "13:00",
-          activity: "祇園、花見小路散步",
+          activity: "祇園、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步",
           notes: [],
           todo: null,
           mapQuery: "花見小路",
-          mapLink: "https://maps.app.goo.gl/bBg7CRmmpaQE4KRVA",
+          mapLink: "https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA",
         },
         {
           time: "14:30",
-          activity: "八坂神社",
+          activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
           notes: [],
           todo: null,
           mapQuery: "八坂神社",
-          mapLink: "https://maps.app.goo.gl/9K97GM4QDeAY6HA56",
+          mapLink: "https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7",
         },
         {
           time: "15:15",
-          activity: "搭京阪本線 從祇園四條站搭京阪本線往大阪方向，坐到伏見稻荷站下車",
+          activity: "搭京阪前往伏見稻荷",
           notes: [
-            { type: "info", text: "約 5 分鐘" },
+            { type: "info", text: "從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘" },
           ],
           todo: null,
           mapQuery: "祇園四條站",
@@ -175,7 +175,7 @@ export const TRIP_DATA = {
         },
         {
           time: "15:30",
-          activity: "伏見稻荷大社",
+          activity: "[伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5)",
           notes: [
             { type: "info", text: "從伏見稻荷大社大鳥居開始進去" },
             { type: "warn", text: "建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘" },
@@ -188,7 +188,7 @@ export const TRIP_DATA = {
           time: "17:30",
           activity: "搭京阪返回大阪",
           notes: [
-            { type: "warn", text: "預留 5–10 分鐘容錯緩衝（梅雨季偶有延誤）；伏見稻荷（京阪普通）→ 丹波橋換特急 → 淀屋橋下車，步行約 3–5 分至北濱站（堺筋線 K14）→ 搭堺筋線至日本橋（K17）" },
+            { type: "warn", text: "預留 5–10 分鐘容錯緩衝（梅雨季偶有延誤）；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪普通）→ 丹波橋換特急 → 淀屋橋下車，步行約 3–5 分至北濱站（堺筋線 K14）→ 搭堺筋線至日本橋（K17）" },
           ],
           todo: null,
           mapQuery: "伏見稻荷站",
@@ -196,7 +196,7 @@ export const TRIP_DATA = {
         },
         {
           time: "18:30",
-          activity: "抵達大阪日本橋",
+          activity: "抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)",
           notes: [],
           todo: null,
           mapQuery: "日本橋站+大阪",
@@ -204,13 +204,13 @@ export const TRIP_DATA = {
         },
         {
           time: "19:00",
-          activity: "道頓堀晚餐",
+          activity: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐",
           notes: [
             { type: "info", text: "串家物語（自助炸串，無需預約）" },
           ],
           todo: "晚餐：待選",
           mapQuery: "串家物語+道頓堀店",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=串家物語+道頓堀店",
+          mapLink: "https://maps.app.goo.gl/JfTtUShoXsFDNsLaA",
         },
       ],
       routes: [
