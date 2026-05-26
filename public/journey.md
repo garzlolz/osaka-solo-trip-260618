@@ -1,6 +1,6 @@
 # 2026 大阪獨旅 06/18 ~ 06/21
 
-> 更新日期: 2026-05-26 18:18
+> 更新日期: 2026-05-26 19:50
 
 ---
 
@@ -8,11 +8,11 @@
 
 - [x] 手機辦好 ICOCA 卡
 - [ ] [Visit Japan Web](https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/)
-- [ ] [出國登陸](https://www.boca.gov.tw/sp-abre-main-1.html)
-- [ ] e-sim
+- [ ] [出國登錄](https://www.boca.gov.tw/sp-abre-main-1.html)
+- [ ] 辦理 e-SIM
 - [ ] 購買清水寺電子票
 - [ ] 購買大阪城電子票
-- [ ] 確認 INNN 接駁車訂單（2026-1588178）
+- [x] 確認 INNN 接駁車訂單（2026-1588178）
 - [ ] 確認 Peach MM028 電子登機證
 - [x] 換日幣 / 確認海外刷卡手續費
 - [ ] 下載 Google Maps 大阪離線地圖

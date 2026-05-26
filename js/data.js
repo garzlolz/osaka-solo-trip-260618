@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 18:18",
+    updatedAt: "2026-05-26 19:50",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -113,7 +113,7 @@ export const TRIP_DATA = {
       events: [
         {
           time: "08:00",
-          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 搭乘堺筋線 → [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 轉乘阪急京都線特急 → [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)（約 58 分，¥650）",
+          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 換阪急京都線特急 → [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)（約 58 分，¥650）",
           notes: [
             { type: "info", text: "刷 ICOCA 即可，無需買紙票" },
           ],
