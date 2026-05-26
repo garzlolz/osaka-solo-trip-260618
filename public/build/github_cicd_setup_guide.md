@@ -159,7 +159,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 安裝 pnpm 工具
-        uses: pnpm/action-setup@v6
+        uses: pnpm/action-setup@v2
         with:
           version: 11
 
