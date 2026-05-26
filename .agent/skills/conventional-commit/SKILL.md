@@ -6,7 +6,9 @@ description: "Prompt and workflow for generating conventional commit messages us
 ### Instructions
 
 ```xml
-	<description>This file contains a prompt template for generating conventional commit messages. It provides instructions, examples, and formatting guidelines to help users write standardized, descriptive commit messages in accordance with the Conventional Commits specification.</description>
+	<description>This file contains a prompt template for generating conventional commit messages. It provides instructions, examples, and formatting guidelines to help users write standardized, descriptive commit messages in accordance with the Conventional Commits specification.
+    Constraint: All descriptions, bodies, and footers must be written in Traditional Chinese (Taiwan).
+    </description>
 ```
 
 ### Workflow
