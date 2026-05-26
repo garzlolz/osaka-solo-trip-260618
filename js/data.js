@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 18:05",
+    updatedAt: "2026-05-26 18:12",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -332,35 +332,24 @@ export const TRIP_DATA = {
         },
         {
           time: "21:44 左右",
-          activity: "抵達關西機場站，前往 Aeroplaza 2F 的 NODOKA（洗澡、休息、安頓）",
+          activity: "抵達關西機場站，前往 Aeroplaza",
           notes: [
-            { type: "info", text: "關西機場站與 Aeroplaza 為相連動線" },
+            { type: "info", text: "關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA" },
           ],
           todo: null,
           mapQuery: "關西國際機場+第一航廈",
           mapLink: "https://www.google.com/maps/search/?api=1&query=關西國際機場+第一航廈",
         },
         {
-          time: "22:15–23:00",
-          activity: "NODOKA / Aeroplaza 安頓",
+          time: "22:00–05:15",
+          activity: "NODOKA 洗澡／休息／整理行李",
           notes: [
-            { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位" },
-            { type: "tip",  text: "若 NODOKA 拖太久，改用 Aeroplaza 付費淋浴作備案；NODOKA 位於 Aeroplaza 2F，與 1F 接駁車乘車處在同棟建築的上下樓" },
+            { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；NODOKA 位於 Aeroplaza 2F" },
+            { type: "tip",  text: "若 NODOKA 淋浴間拖太久，改用 Aeroplaza 付費淋浴作為備案；與 1F 免費接駁巴士乘車處為同一建築的上下樓" },
           ],
           todo: null,
           mapQuery: "KIX+Airport+Lounge+NODOKA",
           mapLink: "https://www.google.com/maps/search/?api=1&query=KIX+Airport+Lounge+NODOKA",
-        },
-        {
-          time: "深夜",
-          activity: "休息區",
-          notes: [
-            { type: "ok",   text: "免費區不需預約" },
-            { type: "warn", text: "深夜可能需搶位置" },
-          ],
-          todo: null,
-          mapQuery: "Aeroplaza",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=Aeroplaza",
         },
       ],
     },
@@ -372,26 +361,27 @@ export const TRIP_DATA = {
       dateStr: "2026-06-21",
       events: [
         {
-          time: "05:00",
-          activity: "起床整理",
+          time: "05:15–05:30",
+          activity: "收拾、離開 NODOKA",
           notes: [],
-          todo: "早餐：機場便利商店隨手帶",
+          todo: "早餐：可在便利商店或 NODOKA 隨手帶解決",
         },
         {
-          time: "05:20",
-          activity: "由 Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
+          time: "05:30–05:45",
+          activity: "Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
           notes: [
-            { type: "info", text: "車程約 7～9 分鐘；乘車處與 2F NODOKA 為同一建築" },
+            { type: "info", text: "免費接駁車車程約 7～9 分鐘；乘車處在 Aeroplaza 1F" },
           ],
           todo: null,
         },
         {
-          time: "05:40",
-          activity: "抵達第二航廈 T2 辦理 Peach 報到與後續流程",
+          time: "05:45–07:00",
+          activity: "第二航廈 T2 辦理 Peach 報到／託運行李／安檢前準備",
           notes: [
-            { type: "warn", text: "可能排隊（但時間抓很安全）；回程機票以第二航廈 T2 為準" },
+            { type: "warn", text: "Peach 國際線報到時間為起飛前 120 至 50 分鐘，07:00 截止報到（極重要，逾時無法登機）" },
+            { type: "tip",  text: "提早於 05:45 抵達櫃台排隊以預留充足的託運與安檢時間" },
           ],
-          todo: null,
+          todo: "✔ 07:00 前完成報到手續",
         },
         {
           time: "07:50",
