@@ -48,9 +48,6 @@ jobs:
         # 將 public 目錄完整複製到 dist 中，確保 data.js 中的 public/images/... 靜態路徑可供讀取
         run: cp -R public dist/public
 
-      - name: 配置 GitHub Pages 環境
-        uses: actions/configure-pages@v4
-
       - name: 上傳打包後的網頁產物
         uses: actions/upload-pages-artifact@v3
         with:

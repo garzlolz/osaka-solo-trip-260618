@@ -180,15 +180,12 @@ jobs:
         # 這一步將 public 目錄完整複製到 dist 中，確保 data.js 的 public/images/... 路徑在線上能正確運作
         run: cp -R public dist/public
 
-      - name: 配置 GitHub Pages 環境
-        uses: actions/configure-pages@v4
-
-      - name: 上傳打包後的網頁產物
+      - name: 上傳 Build Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
 
-      - name: 部署至 GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 ```
