@@ -3,24 +3,17 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # 當 main 分支有程式碼推送時自動觸發
+      - main
 
-# 設定工作流權限以允許部署到 GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
-# 避免多個部署衝突
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: 檢出專案程式碼
@@ -35,21 +28,20 @@ jobs:
         run: npm install -g pnpm@11
 
       - name: 安裝專案相依套件
-        # 由於是 CI 環境，使用 frozen-lockfile 確保套件版本一致
         run: pnpm install --frozen-lockfile
 
       - name: 進行專案建置打包 (Vite)
         run: pnpm run build
 
       - name: 複製 public 靜態目錄至編譯輸出
-        # 將 public 目錄完整複製到 dist 中，確保 data.js 中的 public/images/... 靜態路徑可供讀取
         run: cp -R public dist/public
 
-      - name: 上傳打包後的網頁產物
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'
-
-      - name: 部署至 GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: 部署至 gh-pages 分支
+        run: |
+          cd dist
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Deploy from ${{ github.sha }}"
+          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:gh-pages
