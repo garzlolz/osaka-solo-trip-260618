@@ -217,8 +217,8 @@ export const TRIP_DATA = {
         {
           title: "去程路線：日本橋 → 京都河原町（NAVITIME 確認版）",
           segments: [
-            { segment: 1, route: "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）", from: "日本橋 2 番月台",  to: "淡路",       duration: "約 17 分", cost: "¥240",  note: "" },
-            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "淡路 2・3 番月台", to: "京都河原町", duration: "約 35 分", cost: "¥410",  note: "" },
+            { segment: 1, route: "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）", from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台",  to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)",       duration: "約 17 分", cost: "¥240",  note: "" },
+            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 2・3 番月台", to: "[京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)", duration: "約 35 分", cost: "¥410",  note: "" },
           ],
           summary: "總計：約 58 分鐘　¥650　換乘 1 次（淡路站換月台）",
           tips: [
@@ -229,10 +229,10 @@ export const TRIP_DATA = {
         {
           title: "回程路線：京都河原町 → 日本橋飯店",
           segments: [
-            { segment: 1, route: "阪急京都線特急（往大阪梅田）",              from: "京都河原町",    to: "淡路",         duration: "約 35 分", cost: "",      note: "" },
-            { segment: 2, route: "阪急千里線 → 直通堺筋線（同車廂，坐著不動）", from: "淡路",          to: "日本橋（K17）", duration: "約 20 分", cost: "",      note: "" },
-            { segment: 3, route: "步行",                                         from: "日本橋（K17）", to: "道頓堀 / 難波", duration: "約 10 分", cost: "",      note: "吃晚餐逛街" },
-            { segment: 4, route: "步行",                                         from: "道頓堀 / 難波", to: "日本橋飯店",    duration: "約 8 分",  cost: "",      note: "逛完後步行回飯店" },
+            { segment: 1, route: "阪急京都線特急（往大阪梅田）",              from: "[京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)",    to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)",         duration: "約 35 分", cost: "",      note: "" },
+            { segment: 2, route: "阪急千里線 → 直通堺筋線（同車廂，坐著不動）", from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)",          to: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)（K17）", duration: "約 20 分", cost: "",      note: "" },
+            { segment: 3, route: "步行",                                         from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)（K17）", to: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波", duration: "約 10 分", cost: "",      note: "吃晚餐逛街" },
+            { segment: 4, route: "步行",                                         from: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波", to: "日本橋飯店",    duration: "約 8 分",  cost: "",      note: "逛完後步行回飯店" },
           ],
           summary: "總計：約 55 分鐘（不含逛街）　換乘 1 次（淡路站換月台）",
           tips: [

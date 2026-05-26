@@ -1,6 +1,17 @@
+const renderMarkdownLinks = (text) => {
+  if (!text) return "";
+  return text.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-osk-teal hover:underline font-bold">$1</a>'
+  );
+};
+
 export default {
   props: {
     route: { type: Object, required: true },
+  },
+  setup() {
+    return { renderMarkdownLinks };
   },
   template: `
     <div class="bg-osk-sand rounded-2xl border-2 border-osk-amber/30 p-5 mt-4">
@@ -30,12 +41,12 @@ export default {
               class="border-b border-osk-amber/20 hover:bg-osk-amber/10 transition-colors"
             >
               <td class="py-2.5 px-2 font-black text-osk-orange">{{ seg.segment }}</td>
-              <td class="py-2.5 px-2 text-osk-navy font-medium leading-snug">{{ seg.route }}</td>
-              <td class="py-2.5 px-2 text-osk-navy/70 whitespace-nowrap">{{ seg.from }}</td>
-              <td class="py-2.5 px-2 text-osk-navy/70 whitespace-nowrap">{{ seg.to }}</td>
+              <td class="py-2.5 px-2 text-osk-navy font-medium leading-snug" v-html="renderMarkdownLinks(seg.route)"></td>
+              <td class="py-2.5 px-2 text-osk-navy/70 whitespace-nowrap" v-html="renderMarkdownLinks(seg.from)"></td>
+              <td class="py-2.5 px-2 text-osk-navy/70 whitespace-nowrap" v-html="renderMarkdownLinks(seg.to)"></td>
               <td class="py-2.5 px-2 text-osk-teal font-bold whitespace-nowrap">{{ seg.duration }}</td>
               <td class="py-2.5 px-2 text-osk-darkOrange font-bold whitespace-nowrap">{{ seg.cost || '—' }}</td>
-              <td class="py-2.5 px-2 text-osk-navy/50">{{ seg.note || '' }}</td>
+              <td class="py-2.5 px-2 text-osk-navy/50" v-html="renderMarkdownLinks(seg.note)"></td>
             </tr>
           </tbody>
         </table>
