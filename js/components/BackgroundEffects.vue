@@ -12,16 +12,16 @@
 
     <!-- 章魚燒裝飾 -->
     <div class="bg-decor animate-float-slow"   style="top:42vh; right:3vw;  width:90px;  opacity:0.22;">
-      <img src="public/images/views/章魚燒2.png" alt="" style="width:100%; transform:rotate(12deg);" />
+      <img :src="'public/images/views/章魚燒2.png'" alt="" style="width:100%; transform:rotate(12deg);" />
     </div>
     <div class="bg-decor animate-float-medium" style="top:8vh;  left:42vw;  width:70px;  opacity:0.18;">
-      <img src="public/images/views/章魚燒2.png" alt="" style="width:100%; transform:rotate(-8deg);" />
+      <img :src="'public/images/views/章魚燒2.png'" alt="" style="width:100%; transform:rotate(-8deg);" />
     </div>
     <div class="bg-decor animate-float-fast"   style="top:68vh; left:2vw;   width:110px; opacity:0.20;">
-      <img src="public/images/views/章魚燒1.png" alt="" style="width:100%; transform:rotate(6deg);" />
+      <img :src="'public/images/views/章魚燒1.png'" alt="" style="width:100%; transform:rotate(6deg);" />
     </div>
     <div class="bg-decor animate-float-slow"   style="top:15vh; right:1vw;  width:75px;  opacity:0.16;">
-      <img src="public/images/views/章魚燒2.png" alt="" style="width:100%; transform:rotate(-15deg);" />
+      <img :src="'public/images/views/章魚燒2.png'" alt="" style="width:100%; transform:rotate(-15deg);" />
     </div>
   </div>
 </template>
