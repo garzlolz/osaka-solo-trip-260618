@@ -26,16 +26,13 @@ jobs:
       - name: 檢出專案程式碼
         uses: actions/checkout@v4
 
-      - name: 安裝 pnpm 工具
-        uses: pnpm/action-setup@v4
-        with:
-          version: 11
-
       - name: 設定 Node.js 環境
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+
+      - name: 安裝 pnpm 工具
+        run: npm install -g pnpm@11
 
       - name: 安裝專案相依套件
         # 由於是 CI 環境，使用 frozen-lockfile 確保套件版本一致
