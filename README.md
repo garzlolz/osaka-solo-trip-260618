@@ -24,10 +24,22 @@ python -m http.server 8080
 
 ## 網頁功能
 
-- **行程**：Day 1–4 頁籤切換，時間軸卡片，備註依類型顯色（⚠️ 黃、❌ 灰、✔ 綠）；Day 1 含機場接駁圖片與風險說明，Day 2 含去回程路線表
-- **準備清單**：可勾選核取方塊，狀態透過 `localStorage` 持久化（重新整理不會重置）
-- **必要行動**：優先行動表格 + Bottleneck 分析
+| 頁籤 | 說明 |
+|------|------|
+| **行程** | Day 1–4 頁籤切換；時間軸卡片；備註依類型顯色（⚠️ 黃、❌ 灰、✔ 綠、ℹ 藍）；Day 1 含機場接駁圖片與風險說明，Day 2 含去回程路線表 |
+| **準備清單** | 可勾選核取方塊，狀態透過 `localStorage` 持久化，重新整理不會重置 |
+| **必要行動** | 優先行動編號列表 |
+| **Bottleneck** | 旅程核心瓶頸分析 |
+
+各景點事件卡片若有 Google Maps 連結，可切換內嵌地圖預覽（Day 1–3 已完整加入）。
 
 ## 更新行程
 
-編輯 [journey.md](journey.md) 後，同步更新 [js/data.js](js/data.js) 中對應的資料即可。格式慣例詳見 [CLAUDE.md](CLAUDE.md)。
+編輯 [public/journey.md](public/journey.md) 後，同步更新 [js/data.js](js/data.js) 中對應的資料。若要為某事件加入地圖，在 `events[]` 項目新增：
+
+```js
+mapQuery: "景點搜尋字串",   // 用於 embed iframe（空格用 + 連接）
+mapLink:  "https://www.google.com/maps/search/?api=1&query=...",
+```
+
+格式慣例詳見 [CLAUDE.md](CLAUDE.md)。
