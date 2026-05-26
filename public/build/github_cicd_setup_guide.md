@@ -14,7 +14,7 @@
 
 ---
 
-## 1. 專案架喚變更說明
+## 1. 專案架構變更說明
 
 整合後，專案的結構將保持輕量，僅新增幾個設定檔：
 
@@ -32,7 +32,7 @@ osaka-solo-trip-260618/
 ├── index.html
 ├── vite.config.js              # <-- [新增] Vite 設定檔
 ├── package.json                # <-- [新增] 專案資訊與指令
-├── package-lock.json           # <-- [新增] 鎖定套件版本
+├── pnpm-lock.yaml              # <-- [新增] 鎖定套件版本 (pnpm)
 └── .gitignore                  # <-- [新增/修改] 排除 node_modules 與 dist
 ```
 
@@ -45,13 +45,13 @@ osaka-solo-trip-260618/
 ### 1. 初始化 `package.json`
 在終端機執行：
 ```bash
-npm init -y
+pnpm init -y
 ```
 
 接著，編輯產生的 `package.json`，將其修改為以下內容：
 ```json
 {
-  "name": "osaka-solo-trip-2026",
+  "name": "osaka-solo-trip-260618",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -61,7 +61,10 @@ npm init -y
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.2.0"
+    "vite": "^8.0.14"
+  },
+  "dependencies": {
+    "vue": "^3.5.34"
   }
 }
 ```
@@ -70,7 +73,7 @@ npm init -y
 ### 2. 安裝本地相依套件
 在終端機執行安裝：
 ```bash
-npm install
+pnpm install
 ```
 
 ### 3. 設定 `.gitignore`
@@ -98,6 +101,18 @@ export default defineConfig({
   // 停用 Vite 預設將 public/ 內容複製到 dist 根目錄的行為
   // 這樣做是為了維持您程式碼中 `public/images/...` 的路徑對齊
   publicDir: false,
+  
+  resolve: {
+    alias: {
+      // 指向含 HTML 編譯器的完整 Vue 版本，解決動態 template 渲染問題
+      vue: 'vue/dist/vue.esm-bundler.js',
+    },
+  },
+  define: {
+    __VUE_OPTIONS_API__: true,
+    __VUE_PROD_DEVTOOLS__: false,
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
+  },
 });
 ```
 
@@ -143,17 +158,23 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 11
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: npm ci
+        # 由於是 CI 環境，使用 frozen-lockfile 確保套件版本一致
+        run: pnpm install --frozen-lockfile
 
       - name: Build Project
-        run: npm run build
+        run: pnpm run build
 
       - name: Copy Public Directory to Build Output
         # 這一步將 public 目錄完整複製到 dist 中，確保 data.js 的 public/images/... 路徑在線上能正確運作
@@ -197,7 +218,7 @@ jobs:
 ### 本地開發 (Local Development)
 1. 開啟終端機，執行：
    ```bash
-   npm run dev
+   pnpm dev
    ```
 2. 終端機會顯示一個本地網址（通常是 `http://localhost:5173/osaka-solo-trip-260618/`）。
 3. 用瀏覽器打開它。當您修改 `journey.md`、`data.js` 或任何前端元件時，瀏覽器會**自動即時更新**（不需要手動重新整理網頁）。
