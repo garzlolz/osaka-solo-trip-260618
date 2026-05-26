@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 18:12",
+    updatedAt: "2026-05-26 18:18",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -149,7 +149,7 @@ export const TRIP_DATA = {
         },
         {
           time: "13:00",
-          activity: "祇園、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步",
+          activity: "[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步",
           notes: [],
           todo: null,
           mapQuery: "花見小路",
@@ -188,7 +188,7 @@ export const TRIP_DATA = {
           time: "17:30",
           activity: "搭京阪返回大阪",
           notes: [
-            { type: "warn", text: "預留 5–10 分鐘容錯緩衝（梅雨季偶有延誤）；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪普通）→ 丹波橋換特急 → 淀屋橋下車，步行約 3–5 分至北濱站（堺筋線 K14）→ 搭堺筋線至日本橋（K17）" },
+            { type: "warn", text: "⚠️ 預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" },
           ],
           todo: null,
           mapQuery: "伏見稻荷站",
@@ -345,7 +345,7 @@ export const TRIP_DATA = {
           activity: "NODOKA 洗澡／休息／整理行李",
           notes: [
             { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；NODOKA 位於 Aeroplaza 2F" },
-            { type: "tip",  text: "若 NODOKA 淋浴間拖太久，改用 Aeroplaza 付費淋浴作為備案；與 1F 免費接駁巴士乘車處為同一建築的上下樓" },
+            { type: "tip",  text: "若 NODOKA 淋浴間拖太久，改用 [AEROPLAZA 付費淋浴處](https://maps.app.goo.gl/tvx4kjvycJuiTQYp6)作為備案；與 1F 免費接駁巴士乘車處為同一建築的上下樓" },
           ],
           todo: null,
           mapQuery: "KIX+Airport+Lounge+NODOKA",

@@ -1,6 +1,6 @@
 # 2026 大阪獨旅 06/18 ~ 06/21
 
-> 更新日期: 2026-05-26 18:12
+> 更新日期: 2026-05-26 18:18
 
 ---
 
@@ -55,11 +55,11 @@
 | 09:00 | 抵達 [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)                                                                             |                                                                                                                                                            |                                                     |
 | 09:15 | [清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5)                                                                                     | ⚠️ 趁人少；選「二年坂往上拍」清水舞台視角最佳                                                                                                              | ✔ 可提前購買電子票避免排隊                          |
 | 11:00 | [二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)                                                                            |                                                                                                                                                            | 午餐：[奧丹豆腐料理](https://maps.app.goo.gl/6UnmkNvfcn14rcd28) / 三年坂茶寮（建議提前記好店名） |
-| 13:00 | 祇園、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步 | | |
+| 13:00 | [祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步 | | |
 | 14:30 | [八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7) | | |
 | 15:15 | 搭京阪前往伏見稻荷 | 從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘 | |
 | 15:30 | [伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5) | 從大鳥居開始進去；⚠️ 建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘 | |
-| 17:30 | 搭京阪返回大阪 | ⚠️ 預留 5–10 分鐘容錯緩衝（梅雨季偶有延誤）；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪普通）→ 丹波橋換特急 → 淀屋橋下車，步行約 3–5 分至北濱站（堺筋線 K14）→ 搭堺筋線至日本橋（K17） | |
+| 17:30 | 搭京阪返回大阪 | ⚠️ 預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17） |  |
 | 18:30 | 抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)                                                                             |                                                                                                                                                            |                                                     |
 | 19:00 | [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐                                                                                 | [串家物語 Namba Parks](https://maps.app.goo.gl/wCm3k29WWo5fgsPK8)（自助炸串，無需預約）                                                                    | 晚餐：待選                                          |
 
@@ -105,7 +105,7 @@
 | 20:00       | 回飯店拿行李                                   |                                                                                                        |                                                                        |
 | 21:00       | [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場站 | ⚠️ 南海難波站 ≠ 地鐵難波站，需步行前往南海難波站搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩 |  |
 | 21:44 左右  | 抵達關西機場站，前往 Aeroplaza | 關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA |  |
-| 22:00–05:15 | NODOKA 洗澡／休息／整理行李 | ⚠️ 先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；NODOKA 位於 Aeroplaza 2F。<br>✔ 若淋浴間拖太久，改用 Aeroplaza 付費淋浴作為備案；與 1F 免費接駁巴士乘車處為同一建築上下樓 |  |
+| 22:00–05:15 | NODOKA 洗澡／休息／整理行李 | ⚠️ 先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；NODOKA 位於 Aeroplaza 2F。<br>✔ 若淋浴間拖太久，改用 [AEROPLAZA 付費淋浴處](https://maps.app.goo.gl/tvx4kjvycJuiTQYp6)作為備案；與 1F 免費接駁巴士乘車處為同一建築上下樓 |  |
 
 ---
 
