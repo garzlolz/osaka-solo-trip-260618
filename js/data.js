@@ -352,6 +352,16 @@ export const TRIP_DATA = {
           mapLink: "https://www.google.com/maps/search/?api=1&query=KIX+Airport+Lounge+NODOKA",
         },
       ],
+      subsections: [
+        {
+          type: "images",
+          title: "機場免費接駁巴士乘車處",
+          images: [
+            { src: "public/images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "第 1 航廈 / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
+            { src: "public/images/接駁巴士（免費）乘車處位置第2航廈→前往第1航廈、關西機場站.png", alt: "第 2 航廈 ➞ 前往第 1 航廈 / 關西機場站接駁巴士乘車處" },
+          ],
+        },
+      ],
     },
 
     {
