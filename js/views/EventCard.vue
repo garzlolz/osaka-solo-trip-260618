@@ -7,10 +7,10 @@ const props = defineProps({
 });
 
 const NOTE_STYLE = {
-  warn: { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-800",   icon: "⚠️" },
-  ok:   { bg: "bg-gray-50",    border: "border-gray-200",    text: "text-gray-600",    icon: "❌" },
-  tip:  { bg: "bg-green-50",   border: "border-green-200",   text: "text-green-700",   icon: "✔" },
-  info: { bg: "bg-blue-50/60", border: "border-blue-100",    text: "text-blue-700",    icon: "ℹ" },
+  warn: { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-800",   icon: "warning" },
+  ok:   { bg: "bg-gray-50",    border: "border-gray-200",    text: "text-gray-600",    icon: "cancel" },
+  tip:  { bg: "bg-green-50",   border: "border-green-200",   text: "text-green-700",   icon: "check_circle" },
+  info: { bg: "bg-blue-50/60", border: "border-blue-100",    text: "text-blue-700",    icon: "info" },
 };
 
 const renderMarkdownLinks = (text) => {
@@ -116,7 +116,7 @@ const mapEmbedUrl = computed(() => {
                   : 'bg-white text-osk-teal border-osk-teal/30 hover:border-osk-teal'
               ]"
             >
-              <span>🗺</span>
+              <span class="material-icons text-sm leading-none">map</span>
               <span>{{ map.name }}</span>
             </button>
           </div>
@@ -132,7 +132,7 @@ const mapEmbedUrl = computed(() => {
             :key="i"
             :class="['flex items-start gap-1.5 text-xs rounded-xl px-3 py-2 border', noteStyle(note.type).bg, noteStyle(note.type).border, noteStyle(note.type).text]"
           >
-            <span class="flex-shrink-0 mt-px">{{ noteStyle(note.type).icon }}</span>
+            <span class="material-icons flex-shrink-0 mt-px text-base leading-none">{{ noteStyle(note.type).icon }}</span>
             <span class="font-medium leading-snug" v-html="renderMarkdownLinks(note.text)"></span>
           </div>
         </div>
@@ -144,7 +144,7 @@ const mapEmbedUrl = computed(() => {
             :key="i"
             class="text-xs font-semibold text-osk-darkOrange flex items-start gap-1"
           >
-            <span class="shrink-0">📌</span>
+            <span class="material-icons shrink-0 text-sm leading-none">push_pin</span>
             <span v-html="renderMarkdownLinks(line)"></span>
           </p>
         </div>

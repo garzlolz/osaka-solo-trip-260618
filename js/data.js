@@ -86,7 +86,7 @@ export const TRIP_DATA = {
         },
         {
           type: "risks",
-          title: "⚠️ INNN 接駁風險與應對",
+          title: "INNN 接駁風險與應對",
           items: [
             {
               title: "入境 + 領行李超過 60 分",
@@ -135,7 +135,7 @@ export const TRIP_DATA = {
           notes: [
             { type: "warn", text: "趁人少；選「二年坂往上拍」清水舞台視角最佳" },
           ],
-          todo: "✔ 可提前購買電子票避免排隊",
+          todo: "可提前購買電子票避免排隊",
           mapQuery: "清水寺",
           mapLink: "https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5",
         },
@@ -188,7 +188,7 @@ export const TRIP_DATA = {
           time: "17:30",
           activity: "搭京阪返回大阪",
           notes: [
-            { type: "warn", text: "⚠️ 預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" },
+            { type: "warn", text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" },
           ],
           todo: null,
           mapQuery: "伏見稻荷站",
@@ -222,8 +222,8 @@ export const TRIP_DATA = {
           ],
           summary: "總計：約 58 分鐘　¥650　換乘 1 次（淡路站換月台）",
           tips: [
-            "✔ 上車前確認車頭方向牌寫「北千里」或「高槻市」，兩個都會經過淡路",
-            "✔ 全程刷 ICOCA，不需買紙票",
+            "上車前確認車頭方向牌寫「北千里」或「高槻市」，兩個都會經過淡路",
+            "全程刷 ICOCA，不需買紙票",
           ],
         },
         {
@@ -236,7 +236,7 @@ export const TRIP_DATA = {
           ],
           summary: "總計：約 55 分鐘（不含逛街）　換乘 1 次（淡路站換月台）",
           tips: [
-            "✔ 全程刷 ICOCA，不需買紙票",
+            "全程刷 ICOCA，不需買紙票",
           ],
         },
       ],
@@ -391,7 +391,7 @@ export const TRIP_DATA = {
             { type: "warn", text: "Peach 國際線報到時間為起飛前 120 至 50 分鐘，07:00 截止報到（極重要，逾時無法登機）" },
             { type: "tip",  text: "提早於 05:45 抵達櫃台排隊以預留充足的託運與安檢時間" },
           ],
-          todo: "✔ 07:00 前完成報到手續",
+          todo: "07:00 前完成報到手續",
         },
         {
           time: "07:50",
@@ -404,9 +404,9 @@ export const TRIP_DATA = {
   ],
 
   requiredActions: [
-    { priority: "✔ 強烈建議",           action: "清水寺電子票（避免排隊）" },
-    { priority: "✔ 強烈建議",           action: "大阪城電子票（避免排隊）" },
-    { priority: "✔ 行為策略（最重要）", action: "NODOKA → 一到機場直接去排（這是唯一會真的影響你流程的點）" },
+    { priority: "強烈建議",           action: "清水寺電子票（避免排隊）" },
+    { priority: "強烈建議",           action: "大阪城電子票（避免排隊）" },
+    { priority: "行為策略（最重要）", action: "NODOKA → 一到機場直接去排（這是唯一會真的影響你流程的點）" },
   ],
 
   bottleneck: "唯一真正的 bottleneck 是「機場淋浴資源競爭」，其次才是「觀景台黃金時段流量控制」。",

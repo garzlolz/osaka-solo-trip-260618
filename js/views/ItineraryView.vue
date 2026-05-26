@@ -56,7 +56,7 @@ const currentDay = computed(() => {
         v-if="currentDay.day === 4 && bottleneck"
         class="mb-6 bg-red-50/90 backdrop-blur-sm border-2 border-red-200 rounded-2xl p-4 flex gap-3 text-red-900 shadow-card"
       >
-        <span class="text-xl flex-shrink-0">⚠️</span>
+        <span class="material-icons flex-shrink-0 text-xl leading-none text-red-500">warning</span>
         <div>
           <h4 class="font-black text-sm text-red-950 mb-0.5">旅程核心瓶頸提醒 (Bottleneck)</h4>
           <p class="text-xs font-semibold leading-relaxed text-red-800">
@@ -124,7 +124,7 @@ const currentDay = computed(() => {
             : 'bg-osk-teal text-white'
         ]"
       >
-        <span>🚇</span>
+        <span class="material-icons text-lg leading-none">directions_transit</span>
         <span>{{ isRouteModalOpen ? '收起交通' : '交通資訊' }}</span>
       </button>
     </div>
@@ -148,12 +148,12 @@ const currentDay = computed(() => {
           @click="isRouteModalOpen = false"
           class="absolute top-4 right-4 text-sm font-black text-osk-navy/60 hover:text-osk-navy hover:scale-110 transition-transform"
         >
-          ❌
+          <span class="material-icons text-xl leading-none">close</span>
         </button>
         
         <div class="mb-4 pr-8">
           <h3 class="text-base font-black text-osk-navy flex items-center gap-2">
-            <span>🚇</span>
+            <span class="material-icons text-base leading-none">directions_transit</span>
             <span>Day {{ currentDay.day }} 交通與路線資訊</span>
           </h3>
         </div>

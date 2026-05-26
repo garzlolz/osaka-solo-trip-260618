@@ -7,10 +7,10 @@ defineProps({
 <template>
   <div class="px-4 max-w-2xl mx-auto space-y-6">
 
-    <!-- 📌 必要行動 -->
+    <!-- 必要行動 -->
     <div class="bg-white rounded-3xl border-2 border-white shadow-card p-6">
       <h2 class="text-lg font-black text-osk-navy mb-5 flex items-center gap-2">
-        <span class="text-xl">📌</span>
+        <span class="material-icons text-xl leading-none">push_pin</span>
         必要行動
       </h2>
       <div class="space-y-3">

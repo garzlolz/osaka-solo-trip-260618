@@ -15,7 +15,7 @@ const renderMarkdownLinks = (text) => {
 <template>
   <div class="bg-osk-sand rounded-2xl border-2 border-osk-amber/30 p-5 mt-4">
     <h4 class="text-sm font-black text-osk-navy mb-3 flex items-center gap-2">
-      <span class="text-base">🚃</span>
+      <span class="material-icons text-base leading-none">train</span>
       {{ route.title }}
     </h4>
 
@@ -61,8 +61,11 @@ const renderMarkdownLinks = (text) => {
       <p
         v-for="(tip, i) in route.tips"
         :key="i"
-        class="text-xs text-osk-teal font-semibold"
-      >{{ tip }}</p>
+        class="text-xs text-osk-teal font-semibold flex items-center gap-1"
+      >
+        <span class="material-icons text-sm leading-none">check</span>
+        <span>{{ tip }}</span>
+      </p>
     </div>
   </div>
 </template>
