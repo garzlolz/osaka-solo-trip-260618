@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   base: '/osaka-solo-trip-260618/',
-  publicDir: false,
+  publicDir: 'public',
   plugins: [vue()],
   define: {
     __VUE_OPTIONS_API__: true,

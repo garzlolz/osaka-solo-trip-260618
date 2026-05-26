@@ -80,8 +80,8 @@ export const TRIP_DATA = {
           type: "images",
           title: "INNN 機場 T2 接機處",
           images: [
-            { src: "public/images/INNN_機場T2接機處路線圖.png", alt: "關西機場 T2 平面圖，INNN 櫃台位於國際線到着口左側" },
-            { src: "public/images/INNN_路線環境圖.png",         alt: "T2 航廈實景，出口左轉即可看到 INNN" },
+            { src: "images/INNN_機場T2接機處路線圖.png", alt: "關西機場 T2 平面圖，INNN 櫃台位於國際線到着口左側" },
+            { src: "images/INNN_路線環境圖.png",         alt: "T2 航廈實景，出口左轉即可看到 INNN" },
           ],
         },
         {
@@ -357,8 +357,8 @@ export const TRIP_DATA = {
           type: "images",
           title: "機場免費接駁巴士乘車處",
           images: [
-            { src: "public/images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "第 1 航廈 / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
-            { src: "public/images/接駁巴士（免費）乘車處位置第2航廈→前往第1航廈、關西機場站.png", alt: "第 2 航廈 ➞ 前往第 1 航廈 / 關西機場站接駁巴士乘車處" },
+            { src: "images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "第 1 航廈 / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
+            { src: "images/接駁巴士（免費）乘車處位置第2航廈→前往第1航廈、關西機場站.png", alt: "第 2 航廈 ➞ 前往第 1 航廈 / 關西機場站接駁巴士乘車處" },
           ],
         },
       ],

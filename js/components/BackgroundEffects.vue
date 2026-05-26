@@ -87,7 +87,7 @@ onUnmounted(() => {
         top: 0,
       }"
     >
-      <img :src="`public/images/views/${c.img}`" alt="" style="width:100%; display:block;" />
+      <img :src="`images/views/${c.img}`" alt="" style="width:100%; display:block;" />
     </div>
   </div>
 </template>

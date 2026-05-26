@@ -38,9 +38,6 @@ jobs:
       - name: 進行專案建置打包 (Vite)
         run: pnpm run build
 
-      - name: 複製 public 靜態目錄至編譯輸出
-        run: cp -R public dist/public
-
       - name: 上傳打包後的網頁產物
         uses: actions/upload-pages-artifact@v3
         with:
