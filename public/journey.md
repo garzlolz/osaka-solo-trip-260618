@@ -1,6 +1,6 @@
 # 2026 大阪獨旅 06/18 ~ 06/21
 
-> 更新日期: 2026-05-26 19:50
+> 更新日期: 2026-05-27 17:15
 
 ---
 
@@ -17,6 +17,7 @@
 - [x] 換日幣 / 確認海外刷卡手續費
 - [ ] 下載 Google Maps 大阪離線地圖
 - [ ] 下載 Google 翻譯日文離線包
+- [ ] 下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）
 
 ## Day 1：6/18（四）—— 深夜抵達
 
@@ -51,26 +52,27 @@
 
 | 時間  | 活動 / 地點                                                                                | 備註                                                                                                                                                       | 待辦                                                |
 | ----- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| 08:00 | 從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 換阪急京都線特急 → [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)（約 58 分，¥650） | 刷 ICOCA 即可，無需買紙票                                                                                                                                  | 早餐：[丸福珈琲店 千日前本店](https://maps.app.goo.gl/7Ch8e5ETpJLp98x37)（8點營業，出發前解決） |
-| 09:00 | 抵達 [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)                                                                             |                                                                                                                                                            |                                                     |
-| 09:15 | [清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5)                                                                                     | ⚠️ 趁人少；選「二年坂往上拍」清水舞台視角最佳                                                                                                              | ✔ 可提前購買電子票避免排隊                          |
+| 07:00 | 從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)（約 55 分，¥650） | 刷 ICOCA 即可，無需買紙票 | 前往京都並在烏丸下車，步行 10 分鐘至咖啡廳 |
+| 08:00 | [INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) | 08:00–08:50 用餐<br>🚗 **早餐後至清水寺銜接方案：**<br>• **Plan A (207 公車)：** 於 [四條高倉公車站](https://maps.app.goo.gl/92Qkp99nk13GCpje9) 搭乘 207 路至 [清水道公車站](https://maps.app.goo.gl/V9BbPGyWTHi9db199) 下車，步行 750 公尺上坡至仁王門。<br>• **Plan B (計程車備案)：** 若時間落後，使用 **GO App** 叫車直達 [清水寺](https://maps.app.goo.gl/Kv3RuMopX8dmE4Cg8) 仁王門（可直接載到門口，避開 Plan A 最累的 12 分鐘上坡路段）<br>⚠️ 需提前下載 GO App 以防萬一 | 早餐：[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) |
+| 09:15 | [清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5)                                                                                     | ⚠️ 趁人少；選「二年坂往上拍」清水舞台視角最佳                                                                                                              | ✔ 可提前購買電子票避免排隊 |
 | 11:00 | [二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)                                                                            |                                                                                                                                                            | 午餐：[奧丹豆腐料理](https://maps.app.goo.gl/6UnmkNvfcn14rcd28) / 三年坂茶寮（建議提前記好店名） |
 | 13:00 | [祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步 | | |
 | 14:30 | [八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7) | | |
-| 15:15 | 搭京阪前往伏見稻荷 | 從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘 | |
-| 15:30 | [伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5) | 從大鳥居開始進去；⚠️ 建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘 | |
+| 15:10 | [GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29) | 吃濃厚布丁（位於八坂神社斜對面） | 下午茶：[GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29) |
+| 15:40 | 搭京阪前往伏見稻荷 | 從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘 | |
+| 15:55 | [伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5) | 從大鳥居開始進去；⚠️ 建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘 | |
 | 17:30 | 搭京阪返回大阪 | ⚠️ 預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17） |  |
 | 18:30 | 抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)                                                                             |                                                                                                                                                            |                                                     |
 | 19:00 | [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐                                                                                 | [串家物語 Namba Parks](https://maps.app.goo.gl/wCm3k29WWo5fgsPK8)（自助炸串，無需預約）                                                                    | 晚餐：待選                                          |
 
-### 去程路線：日本橋 → 京都河原町（NAVITIME 確認版）
+### 去程路線：日本橋 → 烏丸（NAVITIME 確認版）
 
 | 段次 | 路線                                                              | 上車站           | 下車站     | 時間     | 費用 |
 | ---- | ----------------------------------------------------------------- | ---------------- | ---------- | -------- | ---- |
 | 1    | OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動） | [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台  | [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)       | 約 17 分 | ¥240 |
-| 2    | 阪急京都線特急（往京都河原町）                                    | [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 2・3 番月台 | [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA) | 約 35 分 | ¥410 |
+| 2    | 阪急京都線特急（往京都河原町）                                    | [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 2・3 番月台 | [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站) | 約 30 分 | ¥410 |
 
-**總計：約 58 分鐘　¥650　換乘 1 次（淡路站換月台）**
+**總計：約 55 分鐘（不含步行）　¥650　換乘 1 次（淡路站換月台）**
 
 > ✔ 上車前確認車頭方向牌寫「北千里」或「高槻市」，兩個都會經過淡路
 
