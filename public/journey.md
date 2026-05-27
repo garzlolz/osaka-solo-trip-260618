@@ -1,6 +1,6 @@
 # 2026 大阪獨旅 06/18 ~ 06/21
 
-> 更新日期: 2026-05-27 17:15
+> 更新日期: 2026-05-27 17:42
 
 ---
 
@@ -56,7 +56,7 @@
 | 08:00 | [INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) | 08:00–08:50 用餐<br>🚗 **早餐後至清水寺銜接方案：**<br>• **Plan A (207 公車)：** 於 [四條高倉公車站](https://maps.app.goo.gl/92Qkp99nk13GCpje9) 搭乘 207 路至 [清水道公車站](https://maps.app.goo.gl/V9BbPGyWTHi9db199) 下車，步行 750 公尺上坡至仁王門。<br>• **Plan B (計程車備案)：** 若時間落後，使用 **GO App** 叫車直達 [清水寺](https://maps.app.goo.gl/Kv3RuMopX8dmE4Cg8) 仁王門（可直接載到門口，避開 Plan A 最累的 12 分鐘上坡路段）<br>⚠️ 需提前下載 GO App 以防萬一 | 早餐：[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) |
 | 09:15 | [清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5)                                                                                     | ⚠️ 趁人少；選「二年坂往上拍」清水舞台視角最佳                                                                                                              | ✔ 可提前購買電子票避免排隊 |
 | 11:00 | [二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)                                                                            |                                                                                                                                                            | 午餐：[奧丹豆腐料理](https://maps.app.goo.gl/6UnmkNvfcn14rcd28) / 三年坂茶寮（建議提前記好店名） |
-| 13:00 | [祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步 | | |
+| 13:00 | [祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步 | | 點心：[原鳴門鯛燒總舖](https://maps.app.goo.gl/JyrSBThPyVeRdjBF6) |
 | 14:30 | [八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7) | | |
 | 15:10 | [GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29) | 吃濃厚布丁（位於八坂神社斜對面） | 下午茶：[GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29) |
 | 15:40 | 搭京阪前往伏見稻荷 | 從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘 | |
