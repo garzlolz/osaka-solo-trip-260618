@@ -332,12 +332,14 @@ export const TRIP_DATA = {
           time: "05:30–05:45",
           activity: "Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
           notes: [
-            { type: "info", text: "免費接駁車車程約 10 分鐘；出關西機場站驗票口右轉，穿過 Aeroplaza 下至 1F 前方" },
+            { type: "info", text: "免費接駁車車程約 7 分鐘；出關西機場站驗票口右轉，穿過 Aeroplaza 下至 1F 前方" },
+            { type: "info", text: "5 時班次：05:20 / 05:25 / 05:35 / 05:40 / 05:45 / 05:50 / 05:55（每 2–5 分一班）" },
           ],
           todo: null,
           images: [
             { src: "images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "Aeroplaza 1F / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
             { src: "images/Peach_接駁巴士乘車處指南.jpg", alt: "Peach 官方：前往 T2 接駁巴士乘車處指南" },
+            { src: "images/From Terminal 1, Aeroplaza → To Terminal 2 時刻表.png", alt: "第 1 航廈 / Aeroplaza → 第 2 航廈接駁巴士時刻表" },
           ],
         },
         {
