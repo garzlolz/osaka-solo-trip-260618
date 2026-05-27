@@ -323,17 +323,17 @@ export const TRIP_DATA = {
       dateStr: "2026-06-21",
       events: [
         {
-          time: "05:15–05:30",
+          time: "04:15–04:30",
           activity: "收拾、離開 NODOKA",
           notes: [],
           todo: "早餐：可在便利商店或 NODOKA 隨手帶解決",
         },
         {
-          time: "05:30–05:45",
+          time: "04:30–04:57",
           activity: "Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
           notes: [
             { type: "info", text: "免費接駁車車程約 7 分鐘；出關西機場站驗票口右轉，穿過 Aeroplaza 下至 1F 前方" },
-            { type: "info", text: "5 時班次：05:20 / 05:25 / 05:35 / 05:40 / 05:45 / 05:50 / 05:55（每 2–5 分一班）" },
+            { type: "info", text: "4 時班次：04:00 / 04:50（搭 04:50 班，約 04:57 抵達 T2）" },
           ],
           todo: null,
           images: [
@@ -343,13 +343,13 @@ export const TRIP_DATA = {
           ],
         },
         {
-          time: "05:45–07:00",
+          time: "05:00–07:00",
           activity: "第二航廈 T2 辦理 Peach 報到／託運行李／安檢前準備",
           notes: [
             { type: "warn", text: "Peach 國際線報到時間為起飛前 120 至 50 分鐘，07:00 截止報到（極重要，逾時無法登機）" },
             { type: "info", text: "報到櫃台：T2 1F，接駁車下車後左側入口進入。先至 BAGGAGE TAG KIOSK 列印行李條，再前往行李託運處辦理" },
             { type: "warn", text: "安檢截止：起飛前 25 分鐘（07:25）前必須通過安全檢查" },
-            { type: "tip",  text: "提早於 05:45 抵達排隊，預留充足的託運與安檢時間" },
+            { type: "tip",  text: "約 05:00 抵達排隊，預留充足的託運與安檢時間" },
           ],
           todo: "07:00 前完成報到手續",
           images: [
