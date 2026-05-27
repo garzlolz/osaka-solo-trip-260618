@@ -41,15 +41,16 @@ pnpm preview    # 預覽 build 結果
 
 ```
 index.html                    # HTML 入口（Vite）
-js/
-├── main.js                   # createApp 掛載
-├── data.js                   # 所有旅行資料（硬編碼，無 API）
+src/
+├── App.vue                   # 主殼層（含倒數計時）
+├── js/
+│   ├── main.js               # createApp 掛載
+│   └── data.js               # 所有旅行資料（硬編碼，無 API）
 ├── components/
-│   ├── Tabs.vue              # 頁籤導覽（行程 / 準備清單 / 必要行動）
 │   ├── Icons.js              # SVG 圖示（具名 export，純 JS）
+│   ├── Tabs.vue              # 頁籤導覽（行程 / 準備清單 / 必要行動）
 │   └── BackgroundEffects.vue # 裝飾浮動元素
 └── views/
-    ├── App.vue               # 主殼層（含倒數計時）
     ├── ItineraryView.vue     # 行程時間軸（含 EventCard、Day 頁籤、🚇 交通資訊浮標與彈窗、Day 4 Bottleneck 警示卡片）
     ├── EventCard.vue         # 單一事件卡片（含多地圖按鈕與 iframe）
     ├── RouteTable.vue        # 交通路線表格（在 ItineraryView 的 Modal 中渲染）
@@ -65,7 +66,6 @@ js/
 2. **多地圖解析機制 (Multi-Map Buttons)**：
    - 事件卡片中的活動名稱 (`activity`)、備註 (`notes`)、待辦 (`todo`) 欄位如果包含 Google Maps 連結（網址含 `maps` 或 `google.com/maps`），`EventCard` 會自動提取這些地圖連結並進行去重。
    - 若提取到地圖連結，卡片底部將動態生成 `🗺 景點名` 按鈕，點擊可切換顯示對應的內嵌地圖 (iframe)。
-   - 若沒有提取到 Markdown 連結，則自動 Fallback 到 `mapLink` 與 `mapQuery` 欄位。
 
 3. **浮動交通資訊 (Transit Info Modal)**：
    - 當天行程若在 `data.js` 中有定義 `routes` 資料時，畫面右下角會顯示 `🚇 交通資訊` 浮動按鈕。

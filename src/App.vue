@@ -1,12 +1,12 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-import { TRIP_DATA } from "../data.js";
-import { PlaneIcon } from "../components/Icons.js";
-import BackgroundEffects from "../components/BackgroundEffects.vue";
-import Tabs from "../components/Tabs.vue";
-import ChecklistView from "./ChecklistView.vue";
-import ItineraryView from "./ItineraryView.vue";
-import ActionsView from "./ActionsView.vue";
+import { TRIP_DATA } from "./js/data.js";
+import { PlaneIcon } from "./components/Icons.js";
+import BackgroundEffects from "./components/BackgroundEffects.vue";
+import Tabs from "./components/Tabs.vue";
+import ChecklistView from "./views/ChecklistView.vue";
+import ItineraryView from "./views/ItineraryView.vue";
+import ActionsView from "./views/ActionsView.vue";
 
 const activeTab = ref("itinerary");
 
