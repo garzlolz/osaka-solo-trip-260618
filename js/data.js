@@ -332,11 +332,12 @@ export const TRIP_DATA = {
           time: "05:30–05:45",
           activity: "Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
           notes: [
-            { type: "info", text: "免費接駁車車程約 7～9 分鐘；乘車處在 Aeroplaza 1F" },
+            { type: "info", text: "免費接駁車車程約 10 分鐘；出關西機場站驗票口右轉，穿過 Aeroplaza 下至 1F 前方" },
           ],
           todo: null,
           images: [
             { src: "images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "Aeroplaza 1F / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
+            { src: "images/Peach_接駁巴士乘車處指南.jpg", alt: "Peach 官方：前往 T2 接駁巴士乘車處指南" },
           ],
         },
         {
@@ -344,9 +345,14 @@ export const TRIP_DATA = {
           activity: "第二航廈 T2 辦理 Peach 報到／託運行李／安檢前準備",
           notes: [
             { type: "warn", text: "Peach 國際線報到時間為起飛前 120 至 50 分鐘，07:00 截止報到（極重要，逾時無法登機）" },
-            { type: "tip",  text: "提早於 05:45 抵達櫃台排隊以預留充足的託運與安檢時間" },
+            { type: "info", text: "報到櫃台：T2 1F，接駁車下車後左側入口進入。先至 BAGGAGE TAG KIOSK 列印行李條，再前往行李託運處辦理" },
+            { type: "warn", text: "安檢截止：起飛前 25 分鐘（07:25）前必須通過安全檢查" },
+            { type: "tip",  text: "提早於 05:45 抵達排隊，預留充足的託運與安檢時間" },
           ],
           todo: "07:00 前完成報到手續",
+          images: [
+            { src: "images/Peach_T2報到櫃台位置圖.png", alt: "Peach T2 報到櫃台位置圖（T2 1F，接駁車下車後左側入口）" },
+          ],
         },
         {
           time: "07:50",
