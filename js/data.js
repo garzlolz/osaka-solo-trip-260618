@@ -50,6 +50,10 @@ export const TRIP_DATA = {
             { type: "warn", text: "若錯過會順延至下一班；櫃台營業：07:00–00:10" },
           ],
           todo: null,
+          images: [
+            { src: "images/INNN_機場T2接機處路線圖.png", alt: "關西機場 T2 平面圖，INNN 櫃台位於國際線到着口左側" },
+            { src: "images/INNN_路線環境圖.png",         alt: "T2 航廈實景，出口左轉即可看到 INNN" },
+          ],
         },
         {
           time: "23:30 左右",
@@ -69,14 +73,6 @@ export const TRIP_DATA = {
         },
       ],
       subsections: [
-        {
-          type: "images",
-          title: "INNN 機場 T2 接機處",
-          images: [
-            { src: "images/INNN_機場T2接機處路線圖.png", alt: "關西機場 T2 平面圖，INNN 櫃台位於國際線到着口左側" },
-            { src: "images/INNN_路線環境圖.png",         alt: "T2 航廈實景，出口左轉即可看到 INNN" },
-          ],
-        },
         {
           type: "risks",
           title: "INNN 接駁風險與應對",
@@ -314,19 +310,8 @@ export const TRIP_DATA = {
           activity: "[NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7) 洗澡／休息／整理行李",
           notes: [
             { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；Aeroplaza 2F，24 小時，¥1,400 / 40 分鐘（含備品）" },
-            { type: "tip",  text: "若 NODOKA 淋浴間拖太久，可搭 Aeroplaza 1F 免費接駁巴士前往[關西機場 T2](https://maps.app.goo.gl/NSCU9HVMKCzPHUeM6)使用付費淋浴（車程約 7～9 分鐘）" },
           ],
           todo: null,
-        },
-      ],
-      subsections: [
-        {
-          type: "images",
-          title: "機場免費接駁巴士乘車處",
-          images: [
-            { src: "images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "第 1 航廈 / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
-            { src: "images/接駁巴士（免費）乘車處位置第2航廈→前往第1航廈、關西機場站.png", alt: "第 2 航廈 ➞ 前往第 1 航廈 / 關西機場站接駁巴士乘車處" },
-          ],
         },
       ],
     },
@@ -350,6 +335,9 @@ export const TRIP_DATA = {
             { type: "info", text: "免費接駁車車程約 7～9 分鐘；乘車處在 Aeroplaza 1F" },
           ],
           todo: null,
+          images: [
+            { src: "images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "Aeroplaza 1F / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
+          ],
         },
         {
           time: "05:45–07:00",

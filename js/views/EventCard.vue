@@ -139,6 +139,18 @@ const mapEmbedUrl = computed(() => {
           </p>
         </div>
 
+        <!-- 附圖（直接展開） -->
+        <div v-if="event.images && event.images.length" class="mt-3 space-y-2">
+          <div
+            v-for="img in event.images"
+            :key="img.src"
+            class="rounded-xl overflow-hidden border border-gray-100"
+          >
+            <img :src="img.src" :alt="img.alt" class="w-full object-contain max-h-64 bg-gray-50" loading="lazy" />
+            <p class="text-[11px] text-osk-navy/50 px-3 py-2 leading-snug">{{ img.alt }}</p>
+          </div>
+        </div>
+
         <!-- 地圖 iframe -->
         <div v-show="isMapVisible" class="mt-3 rounded-xl overflow-hidden border-2 border-osk-teal/20">
           <iframe
