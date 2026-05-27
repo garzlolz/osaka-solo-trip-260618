@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-26 19:50",
+    updatedAt: "2026-05-27 17:15",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -18,6 +18,7 @@ export const TRIP_DATA = {
     { id: 9,  text: "換日幣 / 確認海外刷卡手續費",            done: true },
     { id: 10, text: "下載 Google Maps 大阪離線地圖",           done: false },
     { id: 11, text: "下載 Google 翻譯日文離線包",              done: false },
+    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡",       done: false },
   ],
 
   itinerary: [
@@ -112,22 +113,24 @@ export const TRIP_DATA = {
       dateStr: "2026-06-19",
       events: [
         {
-          time: "08:00",
-          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 換阪急京都線特急 → [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)（約 58 分，¥650）",
+          time: "07:00",
+          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)（約 55 分，¥650）",
           notes: [
             { type: "info", text: "刷 ICOCA 即可，無需買紙票" },
           ],
-          todo: "早餐：[丸福珈琲店 千日前本店](https://maps.app.goo.gl/7Ch8e5ETpJLp98x37)（8 點營業，出發前解決）",
-          mapQuery: "丸福珈琲店+千日前本店",
-          mapLink: "https://maps.app.goo.gl/7Ch8e5ETpJLp98x37",
+          todo: "前往京都並在烏丸下車，步行 10 分鐘至咖啡廳",
         },
         {
-          time: "09:00",
-          activity: "抵達 [京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)",
-          notes: [],
-          todo: null,
-          mapQuery: "京都河原町站",
-          mapLink: "https://maps.app.goo.gl/APvfnTQbSnzSSRsQA",
+          time: "08:00",
+          activity: "[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) 享用早餐",
+          notes: [
+            { type: "info", text: "08:00–08:50 用餐" },
+            { type: "info", text: "🚗 早餐後至清水寺銜接方案：<br>• Plan A (207 公車)：於 [四條高倉公車站](https://maps.app.goo.gl/92Qkp99nk13GCpje9) 搭乘 207 路至 [清水道公車站](https://maps.app.goo.gl/V9BbPGyWTHi9db199) 下車，步行 750 公尺上坡至仁王門。<br>• Plan B (計程車備案)：若時間落後，使用 GO App 叫車直達 [清水寺](https://maps.app.goo.gl/Kv3RuMopX8dmE4Cg8) 仁王門（可直接載到門口，避開 Plan A 最累的 12 分鐘上坡路段）" },
+            { type: "warn", text: "需提前下載 GO App 以防萬一" }
+          ],
+          todo: "早餐：[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69)",
+          mapQuery: "INODA咖啡 本店",
+          mapLink: "https://maps.app.goo.gl/vpBvQCnQtD7jsNk69",
         },
         {
           time: "09:15",
@@ -164,17 +167,27 @@ export const TRIP_DATA = {
           mapLink: "https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7",
         },
         {
-          time: "15:15",
+          time: "15:10",
+          activity: "[GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29)",
+          notes: [
+            { type: "info", text: "吃濃厚布丁（位於八坂神社斜對面）" },
+          ],
+          todo: "下午茶：[GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29)",
+          mapQuery: "GION GOZU 四条店",
+          mapLink: "https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29",
+        },
+        {
+          time: "15:40",
           activity: "搭京阪前往伏見稻荷",
           notes: [
             { type: "info", text: "從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘" },
           ],
           todo: null,
           mapQuery: "祇園四條站",
-          mapLink: "https://maps.app.goo.gl/cG8VV8XZTLheFNFU7",
+          mapLink: "https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8",
         },
         {
-          time: "15:30",
+          time: "15:55",
           activity: "[伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5)",
           notes: [
             { type: "info", text: "從伏見稻荷大社大鳥居開始進去" },
@@ -215,12 +228,12 @@ export const TRIP_DATA = {
       ],
       routes: [
         {
-          title: "去程路線：日本橋 → 京都河原町（NAVITIME 確認版）",
+          title: "去程路線：日本橋 → 烏丸（NAVITIME 確認版）",
           segments: [
             { segment: 1, route: "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）", from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台",  to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)",       duration: "約 17 分", cost: "¥240",  note: "" },
-            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 2・3 番月台", to: "[京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)", duration: "約 35 分", cost: "¥410",  note: "" },
+            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 2・3 番月台", to: "[烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)", duration: "約 30 分", cost: "¥410",  note: "" },
           ],
-          summary: "總計：約 58 分鐘　¥650　換乘 1 次（淡路站換月台）",
+          summary: "總計：約 55 分鐘（不含步行）　¥650　換乘 1 次（淡路站換月台）",
           tips: [
             "上車前確認車頭方向牌寫「北千里」或「高槻市」，兩個都會經過淡路",
             "全程刷 ICOCA，不需買紙票",
