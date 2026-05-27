@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-27 17:15",
+    updatedAt: "2026-05-27 17:42",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -154,7 +154,7 @@ export const TRIP_DATA = {
           time: "13:00",
           activity: "[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步",
           notes: [],
-          todo: null,
+          todo: "點心：[原鳴門鯛燒總舖](https://maps.app.goo.gl/JyrSBThPyVeRdjBF6)",
           mapQuery: "花見小路",
           mapLink: "https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA",
         },
