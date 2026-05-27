@@ -57,16 +57,6 @@ const maps = computed(() => {
     }
   });
   
-  // 若未解析出 Google Maps 連結，則回退至傳統欄位 mapLink/mapQuery
-  if (list.length === 0 && props.event.mapLink) {
-    const plainName = props.event.activity.replace(/\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g, '$1');
-    list.push({
-      name: plainName,
-      query: props.event.mapQuery || plainName,
-      link: props.event.mapLink
-    });
-  }
-  
   return list;
 });
 

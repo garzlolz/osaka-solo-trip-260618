@@ -84,8 +84,6 @@ js/
 | `activity` | string | 活動名稱（可使用 Markdown 連結） |
 | `notes` | `{type, text}[]` | 備註陣列；`type` 為 `"warn"` / `"ok"` / `"tip"` / `"info"`；`text` 可使用 Markdown 連結 |
 | `todo` | string \| null | 待辦事項（多行用 `\n` 分隔，可使用 Markdown 連結） |
-| `mapQuery` | string | （舊格式）Google Maps 搜尋字串（用於 embed iframe） |
-| `mapLink` | string | （舊格式）Google Maps 外部連結 |
 
 ## 更新原則
 

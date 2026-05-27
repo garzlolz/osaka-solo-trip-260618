@@ -1,6 +1,6 @@
 # 2026 大阪獨旅 06/18 ~ 06/21
 
-> 更新日期: 2026-05-27 17:42
+> 更新日期: 2026-05-27 18:30
 
 ---
 
@@ -106,8 +106,8 @@
 | 15:30–18:30 | [心齋橋](https://maps.app.goo.gl/pRQToFCrVxBBiFHs7) / [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) | ❌ 不需預約　⚠️ 人潮極多；購物 / 晚餐留彈性，此段不要壓縮                                              | 逛街：藥妝 / 雜貨 / 伴手禮<br>晚餐：待選（大阪最後一頓正餐，建議吃好） |
 | 20:00       | 回飯店拿行李                                   |                                                                                                        |                                                                        |
 | 21:00       | [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場站 | ⚠️ 南海難波站 ≠ 地鐵難波站，需步行前往南海難波站搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩 |  |
-| 21:44 左右  | 抵達關西機場站，前往 Aeroplaza | 關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA |  |
-| 22:00–05:15 | NODOKA 洗澡／休息／整理行李 | ⚠️ 先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；NODOKA 位於 Aeroplaza 2F。<br>✔ 若淋浴間拖太久，改用 [AEROPLAZA 付費淋浴處](https://maps.app.goo.gl/tvx4kjvycJuiTQYp6)作為備案；與 1F 免費接駁巴士乘車處為同一建築上下樓 |  |
+| 21:44 左右  | 抵達[關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 Aeroplaza | 關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA |  |
+| 22:00–05:15 | [NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7) 洗澡／休息／整理行李 | ⚠️ 先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；Aeroplaza 2F，24 小時，¥1,400 / 40 分鐘（含備品）<br>✔ 若淋浴間拖太久，可搭 Aeroplaza 1F 免費接駁巴士前往[關西機場 T2](https://maps.app.goo.gl/NSCU9HVMKCzPHUeM6)使用付費淋浴（車程約 7～9 分鐘） |  |
 
 ### 機場免費接駁巴士乘車處
 

@@ -33,8 +33,6 @@ export const TRIP_DATA = {
           activity: "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
           notes: [],
           todo: null,
-          mapQuery: "桃園國際機場+第一航廈",
-          mapLink: "https://maps.app.goo.gl/dzmAMSbdhjswSMUd6",
         },
         {
           time: "22:00 左右",
@@ -43,8 +41,6 @@ export const TRIP_DATA = {
             { type: "warn", text: "入境審查 20–60 分鐘浮動，遇高峰請多預留時間" },
           ],
           todo: null,
-          mapQuery: "關西國際機場+第二航廈",
-          mapLink: "https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9",
         },
         {
           time: "22:30 左右",
@@ -62,8 +58,6 @@ export const TRIP_DATA = {
             { type: "info", text: "視出關與等車時間而定" },
           ],
           todo: null,
-          mapQuery: "東橫INN+大阪日本橋文樂劇場前",
-          mapLink: "https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8",
         },
         {
           time: "深夜",
@@ -72,8 +66,6 @@ export const TRIP_DATA = {
             { type: "ok", text: "不需預約／僅人多" },
           ],
           todo: "宵夜：待選",
-          mapQuery: "道頓堀",
-          mapLink: "https://maps.app.goo.gl/bvfxbKrwDbBgiV23A",
         },
       ],
       subsections: [
@@ -129,8 +121,6 @@ export const TRIP_DATA = {
             { type: "warn", text: "需提前下載 GO App 以防萬一" }
           ],
           todo: "早餐：[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69)",
-          mapQuery: "INODA咖啡 本店",
-          mapLink: "https://maps.app.goo.gl/vpBvQCnQtD7jsNk69",
         },
         {
           time: "09:15",
@@ -139,32 +129,24 @@ export const TRIP_DATA = {
             { type: "warn", text: "趁人少；選「二年坂往上拍」清水舞台視角最佳" },
           ],
           todo: "可提前購買電子票避免排隊",
-          mapQuery: "清水寺",
-          mapLink: "https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5",
         },
         {
           time: "11:00",
           activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)",
           notes: [],
           todo: "午餐：[奧丹豆腐料理](https://maps.app.goo.gl/6UnmkNvfcn14rcd28) / 三年坂茶寮（建議提前記好店名）",
-          mapQuery: "二寧坂",
-          mapLink: "https://maps.app.goo.gl/uoMtMkpQHuZc43J9A",
         },
         {
           time: "13:00",
           activity: "[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步",
           notes: [],
           todo: "點心：[原鳴門鯛燒總舖](https://maps.app.goo.gl/JyrSBThPyVeRdjBF6)",
-          mapQuery: "花見小路",
-          mapLink: "https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA",
         },
         {
           time: "14:30",
           activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
           notes: [],
           todo: null,
-          mapQuery: "八坂神社",
-          mapLink: "https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7",
         },
         {
           time: "15:10",
@@ -173,8 +155,6 @@ export const TRIP_DATA = {
             { type: "info", text: "吃濃厚布丁（位於八坂神社斜對面）" },
           ],
           todo: "下午茶：[GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29)",
-          mapQuery: "GION GOZU 四条店",
-          mapLink: "https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29",
         },
         {
           time: "15:40",
@@ -183,8 +163,6 @@ export const TRIP_DATA = {
             { type: "info", text: "從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘" },
           ],
           todo: null,
-          mapQuery: "祇園四條站",
-          mapLink: "https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8",
         },
         {
           time: "15:55",
@@ -194,8 +172,6 @@ export const TRIP_DATA = {
             { type: "warn", text: "建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘" },
           ],
           todo: null,
-          mapQuery: "伏見稻荷大社 大鳥居(入口)",
-          mapLink: "https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5",
         },
         {
           time: "17:30",
@@ -204,16 +180,12 @@ export const TRIP_DATA = {
             { type: "warn", text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" },
           ],
           todo: null,
-          mapQuery: "伏見稻荷站",
-          mapLink: "https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6",
         },
         {
           time: "18:30",
           activity: "抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)",
           notes: [],
           todo: null,
-          mapQuery: "日本橋站+大阪",
-          mapLink: "https://maps.app.goo.gl/kCabn4TkMCpc28f2A",
         },
         {
           time: "19:00",
@@ -222,8 +194,6 @@ export const TRIP_DATA = {
             { type: "info", text: "[串家物語 Namba Parks](https://maps.app.goo.gl/wCm3k29WWo5fgsPK8)（自助炸串，無需預約）" },
           ],
           todo: "晚餐：待選",
-          mapQuery: "串家物語+Namba+Parks",
-          mapLink: "https://maps.app.goo.gl/wCm3k29WWo5fgsPK8",
         },
       ],
       routes: [
@@ -281,8 +251,6 @@ export const TRIP_DATA = {
             { type: "warn", text: "以早午餐為主，吃快一點就能收掉（ex: 明石燒）" },
           ],
           todo: "早午餐：待選（邊走邊吃）",
-          mapQuery: "黑門市場",
-          mapLink: "https://maps.app.goo.gl/zKjNxecm8j4Rrny89",
         },
         {
           time: "11:00–13:00",
@@ -292,8 +260,6 @@ export const TRIP_DATA = {
             { type: "warn", text: "上天守閣建議抓 1.5–2 小時" },
           ],
           todo: null,
-          mapQuery: "大阪城",
-          mapLink: "https://maps.app.goo.gl/tB9Agj857Rj2F3va7",
         },
         {
           time: "13:15–14:00",
@@ -302,8 +268,6 @@ export const TRIP_DATA = {
             { type: "ok", text: "不需預約　保持短逛，避免壓縮後面行程" },
           ],
           todo: "逛街：電器 / 模型 / 廚具",
-          mapQuery: "日本橋電電街",
-          mapLink: "https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA",
         },
         {
           time: "14:15–15:15",
@@ -313,8 +277,6 @@ export const TRIP_DATA = {
             { type: "warn", text: "上塔與拍照抓 1 小時較穩" },
           ],
           todo: "小食：新世界串炸（待選）",
-          mapQuery: "通天閣",
-          mapLink: "https://maps.app.goo.gl/eFswsy7cd3cw8VyA9",
         },
         {
           time: "15:30–18:30",
@@ -324,8 +286,6 @@ export const TRIP_DATA = {
             { type: "warn", text: "人潮極多；購物 / 晚餐留彈性，此段不要壓縮" },
           ],
           todo: "逛街：藥妝 / 雜貨 / 伴手禮\n晚餐：待選（大阪最後一頓正餐，建議吃好）",
-          mapQuery: "心齋橋筋商店街",
-          mapLink: "https://maps.app.goo.gl/pRQToFCrVxBBiFHs7",
         },
         {
           time: "20:00",
@@ -340,29 +300,23 @@ export const TRIP_DATA = {
             { type: "warn", text: "南海難波站 ≠ 地鐵難波站，需步行前往搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩" },
           ],
           todo: null,
-          mapQuery: "南海難波站",
-          mapLink: "https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8",
         },
         {
           time: "21:44 左右",
-          activity: "抵達關西機場站，前往 Aeroplaza",
+          activity: "抵達[關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 Aeroplaza",
           notes: [
             { type: "info", text: "關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA" },
           ],
           todo: null,
-          mapQuery: "關西國際機場+第一航廈",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=關西國際機場+第一航廈",
         },
         {
           time: "22:00–05:15",
-          activity: "NODOKA 洗澡／休息／整理行李",
+          activity: "[NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7) 洗澡／休息／整理行李",
           notes: [
-            { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；NODOKA 位於 Aeroplaza 2F" },
-            { type: "tip",  text: "若 NODOKA 淋浴間拖太久，改用 [AEROPLAZA 付費淋浴處](https://maps.app.goo.gl/tvx4kjvycJuiTQYp6)作為備案；與 1F 免費接駁巴士乘車處為同一建築的上下樓" },
+            { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；Aeroplaza 2F，24 小時，¥1,400 / 40 分鐘（含備品）" },
+            { type: "tip",  text: "若 NODOKA 淋浴間拖太久，可搭 Aeroplaza 1F 免費接駁巴士前往[關西機場 T2](https://maps.app.goo.gl/NSCU9HVMKCzPHUeM6)使用付費淋浴（車程約 7～9 分鐘）" },
           ],
           todo: null,
-          mapQuery: "KIX+Airport+Lounge+NODOKA",
-          mapLink: "https://www.google.com/maps/search/?api=1&query=KIX+Airport+Lounge+NODOKA",
         },
       ],
       subsections: [
