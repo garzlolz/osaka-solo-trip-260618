@@ -144,7 +144,7 @@ export const TRIP_DATA = {
         },
         {
           time: "13:40",
-          activity: "祇園散步與美食連發：[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)/[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA) ➞ [GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
+          activity: "祇園散步與吃東西：[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)/[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA) ➞ [GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
           notes: [
             { type: "info", text: "八坂神社結束後一路往西吃回車站：花見小路散步 ➞ 布丁 ➞ 鯛魚燒 ➞ 漢堡排" }
           ],
