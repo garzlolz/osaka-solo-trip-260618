@@ -128,7 +128,7 @@ export const TRIP_DATA = {
         },
         {
           time: "11:00",
-          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) ➞ [花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA) 散步",
+          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) ➞ [花見小路](https://maps.app.goo.gl/mR8HnRpf8NuKE4mP8) 散步",
           notes: [
             { type: "info", text: "從三年坂走下來後，往西北方向步行約 10-15 分鐘即可抵達花見小路，先欣賞古色古香的茶屋建築（不安排大餐，避免與下午漢堡排衝突）" }
           ],
@@ -136,7 +136,7 @@ export const TRIP_DATA = {
         },
         {
           time: "13:00",
-          activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
+          activity: "[八坂神社 西樓門](https://maps.app.goo.gl/Gbyrfude4JBfyX78A)",
           notes: [
             { type: "info", text: "花見小路走到盡頭就是四條通，右轉步行不到 5 分鐘即可抵達八坂神社正門（西樓門）" }
           ],
