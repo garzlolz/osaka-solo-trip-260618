@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-27 17:42",
+    updatedAt: "2026-05-28 10:30",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -135,37 +135,43 @@ export const TRIP_DATA = {
         {
           time: "13:00",
           activity: "[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步",
-          notes: [],
-          todo: "點心：[原鳴門鯛燒總舖](https://maps.app.goo.gl/JyrSBThPyVeRdjBF6)",
+          notes: [
+            { type: "info", text: "散步後直接步行前往八坂神社" }
+          ],
+          todo: null,
         },
         {
-          time: "14:30",
+          time: "13:40",
           activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
-          notes: [],
-          todo: null,
-        },
-        {
-          time: "15:10",
-          activity: "[GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29)",
           notes: [
-            { type: "info", text: "吃濃厚布丁（位於八坂神社斜對面）" },
-          ],
-          todo: "下午茶：[GION GOZU 四条店](https://maps.app.goo.gl/G7Zq1A1b3Th1kQF29)",
-        },
-        {
-          time: "15:40",
-          activity: "搭京阪前往伏見稻荷",
-          notes: [
-            { type: "info", text: "從 [祇園四條站](https://maps.app.goo.gl/yC7L9n9uB1Rk5o3X8) 搭乘京阪，約 5 分鐘" },
+            { type: "info", text: "參拜後開始美食一條街行程" }
           ],
           todo: null,
         },
         {
-          time: "15:55",
+          time: "14:20",
+          activity: "祇園美食連發：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
+          notes: [
+            { type: "info", text: "八坂神社結束後一路往西吃回車站：布丁 ➞ 鯛魚燒 ➞ 漢堡排" }
+          ],
+          todo: "點心：布丁、鯛魚燒\n下午餐：漢堡排",
+        },
+        {
+          time: "15:30",
+          activity: "至 [祇園四條站](https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8) 搭乘京阪本線前往 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8)",
+          notes: [
+            { type: "info", text: "步行與車程約 10 分鐘，刷 ICOCA 即可" }
+          ],
+          todo: null,
+          mapQuery: "祇園四條站",
+          mapLink: "https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8",
+        },
+        {
+          time: "15:50",
           activity: "[伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5)",
           notes: [
             { type: "info", text: "從伏見稻荷大社大鳥居開始進去" },
-            { type: "warn", text: "建議往鳥居深處走（遠離入口人少出片）；6 月梅雨季建議帶折疊傘" },
+            { type: "warn", text: "建議往鳥居深處走（遠離入口人少出片）；6 梅雨季建議帶折疊傘" }
           ],
           todo: null,
         },
@@ -173,7 +179,7 @@ export const TRIP_DATA = {
           time: "17:30",
           activity: "搭京阪返回大阪",
           notes: [
-            { type: "warn", text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/6t7oEyFVmsKrTsPK6)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" },
+            { type: "warn", text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" }
           ],
           todo: null,
         },
