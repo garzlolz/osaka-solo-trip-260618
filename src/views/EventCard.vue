@@ -89,27 +89,11 @@ const mapEmbedUrl = computed(() => {
     <div class="flex-1 mb-4">
       <div class="bg-white rounded-2xl border-2 border-white shadow-card hover:border-osk-orange/20 hover:shadow-card-hover transition-all p-4">
 
-        <!-- 時間標籤 + 地圖按鈕群 -->
-        <div class="flex items-start justify-between gap-2 mb-2">
-          <span class="text-xs font-black text-osk-orange bg-osk-orange/10 border border-osk-orange/20 px-2.5 py-0.5 rounded-full mt-1">
+        <!-- 時間標籤 -->
+        <div class="mb-2">
+          <span class="text-xs font-black text-osk-orange bg-osk-orange/10 border border-osk-orange/20 px-2.5 py-0.5 rounded-full">
             {{ event.time }}
           </span>
-          <div v-if="maps.length" class="flex flex-wrap gap-1 justify-end max-w-[70%]">
-            <button
-              v-for="(map, idx) in maps"
-              :key="idx"
-              @click="toggleMap(idx)"
-              :class="[
-                'flex items-center gap-1 text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full border-2 transition-all',
-                isMapVisible && activeMapIdx === idx
-                  ? 'bg-osk-teal text-white border-osk-teal'
-                  : 'bg-white text-osk-teal border-osk-teal/30 hover:border-osk-teal'
-              ]"
-            >
-              <span class="material-icons text-sm leading-none">map</span>
-              <span>{{ map.name }}</span>
-            </button>
-          </div>
         </div>
 
         <!-- 活動名稱 -->
@@ -173,6 +157,24 @@ const mapEmbedUrl = computed(() => {
               class="text-osk-teal font-bold hover:text-osk-navy transition-colors"
             >開啟 {{ currentMap.name }} Google Maps →</a>
           </div>
+        </div>
+
+        <!-- 地圖按鈕群 (標籤) -->
+        <div v-if="maps.length" class="mt-3 flex flex-wrap gap-1.5 justify-end">
+          <button
+            v-for="(map, idx) in maps"
+            :key="idx"
+            @click="toggleMap(idx)"
+            :class="[
+              'flex items-center gap-1 text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full border-2 transition-all',
+              isMapVisible && activeMapIdx === idx
+                ? 'bg-osk-teal text-white border-osk-teal shadow-sm scale-102'
+                : 'bg-white text-osk-teal border-osk-teal/30 hover:border-osk-teal hover:bg-osk-teal/5'
+            ]"
+          >
+            <span class="material-icons text-sm leading-none">map</span>
+            <span>{{ map.name }}</span>
+          </button>
         </div>
 
       </div>
