@@ -102,7 +102,7 @@ export const TRIP_DATA = {
       events: [
         {
           time: "07:00",
-          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)（約 55 分，¥650）",
+          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站&q=35.0036744,135.7605895)（約 55 分，¥650）",
           notes: [
             { type: "info", text: "刷 ICOCA 即可，無需買紙票" },
           ],
@@ -128,7 +128,7 @@ export const TRIP_DATA = {
         },
         {
           time: "11:00",
-          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) ➞ [花見小路](https://maps.app.goo.gl/mR8HnRpf8NuKE4mP8?q=35.0014922,135.7746403) 散步",
+          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9?q=34.9966644,135.781008) ➞ [花見小路](https://maps.app.goo.gl/mR8HnRpf8NuKE4mP8?q=35.0014922,135.7746403) 散步",
           notes: [
             { type: "info", text: "從三年坂走下來後，往西北方向步行約 10-15 分鐘即可抵達花見小路，先欣賞古色古香的茶屋建築（不安排大餐，避免與下午漢堡排衝突）" }
           ],
@@ -197,7 +197,7 @@ export const TRIP_DATA = {
           title: "去程路線：日本橋 → 烏丸（NAVITIME 確認版）",
           segments: [
             { segment: 1, route: "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）", from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台",  to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",       duration: "約 17 分", cost: "¥240",  note: "" },
-            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 2・3 番月台", to: "[烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)", duration: "約 30 分", cost: "¥410",  note: "" },
+            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 2・3 番月台", to: "[烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站&q=35.0036744,135.7605895)", duration: "約 30 分", cost: "¥410",  note: "" },
           ],
           summary: "總計：約 55 分鐘（不含步行）　¥650　換乘 1 次（淡路站換月台）",
           tips: [
