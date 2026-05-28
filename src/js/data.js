@@ -102,7 +102,7 @@ export const TRIP_DATA = {
       events: [
         {
           time: "07:00",
-          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)（約 55 分，¥650）",
+          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)（約 55 分，¥650）",
           notes: [
             { type: "info", text: "刷 ICOCA 即可，無需買紙票" },
           ],
@@ -113,14 +113,14 @@ export const TRIP_DATA = {
           activity: "[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) 享用早餐",
           notes: [
             { type: "info", text: "08:00–08:50 用餐" },
-            { type: "info", text: "🚗 早餐後至清水寺銜接方案：<br>• Plan A (207 公車)：於 [四條高倉公車站](https://maps.app.goo.gl/92Qkp99nk13GCpje9) 搭乘 207 路至 [清水道公車站](https://maps.app.goo.gl/V9BbPGyWTHi9db199) 下車，步行 750 公尺上坡至仁王門。<br>• Plan B (計程車備案)：若時間落後，使用 GO App 叫車直達 [清水寺](https://maps.app.goo.gl/Kv3RuMopX8dmE4Cg8) 仁王門（可直接載到門口，避開 Plan A 最累的 12 分鐘上坡路段）" },
+            { type: "info", text: "🚗 早餐後至清水寺銜接方案：<br>• Plan A (207 公車)：於 [四條高倉公車站](https://maps.app.goo.gl/92Qkp99nk13GCpje9?q=35.0037313,135.7616107) 搭乘 207 路至 [清水道公車站](https://maps.app.goo.gl/V9BbPGyWTHi9db199?q=34.9965046,135.7768302) 下車，步行 750 公尺上坡至仁王門。<br>• Plan B (計程車備案)：若時間落後，使用 GO App 叫車直達 [清水寺](https://maps.app.goo.gl/Kv3RuMopX8dmE4Cg8?q=34.9946662,135.784661) 仁王門（可直接載到門口，避開 Plan A 最累的 12 分鐘上坡路段）" },
             { type: "warn", text: "需提前下載 GO App 以防萬一" }
           ],
           todo: "早餐：[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69)",
         },
         {
           time: "09:15",
-          activity: "[清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5)",
+          activity: "[清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5?q=34.9946662,135.784661)",
           notes: [
             { type: "warn", text: "趁人少；選「二年坂往上拍」清水舞台視角最佳" },
           ],
@@ -128,7 +128,7 @@ export const TRIP_DATA = {
         },
         {
           time: "11:00",
-          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) ➞ [花見小路](https://maps.app.goo.gl/mR8HnRpf8NuKE4mP8) 散步",
+          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) ➞ [花見小路](https://maps.app.goo.gl/mR8HnRpf8NuKE4mP8?q=35.0014922,135.7746403) 散步",
           notes: [
             { type: "info", text: "從三年坂走下來後，往西北方向步行約 10-15 分鐘即可抵達花見小路，先欣賞古色古香的茶屋建築（不安排大餐，避免與下午漢堡排衝突）" }
           ],
@@ -136,7 +136,7 @@ export const TRIP_DATA = {
         },
         {
           time: "13:00",
-          activity: "[八坂神社 西樓門](https://maps.app.goo.gl/Gbyrfude4JBfyX78A)",
+          activity: "[八坂神社 西樓門](https://maps.app.goo.gl/Gbyrfude4JBfyX78A?q=35.0037437,135.7775306)",
           notes: [
             { type: "info", text: "花見小路走到盡頭就是四條通，右轉步行不到 5 分鐘即可抵達八坂神社正門（西樓門）" }
           ],
@@ -144,7 +144,7 @@ export const TRIP_DATA = {
         },
         {
           time: "13:40",
-          activity: "祇園散步吃東西：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
+          activity: "祇園散步吃東西：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6?q=35.0036644,135.7762665) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8?q=35.003997,135.772745) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8?q=35.0042233,135.7706292)",
           notes: [
             { type: "info", text: "從八坂神社往西（往鴨川/車站方向）沿著四條通走，順路吃回車站：布丁 ➞ 鯛魚燒 ➞ 漢堡排，完全不走回頭路" }
           ],
@@ -152,13 +152,13 @@ export const TRIP_DATA = {
         },
         {
           time: "15:30",
-          activity: "至 [祇園四條站](https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8) 搭乘京阪本線前往 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8)",
+          activity: "至 [祇園四條站](https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8?q=35.0033014,135.7719122) 搭乘京阪本線前往 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)",
           notes: [
             { type: "info", text: "步行與車程約 10 分鐘，刷 ICOCA 即可" }
           ],
           todo: null,
           mapQuery: "祇園四條站",
-          mapLink: "https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8",
+          mapLink: "https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8?q=35.0033014,135.7719122",
         },
         {
           time: "15:50",
@@ -173,13 +173,13 @@ export const TRIP_DATA = {
           time: "17:30",
           activity: "搭京阪返回大阪",
           notes: [
-            { type: "warn", text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" }
+            { type: "warn", text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" }
           ],
           todo: null,
         },
         {
           time: "18:30",
-          activity: "抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)",
+          activity: "抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)",
           notes: [],
           todo: null,
         },
@@ -196,8 +196,8 @@ export const TRIP_DATA = {
         {
           title: "去程路線：日本橋 → 烏丸（NAVITIME 確認版）",
           segments: [
-            { segment: 1, route: "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）", from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A) 2 番月台",  to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)",       duration: "約 17 分", cost: "¥240",  note: "" },
-            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9) 2・3 番月台", to: "[烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)", duration: "約 30 分", cost: "¥410",  note: "" },
+            { segment: 1, route: "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）", from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台",  to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",       duration: "約 17 分", cost: "¥240",  note: "" },
+            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 2・3 番月台", to: "[烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站)", duration: "約 30 分", cost: "¥410",  note: "" },
           ],
           summary: "總計：約 55 分鐘（不含步行）　¥650　換乘 1 次（淡路站換月台）",
           tips: [
@@ -208,9 +208,9 @@ export const TRIP_DATA = {
         {
           title: "回程路線：京都河原町 → 日本橋飯店",
           segments: [
-            { segment: 1, route: "阪急京都線特急（往大阪梅田）",              from: "[京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)",    to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)",         duration: "約 35 分", cost: "",      note: "" },
-            { segment: 2, route: "阪急千里線 → 直通堺筋線（同車廂，坐著不動）", from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9)",          to: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)（K17）", duration: "約 20 分", cost: "",      note: "" },
-            { segment: 3, route: "步行",                                         from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A)（K17）", to: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波", duration: "約 10 分", cost: "",      note: "吃晚餐逛街" },
+            { segment: 1, route: "阪急京都線特急（往大阪梅田）",              from: "[京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)",    to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",         duration: "約 35 分", cost: "",      note: "" },
+            { segment: 2, route: "阪急千里線 → 直通堺筋線（同車廂，坐著不動）", from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",          to: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）", duration: "約 20 分", cost: "",      note: "" },
+            { segment: 3, route: "步行",                                         from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）", to: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波", duration: "約 10 分", cost: "",      note: "吃晚餐逛街" },
             { segment: 4, route: "步行",                                         from: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波", to: "[日本橋飯店](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8)",    duration: "約 8 分",  cost: "",      note: "逛完後步行回飯店" },
           ],
           summary: "總計：約 55 分鐘（不含逛街）　換乘 1 次（淡路站換月台）",

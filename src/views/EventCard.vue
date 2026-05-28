@@ -47,9 +47,34 @@ const maps = computed(() => {
       const link = match[2];
       if (link.includes("maps")) {
         if (!list.some(item => item.link === link)) {
+          let query = name;
+          try {
+            const urlObj = new URL(link);
+            const qParam = urlObj.searchParams.get("q");
+            if (qParam) {
+              query = qParam;
+            } else {
+              const match3d4d = link.match(/!3d(-?[0-9.]+)!4d(-?[0-9.]+)/);
+              const matchAt = link.match(/@(-?[0-9.]+),(-?[0-9.]+)/);
+              if (match3d4d) {
+                query = `${match3d4d[1]},${match3d4d[2]}`;
+              } else if (matchAt) {
+                query = `${matchAt[1]},${matchAt[2]}`;
+              }
+            }
+          } catch (e) {
+            const match3d4d = link.match(/!3d(-?[0-9.]+)!4d(-?[0-9.]+)/);
+            const matchAt = link.match(/@(-?[0-9.]+),(-?[0-9.]+)/);
+            if (match3d4d) {
+              query = `${match3d4d[1]},${match3d4d[2]}`;
+            } else if (matchAt) {
+              query = `${matchAt[1]},${matchAt[2]}`;
+            }
+          }
+          
           list.push({
             name,
-            query: name,
+            query,
             link
           });
         }
