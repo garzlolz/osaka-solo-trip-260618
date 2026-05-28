@@ -128,9 +128,9 @@ export const TRIP_DATA = {
         },
         {
           time: "11:00",
-          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) 散步",
+          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) ➞ [花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA) 散步",
           notes: [
-            { type: "info", text: "從清水寺順路步行下山，沿途欣賞古街風情（不安排大餐，避免與下午漢堡排衝突）" }
+            { type: "info", text: "從三年坂走下來後，往西北方向步行約 10-15 分鐘即可抵達花見小路，先欣賞古色古香的茶屋建築（不安排大餐，避免與下午漢堡排衝突）" }
           ],
           todo: null,
         },
@@ -138,15 +138,15 @@ export const TRIP_DATA = {
           time: "13:00",
           activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
           notes: [
-            { type: "info", text: "參拜後開始祇園散步與美食行程" }
+            { type: "info", text: "花見小路走到盡頭就是四條通，右轉步行不到 5 分鐘即可抵達八坂神社正門（西樓門）" }
           ],
           todo: null,
         },
         {
           time: "13:40",
-          activity: "祇園散步與吃東西：[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)/[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA) ➞ [GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
+          activity: "祇園散步吃東西：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
           notes: [
-            { type: "info", text: "八坂神社結束後一路往西吃回車站：花見小路散步 ➞ 布丁 ➞ 鯛魚燒 ➞ 漢堡排" }
+            { type: "info", text: "從八坂神社往西（往鴨川/車站方向）沿著四條通走，順路吃回車站：布丁 ➞ 鯛魚燒 ➞ 漢堡排，完全不走回頭路" }
           ],
           todo: "點心：布丁、鯛魚燒\n下午餐：漢堡排",
         },
