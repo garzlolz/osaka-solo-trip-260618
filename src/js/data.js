@@ -127,6 +127,14 @@ export const TRIP_DATA = {
           todo: "可提前購買電子票避免排隊",
         },
         {
+          time: "11:00",
+          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9) 散步",
+          notes: [
+            { type: "info", text: "從清水寺順路步行下山，沿途欣賞古街風情（不安排大餐，避免與下午漢堡排衝突）" }
+          ],
+          todo: null,
+        },
+        {
           time: "13:00",
           activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
           notes: [
