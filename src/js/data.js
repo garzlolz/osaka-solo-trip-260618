@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-28 10:30",
+    updatedAt: "2026-05-28 10:35",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -127,32 +127,18 @@ export const TRIP_DATA = {
           todo: "可提前購買電子票避免排隊",
         },
         {
-          time: "11:00",
-          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9)",
-          notes: [],
-          todo: "午餐：[奧丹豆腐料理](https://maps.app.goo.gl/6UnmkNvfcn14rcd28) / 三年坂茶寮（建議提前記好店名）",
-        },
-        {
           time: "13:00",
-          activity: "[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)、[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA)散步",
+          activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
           notes: [
-            { type: "info", text: "散步後直接步行前往八坂神社" }
+            { type: "info", text: "參拜後開始祇園散步與美食行程" }
           ],
           todo: null,
         },
         {
           time: "13:40",
-          activity: "[八坂神社](https://maps.app.goo.gl/wJ5c7b3rL2P6j1aX7)",
+          activity: "祇園散步與美食連發：[祇園](https://maps.app.goo.gl/C1txvdXBy9ssDLhD6)/[花見小路](https://maps.app.goo.gl/M4rJ6a5v521zZ4ZNA) ➞ [GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
           notes: [
-            { type: "info", text: "參拜後開始美食一條街行程" }
-          ],
-          todo: null,
-        },
-        {
-          time: "14:20",
-          activity: "祇園美食連發：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8)",
-          notes: [
-            { type: "info", text: "八坂神社結束後一路往西吃回車站：布丁 ➞ 鯛魚燒 ➞ 漢堡排" }
+            { type: "info", text: "八坂神社結束後一路往西吃回車站：花見小路散步 ➞ 布丁 ➞ 鯛魚燒 ➞ 漢堡排" }
           ],
           todo: "點心：布丁、鯛魚燒\n下午餐：漢堡排",
         },
