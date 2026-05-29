@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-28 10:35",
+    updatedAt: "2026-05-29 16:28",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -187,7 +187,10 @@ export const TRIP_DATA = {
           time: "19:00",
           activity: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐",
           notes: [
-            { type: "info", text: "[串家物語 Namba Parks](https://maps.app.goo.gl/wCm3k29WWo5fgsPK8)（自助炸串，無需預約）" },
+            { type: "info", text: "[千代松勝蓋飯](https://maps.app.goo.gl/KyAtYvBUzZ43kCRS6)（特厚切豬排蓋飯，千日前）" },
+            { type: "info", text: "[吉次牛舌](https://maps.app.goo.gl/o8NTGnrBovVjvsgE7)（炭火燒牛舌，心齋橋）" },
+            { type: "info", text: "[大阪鐵板燒居酒屋 Dorajyu](https://maps.app.goo.gl/CPbFXVQtjxGGDVzeA)（大阪燒/鐵板燒）" },
+            { type: "info", text: "[新宿燒肉 牛舌的檸檬 大阪本店](https://maps.app.goo.gl/WTQmxqLaD7CFb2Cq9)（極厚切牛舌）" },
           ],
           todo: "晚餐：待選",
         },
