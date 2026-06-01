@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-29 16:28",
+    updatedAt: "2026-05-29 17:28",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -231,90 +231,145 @@ export const TRIP_DATA = {
       dateStr: "2026-06-20",
       events: [
         {
-          time: "09:00",
+          time: "08:00",
           activity: "起床整理、打包行李",
-          notes: [],
+          notes: [
+            { type: "info", text: "整理行李，準備退房" },
+          ],
           todo: null,
+        },
+        {
+          time: "08:30",
+          activity: "退房並寄放行李",
+          notes: [
+            { type: "info", text: "辦理退房，行李寄放在「東橫INN 大阪日本橋文樂劇場前」櫃台" },
+          ],
+          todo: null,
+        },
+        {
+          time: "08:45–09:45",
+          activity: "[黑門市場](https://maps.app.goo.gl/zKjNxecm8j4Rrny89)",
+          notes: [
+            { type: "info", text: "步行約 2 分鐘即抵達。此時店家剛開門，人潮最少，可以更輕鬆地吃早午餐" },
+          ],
+          todo: "早午餐: 待選（邊走邊吃）",
         },
         {
           time: "09:45",
-          activity: "退房，寄放行李",
-          notes: [],
-          todo: null,
-        },
-        {
-          time: "10:00–10:45",
-          activity: "[黑門市場](https://maps.app.goo.gl/zKjNxecm8j4Rrny89)",
+          activity: "交通：黑門市場 ➞ 大阪城",
           notes: [
-            { type: "ok",   text: "不需預約" },
-            { type: "warn", text: "以早午餐為主，吃快一點就能收掉（ex: 明石燒）" },
+            { type: "info", text: "堺筋線（日本橋 ➞ 堺筋本町）➞ 站內轉乘中央線（➞ 谷町四丁目）➞ 步行至大阪城（約 30 分，¥190）" },
           ],
-          todo: "早午餐：待選（邊走邊吃）",
+          todo: "刷 ICOCA 即可",
         },
         {
-          time: "11:00–13:00",
+          time: "10:15–12:15",
           activity: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
           notes: [
             { type: "ok",   text: "公園免費開放　天守閣 9:00–18:00（最晚入場 17:30）" },
-            { type: "warn", text: "上天守閣建議抓 1.5–2 小時" },
+            { type: "info", text: "提早出發可避開中午最熱與最擠的登天守閣人潮；建議預先購買電子票" },
           ],
           todo: null,
         },
         {
-          time: "13:15–14:00",
-          activity: "[日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) / [千日前道具屋筋](https://maps.app.goo.gl/5gokAdbwdQ4Sp1gC6)",
+          time: "12:15",
+          activity: "交通：大阪城 ➞ 通天閣",
           notes: [
-            { type: "ok", text: "不需預約　保持短逛，避免壓縮後面行程" },
+            { type: "info", text: "步行至森之宮站 ➞ 搭中央線（➞ 堺筋本町）➞ 站內轉乘堺筋線（➞ 惠美須町）➞ 步行至通天閣（約 36 分，¥240）" },
           ],
-          todo: "逛街：電器 / 模型 / 廚具",
+          todo: "刷 ICOCA 即可",
         },
         {
-          time: "14:15–15:15",
-          activity: "[通天閣](https://maps.app.goo.gl/eFswsy7cd3cw8VyA9)",
+          time: "12:45–14:00",
+          activity: "[通天閣](https://maps.app.goo.gl/eFswsy7cd3cw8VyA9)（新世界）",
           notes: [
             { type: "ok",   text: "不需預約" },
-            { type: "warn", text: "上塔與拍照抓 1 小時較穩" },
+            { type: "info", text: "下車先往南走 5 分鐘去通天閣，收掉南端景點並吃串炸當午茶點心" },
           ],
           todo: "小食：新世界串炸（待選）",
         },
         {
-          time: "15:30–18:30",
+          time: "14:00–15:30",
+          activity: "[日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) / [千日前道具屋筋](https://maps.app.goo.gl/5gokAdbwdQ4Sp1gC6)",
+          notes: [
+            { type: "ok",   text: "不需預約" },
+            { type: "info", text: "從通天閣往北逛回惠美須町站，開始**一路向北**逛電器、模型。此路徑順向往飯店方向走" },
+          ],
+          todo: "逛街：電器 / 模型 / 廚具",
+        },
+        {
+          time: "15:45–18:00",
           activity: "[心齋橋](https://maps.app.goo.gl/pRQToFCrVxBBiFHs7) / [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA)",
           notes: [
             { type: "ok",   text: "不需預約" },
-            { type: "warn", text: "人潮極多；購物 / 晚餐留彈性，此段不要壓縮" },
+            { type: "warn", text: "人潮極多；若腳痠可從惠美須町站搭一站地鐵回日本橋站（¥190）。此時段進行藥妝補貨與大阪最後晚餐" },
           ],
           todo: "逛街：藥妝 / 雜貨 / 伴手禮\n晚餐：待選（大阪最後一頓正餐，建議吃好）",
         },
         {
-          time: "20:00",
-          activity: "回飯店拿行李",
-          notes: [],
-          todo: null,
-        },
-        {
-          time: "21:00",
-          activity: "[南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)搭南海電鐵空港急行（走南海本線直通機場線）前往關西機場站",
+          time: "18:00–18:30",
+          activity: "飯店取物並前往難波",
           notes: [
-            { type: "warn", text: "南海難波站 ≠ 地鐵難波站，需步行前往搭車（約 ¥970，44 分）　21:30 出發亦可，21:00 更穩" },
+            { type: "info", text: "回飯店拿行李，並步行至「南海難波站」。因為提早了，可以避開轉運站的深夜人潮" },
           ],
           todo: null,
         },
         {
-          time: "21:44 左右",
-          activity: "抵達[關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 Aeroplaza",
+          time: "18:30",
+          activity: "交通：難波 ➞ 關西機場",
+          notes: [
+            { type: "info", text: "從 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8) 搭乘南海電鐵空港急行（約 44 分鐘，¥970）前往關西機場" },
+          ],
+          todo: "刷 ICOCA 即可",
+        },
+        {
+          time: "19:30 左右",
+          activity: "抵達 [關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 Aeroplaza",
           notes: [
             { type: "info", text: "關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA" },
           ],
           todo: null,
         },
         {
-          time: "22:00–05:15",
+          time: "20:00–05:15",
           activity: "[NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7) 洗澡／休息／整理行李",
           notes: [
-            { type: "warn", text: "先看 NODOKA 現場排隊狀況，優先處理淋浴或休息位；Aeroplaza 2F，24 小時，¥1,400 / 40 分鐘（含備品）" },
+            { type: "tip", text: "**關鍵行動**：提早抵達 Aeroplaza 2F 的 NODOKA。這時段排隊洗澡的人較少，能大幅提高你搶到淋浴間與舒適休息位的機會" },
+            { type: "warn", text: "24 小時營業，使用 ICOCA 或卡片付費" },
           ],
           todo: null,
+        },
+      ],
+      routes: [
+        {
+          title: "交通路線：黑門市場 → 大阪城",
+          segments: [
+            { segment: 1, route: "步行", from: "[黑門市場](https://maps.app.goo.gl/zKjNxecm8j4Rrny89)", to: "[日本橋站](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)", duration: "約 4 分 (220m)", cost: "", note: "" },
+            { segment: 2, route: "OsakaMetro 堺筋線普通（往北千里）", from: "[日本橋站](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台 (K17)", to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)", duration: "約 3 分 (2站)", cost: "¥190 (包含段次3)", note: "車站 ID：K17" },
+            { segment: 3, route: "站內轉乘中央線，搭乘中央線普通（往學研奈良登美丘）", from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (C17)", to: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)", duration: "約 1 分 (1站)", cost: "", note: "轉乘步行約 1 分" },
+            { segment: 4, route: "步行", from: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C18)", to: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (〒540-0002)", duration: "約 19 分 (1.3km)", cost: "", note: "" },
+          ],
+          summary: "總計：約 30 分鐘（乘車 24 分鐘）　¥190　換乘 1 次（堺筋本町站站內轉乘）",
+          tips: [
+            "黑門市場到地鐵站步行僅 220 公尺",
+            "在堺筋本町站換乘中央線僅需步行約 1 分鐘，非常方便",
+            "從谷町四丁目站至大阪城天守閣步行約 19 分鐘 (約 1.3 公里)，全程刷 ICOCA 即可",
+          ],
+        },
+        {
+          title: "交通路線：大阪城 → 通天閣",
+          segments: [
+            { segment: 1, route: "步行", from: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)", to: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C19)", duration: "約 19 分 (1.4km)", cost: "", note: "" },
+            { segment: 2, route: "OsakaMetro 中央線普通（往夢洲）", from: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) 3 番月台 (C19)", to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)", duration: "約 4 分 (2站)", cost: "¥240 (包含段次4)", note: "車站 ID：C19" },
+            { segment: 3, route: "站內轉乘堺筋線，搭乘堺筋線普通（往天下茶屋）", from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (K15)", to: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA)", duration: "約 5 分 (3站)", cost: "", note: "轉乘步行約 1 分" },
+            { segment: 4, route: "步行", from: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) (K18)", to: "[通天閣](https://maps.app.goo.gl/eFswsy7cd3cw8VyA9)", duration: "約 5 分 (400m)", cost: "", note: "" },
+          ],
+          summary: "總計：約 36 分鐘（乘車 25 分鐘）　¥240　換乘 1 次（堺筋本町站站內轉乘）",
+          tips: [
+            "從大阪城天守閣步行至森之宮站約 1.4 公里，可沿途欣賞大阪城公園綠地",
+            "堺筋本町站轉乘僅需步行約 1 分鐘",
+            "全程刷 ICOCA 即可",
+          ],
         },
       ],
     },

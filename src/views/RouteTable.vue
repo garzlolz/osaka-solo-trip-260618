@@ -26,8 +26,8 @@ const renderMarkdownLinks = (text) => {
           <tr class="text-osk-navy/50 border-b-2 border-osk-amber/30">
             <th class="text-left py-2 px-2 font-bold w-8">#</th>
             <th class="text-left py-2 px-2 font-bold">路線</th>
-            <th class="text-left py-2 px-2 font-bold">上車站</th>
-            <th class="text-left py-2 px-2 font-bold">下車站</th>
+            <th class="text-left py-2 px-2 font-bold">出發地 / 上車站</th>
+            <th class="text-left py-2 px-2 font-bold">目的地 / 下車站</th>
             <th class="text-left py-2 px-2 font-bold whitespace-nowrap">時間</th>
             <th class="text-left py-2 px-2 font-bold">費用</th>
             <th class="text-left py-2 px-2 font-bold">備註</th>
