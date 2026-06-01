@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-01 16:47",
+    updatedAt: "2026-06-01 17:25",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -430,37 +430,55 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "info",
-              text: "步行至 [高島屋](https://maps.app.goo.gl/FZJJxx5jNE9AviDo6) 或 [Namba Parks](https://maps.app.goo.gl/ZfReR9W9E2CEvvZ2A)。此處為採購重心，專櫃退稅、日系服飾一站完成",
+              text: "步行至 [高島屋](https://maps.app.goo.gl/FZJJxx5jNE9AviDo6)、[Namba Parks](https://maps.app.goo.gl/ZfReR9W9E2CEvvZ2A) 或 [難波CITY 本館](https://maps.app.goo.gl/Lst1Jbs3hmwBf7577)。此處為採購重心，專櫃退稅、日系服飾一站完成",
             },
             { type: "warn", text: "2026 年退稅人潮較多，請預留退稅手續時間" },
           ],
           todo: "專櫃退稅、日系服飾採購",
         },
         {
-          time: "18:00–19:30",
+          time: "18:00–19:15",
           activity: "最後晚餐",
           notes: [
             {
               type: "info",
-              text: "於難波或 [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 區域用餐，並進行藥妝最後補貨",
+              text: "於難波站周邊或百貨內用餐，避免人擠人，保存體力，且離飯店較近",
             },
           ],
           todo: "晚餐：待選（建議吃好）",
         },
         {
-          time: "19:30–20:00",
+          time: "19:15–19:30",
           activity: "回飯店取行李",
           notes: [
-            { type: "info", text: "從難波步行回飯店提領行李" },
+            { type: "info", text: "從難波步行回飯店提領行李，確保在飯店櫃台要求的時間前領回" },
+          ],
+          todo: "取回寄放行李",
+        },
+        {
+          time: "19:30–19:50",
+          activity: "大廳戰利品裝箱",
+          notes: [
             {
               type: "tip",
-              text: "建議在此處於飯店大廳將下午採購的戰利品塞入大行李箱",
+              text: "於飯店大廳整理行李，將下午採購的模型、衣物等戰利品塞入大行李箱，確保能順利關上",
             },
           ],
           todo: "整理戰利品進大行李箱",
         },
         {
-          time: "20:00",
+          time: "19:50–20:10",
+          activity: "交通：前往南海難波站",
+          notes: [
+            {
+              type: "info",
+              text: "從飯店步行前往南海難波站（約 1.1 公里，負重移動預留 20 分鐘以保安全）",
+            },
+          ],
+          todo: "步行前往南海難波站",
+        },
+        {
+          time: "20:10",
           activity: "交通：難波 ➞ 關西機場",
           notes: [
             {
