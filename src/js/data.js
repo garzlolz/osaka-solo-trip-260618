@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-01 17:25",
+    updatedAt: "2026-06-01 17:30",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -430,11 +430,11 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "info",
-              text: "步行至 [高島屋](https://maps.app.goo.gl/FZJJxx5jNE9AviDo6)、[Namba Parks](https://maps.app.goo.gl/ZfReR9W9E2CEvvZ2A) 或 [難波CITY 本館](https://maps.app.goo.gl/Lst1Jbs3hmwBf7577)。此處為採購重心，專櫃退稅、日系服飾一站完成",
+              text: "步行至 [高島屋](https://maps.app.goo.gl/FZJJxx5jNE9AviDo6)、[Namba Parks](https://maps.app.goo.gl/ZfReR9W9E2CEvvZ2A) 或 [難波CITY 本館](https://maps.app.goo.gl/Lst1Jbs3hmwBf7577)，亦可順路逛 [Edion 愛電王 難波總店](https://maps.app.goo.gl/4bxavCUCPaJaqNo16)（模型電器種類極多，退稅便利）",
             },
             { type: "warn", text: "2026 年退稅人潮較多，請預留退稅手續時間" },
           ],
-          todo: "專櫃退稅、日系服飾採購",
+          todo: "專櫃退稅、日系服飾、電器模型採購",
         },
         {
           time: "18:00–19:15",
