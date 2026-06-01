@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-01 15:57",
+    updatedAt: "2026-06-01 16:47",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -489,7 +489,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "tip",
-              text: "**關鍵行動**：抵達 Aeroplaza 2F 的 NODOKA，優先排隊洗澡並休息",
+              text: "關鍵行動：抵達 Aeroplaza 2F 的 NODOKA，優先排隊洗澡並休息",
             },
             { type: "warn", text: "24 小時營業，使用 ICOCA 或卡片付費" },
           ],
