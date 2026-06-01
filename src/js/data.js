@@ -2,23 +2,33 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-05-29 17:28",
+    updatedAt: "2026-06-01 15:15",
     departureDate: "2026-06-18T18:15:00",
   },
 
   checklist: [
-    { id: 1,  text: "手機辦好 ICOCA 卡",                       done: true  },
-    { id: 2,  text: "Visit Japan Web 登錄",                    done: false, url: "https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/" },
-    { id: 3,  text: "出國登錄（外交部）",                      done: false, url: "https://www.boca.gov.tw/sp-abre-main-1.html" },
-    { id: 4,  text: "辦理 e-SIM",                              done: false },
-    { id: 5,  text: "購買清水寺電子票",                        done: false },
-    { id: 6,  text: "購買大阪城電子票",                        done: false },
-    { id: 7,  text: "確認 INNN 接駁車訂單（2026-1588178）",    done: true },
-    { id: 8,  text: "確認 Peach MM028 電子登機證",             done: false },
-    { id: 9,  text: "換日幣 / 確認海外刷卡手續費",            done: true },
-    { id: 10, text: "下載 Google Maps 大阪離線地圖",           done: false },
-    { id: 11, text: "下載 Google 翻譯日文離線包",              done: false },
-    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡",       done: false },
+    { id: 1, text: "手機辦好 ICOCA 卡", done: false },
+    {
+      id: 2,
+      text: "Visit Japan Web 登錄",
+      done: false,
+      url: "https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/",
+    },
+    {
+      id: 3,
+      text: "出國登錄（外交部）",
+      done: false,
+      url: "https://www.boca.gov.tw/sp-abre-main-1.html",
+    },
+    { id: 4, text: "辦理 e-SIM", done: false },
+    { id: 5, text: "購買清水寺電子票", done: false },
+    { id: 6, text: "購買大阪城電子票", done: false },
+    { id: 7, text: "確認 INNN 接駁車訂單（2026-1588178）", done: false },
+    { id: 8, text: "確認 Peach MM028 電子登機證", done: false },
+    { id: 9, text: "換日幣 / 確認海外刷卡手續費", done: false },
+    { id: 10, text: "下載 Google Maps 大阪離線地圖", done: false },
+    { id: 11, text: "下載 Google 翻譯日文離線包", done: false },
+    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡", done: false },
   ],
 
   itinerary: [
@@ -30,15 +40,20 @@ export const TRIP_DATA = {
       events: [
         {
           time: "18:15",
-          activity: "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
+          activity:
+            "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
           notes: [],
           todo: null,
         },
         {
           time: "22:00 左右",
-          activity: "抵達 [關西機場 T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9)，辦理入境 / 領行李",
+          activity:
+            "抵達 [關西機場 T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9)，辦理入境 / 領行李",
           notes: [
-            { type: "warn", text: "入境審查 20–60 分鐘浮動，遇高峰請多預留時間" },
+            {
+              type: "warn",
+              text: "入境審查 20–60 分鐘浮動，遇高峰請多預留時間",
+            },
           ],
           todo: null,
         },
@@ -46,29 +61,38 @@ export const TRIP_DATA = {
           time: "22:30 左右",
           activity: "INNN 接駁專車（訂單 2026-1588178）→ 前往市區",
           notes: [
-            { type: "info", text: "出關後依序：➞ 前往 INNN 櫃台核對（T2 國際線到達口左側黃色沙發區）➞ 等候接駁（每 30 分一班，發車前 10 分在櫃台集合）" },
-            { type: "warn", text: "若錯過會順延至下一班；櫃台營業：07:00–00:10" },
+            {
+              type: "info",
+              text: "出關後依序：➞ 前往 INNN 櫃台核對（T2 國際線到達口左側黃色沙發區）➞ 等候接駁（每 30 分一班，發車前 10 分在櫃台集合）",
+            },
+            {
+              type: "warn",
+              text: "若錯過會順延至下一班；櫃台營業：07:00–00:10",
+            },
           ],
           todo: null,
           images: [
-            { src: "images/INNN_機場T2接機處路線圖.png", alt: "關西機場 T2 平面圖，INNN 櫃台位於國際線到着口左側" },
-            { src: "images/INNN_路線環境圖.png",         alt: "T2 航廈實景，出口左轉即可看到 INNN" },
+            {
+              src: "images/INNN_機場T2接機處路線圖.png",
+              alt: "關西機場 T2 平面圖，INNN 櫃台位於國際線到着口左側",
+            },
+            {
+              src: "images/INNN_路線環境圖.png",
+              alt: "T2 航廈實景，出口左轉即可看到 INNN",
+            },
           ],
         },
         {
           time: "23:30 左右",
-          activity: "抵達 [東橫INN大阪日本橋文樂劇場前](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8) 辦理入住",
-          notes: [
-            { type: "info", text: "視出關與等車時間而定" },
-          ],
+          activity:
+            "抵達 [東橫INN大阪日本橋文樂劇場前](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8) 辦理入住",
+          notes: [{ type: "info", text: "視出關與等車時間而定" }],
           todo: null,
         },
         {
           time: "深夜",
           activity: "[道頓堀](https://maps.app.goo.gl/bvfxbKrwDbBgiV23A)",
-          notes: [
-            { type: "ok", text: "不需預約／僅人多" },
-          ],
+          notes: [{ type: "ok", text: "不需預約／僅人多" }],
           todo: "宵夜：待選",
         },
       ],
@@ -79,15 +103,18 @@ export const TRIP_DATA = {
           items: [
             {
               title: "入境 + 領行李超過 60 分",
-              detail: "可能錯過某班並順延。建議在飛機上先打開 INNN 確認訊息、記下櫃台位置與營業時間；若預期要等較久，心理先預期等下一班。",
+              detail:
+                "可能錯過某班並順延。建議在飛機上先打開 INNN 確認訊息、記下櫃台位置與營業時間；若預期要等較久，心理先預期等下一班。",
             },
             {
               title: "超額行李無法登車",
-              detail: "現場因空間不足被退件。建議出發前確認行李件數與尺寸，若有大件行李請事先加購行李券或聯絡業者確認車種。",
+              detail:
+                "現場因空間不足被退件。建議出發前確認行李件數與尺寸，若有大件行李請事先加購行李券或聯絡業者確認車種。",
             },
             {
               title: "深夜不熟櫃台位置",
-              detail: "把櫃台位置（T2 國際線到達口左側黃色沙發區）截圖存入手機；飛機上先查好到達口路線，出關後直接前往櫃台位置。",
+              detail:
+                "把櫃台位置（T2 國際線到達口左側黃色沙發區）截圖存入手機；飛機上先查好到達口路線，出關後直接前往櫃台位置。",
             },
           ],
         },
@@ -102,70 +129,94 @@ export const TRIP_DATA = {
       events: [
         {
           time: "07:00",
-          activity: "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站&q=35.0036744,135.7605895)（約 55 分，¥650）",
-          notes: [
-            { type: "info", text: "刷 ICOCA 即可，無需買紙票" },
-          ],
+          activity:
+            "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站&q=35.0036744,135.7605895)（約 55 分，¥650）",
+          notes: [{ type: "info", text: "刷 ICOCA 即可，無需買紙票" }],
           todo: "前往京都並在烏丸下車，步行 10 分鐘至咖啡廳",
         },
         {
           time: "08:00",
-          activity: "[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) 享用早餐",
+          activity:
+            "[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69) 享用早餐",
           notes: [
             { type: "info", text: "08:00–08:50 用餐" },
-            { type: "info", text: "🚗 早餐後至清水寺銜接方案：<br>• Plan A (207 公車)：於 [四條高倉公車站](https://maps.app.goo.gl/92Qkp99nk13GCpje9?q=35.0037313,135.7616107) 搭乘 207 路至 [清水道公車站](https://maps.app.goo.gl/V9BbPGyWTHi9db199?q=34.9965046,135.7768302) 下車，步行 750 公尺上坡至仁王門。<br>• Plan B (計程車備案)：若時間落後，使用 GO App 叫車直達 [清水寺](https://maps.app.goo.gl/Kv3RuMopX8dmE4Cg8?q=34.9946662,135.784661) 仁王門（可直接載到門口，避開 Plan A 最累的 12 分鐘上坡路段）" },
-            { type: "warn", text: "需提前下載 GO App 以防萬一" }
+            {
+              type: "info",
+              text: "🚗 早餐後至清水寺銜接方案：<br>• Plan A (207 公車)：於 [四條高倉公車站](https://maps.app.goo.gl/92Qkp99nk13GCpje9?q=35.0037313,135.7616107) 搭乘 207 路至 [清水道公車站](https://maps.app.goo.gl/V9BbPGyWTHi9db199?q=34.9965046,135.7768302) 下車，步行 750 公尺上坡至仁王門。<br>• Plan B (計程車備案)：若時間落後，使用 GO App 叫車直達 [清水寺](https://maps.app.goo.gl/Kv3RuMopX8dmE4Cg8?q=34.9946662,135.784661) 仁王門（可直接載到門口，避開 Plan A 最累的 12 分鐘上坡路段）",
+            },
+            { type: "warn", text: "需提前下載 GO App 以防萬一" },
           ],
           todo: "早餐：[INODA咖啡 本店](https://maps.app.goo.gl/vpBvQCnQtD7jsNk69)",
         },
         {
           time: "09:15",
-          activity: "[清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5?q=34.9946662,135.784661)",
+          activity:
+            "[清水寺](https://maps.app.goo.gl/iyK9fv1AT5nYJVXx5?q=34.9946662,135.784661)",
           notes: [
-            { type: "warn", text: "趁人少；選「二年坂往上拍」清水舞台視角最佳" },
+            {
+              type: "warn",
+              text: "趁人少；選「二年坂往上拍」清水舞台視角最佳",
+            },
           ],
           todo: "可提前購買電子票避免排隊",
         },
         {
           time: "11:00",
-          activity: "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9?q=34.9966644,135.781008) ➞ [花見小路](https://maps.app.goo.gl/mR8HnRpf8NuKE4mP8?q=35.0014922,135.7746403) 散步",
+          activity:
+            "[二寧坂](https://maps.app.goo.gl/uoMtMkpQHuZc43J9A) / [三年坂](https://maps.app.goo.gl/74xPSBCa5ovELvNT9?q=34.9966644,135.781008) ➞ [花見小路](https://maps.app.goo.gl/mR8HnRpf8NuKE4mP8?q=35.0014922,135.7746403) 散步",
           notes: [
-            { type: "info", text: "從三年坂走下來後，往西北方向步行約 10-15 分鐘即可抵達花見小路，先欣賞古色古香的茶屋建築（不安排大餐，避免與下午漢堡排衝突）" }
+            {
+              type: "info",
+              text: "從三年坂走下來後，往西北方向步行約 10-15 分鐘即可抵達花見小路，先欣賞古色古香的茶屋建築（不安排大餐，避免與下午漢堡排衝突）",
+            },
           ],
           todo: null,
         },
         {
           time: "13:00",
-          activity: "[八坂神社 西樓門](https://maps.app.goo.gl/Gbyrfude4JBfyX78A?q=35.0037437,135.7775306)",
+          activity:
+            "[八坂神社 西樓門](https://maps.app.goo.gl/Gbyrfude4JBfyX78A?q=35.0037437,135.7775306)",
           notes: [
-            { type: "info", text: "花見小路走到盡頭就是四條通，右轉步行不到 5 分鐘即可抵達八坂神社正門（西樓門）" }
+            {
+              type: "info",
+              text: "花見小路走到盡頭就是四條通，右轉步行不到 5 分鐘即可抵達八坂神社正門（西樓門）",
+            },
           ],
           todo: null,
         },
         {
           time: "13:40",
-          activity: "祇園散步吃東西：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6?q=35.0036644,135.7762665) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8?q=35.003997,135.772745) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8?q=35.0042233,135.7706292)",
+          activity:
+            "祇園散步吃東西：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6?q=35.0036644,135.7762665) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8?q=35.003997,135.772745) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8?q=35.0042233,135.7706292)",
           notes: [
-            { type: "info", text: "從八坂神社往西（往鴨川/車站方向）沿著四條通走，順路吃回車站：布丁 ➞ 鯛魚燒 ➞ 漢堡排，完全不走回頭路" }
+            {
+              type: "info",
+              text: "從八坂神社往西（往鴨川/車站方向）沿著四條通走，順路吃回車站：布丁 ➞ 鯛魚燒 ➞ 漢堡排，完全不走回頭路",
+            },
           ],
           todo: "點心：布丁、鯛魚燒\n下午餐：漢堡排",
         },
         {
           time: "15:30",
-          activity: "至 [祇園四條站](https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8?q=35.0033014,135.7719122) 搭乘京阪本線前往 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)",
+          activity:
+            "至 [祇園四條站](https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8?q=35.0033014,135.7719122) 搭乘京阪本線前往 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)",
           notes: [
-            { type: "info", text: "步行與車程約 10 分鐘，刷 ICOCA 即可" }
+            { type: "info", text: "步行與車程約 10 分鐘，刷 ICOCA 即可" },
           ],
           todo: null,
           mapQuery: "祇園四條站",
-          mapLink: "https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8?q=35.0033014,135.7719122",
+          mapLink:
+            "https://maps.app.goo.gl/5BAJeMgCNPaT6YPs8?q=35.0033014,135.7719122",
         },
         {
           time: "15:50",
           activity: "[伏見稻荷大社](https://maps.app.goo.gl/Hp9iJ5RnUasTqLrv5)",
           notes: [
             { type: "info", text: "從伏見稻荷大社大鳥居開始進去" },
-            { type: "warn", text: "建議往鳥居深處走（遠離入口人少出片）；6 梅雨季建議帶折疊傘" }
+            {
+              type: "warn",
+              text: "建議往鳥居深處走（遠離入口人少出片）；6 梅雨季建議帶折疊傘",
+            },
           ],
           todo: null,
         },
@@ -173,13 +224,17 @@ export const TRIP_DATA = {
           time: "17:30",
           activity: "搭京阪返回大阪",
           notes: [
-            { type: "warn", text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）" }
+            {
+              type: "warn",
+              text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）",
+            },
           ],
           todo: null,
         },
         {
           time: "18:30",
-          activity: "抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)",
+          activity:
+            "抵達大阪 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)",
           notes: [],
           todo: null,
         },
@@ -187,10 +242,22 @@ export const TRIP_DATA = {
           time: "19:00",
           activity: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐",
           notes: [
-            { type: "info", text: "[千代松勝蓋飯](https://maps.app.goo.gl/KyAtYvBUzZ43kCRS6)（特厚切豬排蓋飯，千日前）" },
-            { type: "info", text: "[吉次牛舌](https://maps.app.goo.gl/o8NTGnrBovVjvsgE7)（炭火燒牛舌，心齋橋）" },
-            { type: "info", text: "[大阪鐵板燒居酒屋 Dorajyu](https://maps.app.goo.gl/CPbFXVQtjxGGDVzeA)（大阪燒/鐵板燒）" },
-            { type: "info", text: "[新宿燒肉 牛舌的檸檬 大阪本店](https://maps.app.goo.gl/WTQmxqLaD7CFb2Cq9)（極厚切牛舌）" },
+            {
+              type: "info",
+              text: "[千代松勝蓋飯](https://maps.app.goo.gl/KyAtYvBUzZ43kCRS6)（特厚切豬排蓋飯，千日前）",
+            },
+            {
+              type: "info",
+              text: "[吉次牛舌](https://maps.app.goo.gl/o8NTGnrBovVjvsgE7)（炭火燒牛舌，心齋橋）",
+            },
+            {
+              type: "info",
+              text: "[大阪鐵板燒居酒屋 Dorajyu](https://maps.app.goo.gl/CPbFXVQtjxGGDVzeA)（大阪燒/鐵板燒）",
+            },
+            {
+              type: "info",
+              text: "[新宿燒肉 牛舌的檸檬 大阪本店](https://maps.app.goo.gl/WTQmxqLaD7CFb2Cq9)（極厚切牛舌）",
+            },
           ],
           todo: "晚餐：待選",
         },
@@ -199,10 +266,28 @@ export const TRIP_DATA = {
         {
           title: "去程路線：日本橋 → 烏丸（NAVITIME 確認版）",
           segments: [
-            { segment: 1, route: "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）", from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台",  to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",       duration: "約 17 分", cost: "¥240",  note: "" },
-            { segment: 2, route: "阪急京都線特急（往京都河原町）",                                         from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 2・3 番月台", to: "[烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站&q=35.0036744,135.7605895)", duration: "約 30 分", cost: "¥410",  note: "" },
+            {
+              segment: 1,
+              route:
+                "OsakaMetro 堺筋線（往北千里）→ 直通阪急千里線（同車廂，坐著不動）",
+              from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台",
+              to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",
+              duration: "約 17 分",
+              cost: "¥240",
+              note: "",
+            },
+            {
+              segment: 2,
+              route: "阪急京都線特急（往京都河原町）",
+              from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 2・3 番月台",
+              to: "[烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站&q=35.0036744,135.7605895)",
+              duration: "約 30 分",
+              cost: "¥410",
+              note: "",
+            },
           ],
-          summary: "總計：約 55 分鐘（不含步行）　¥650　換乘 1 次（淡路站換月台）",
+          summary:
+            "總計：約 55 分鐘（不含步行）　¥650　換乘 1 次（淡路站換月台）",
           tips: [
             "上車前確認車頭方向牌寫「北千里」或「高槻市」，兩個都會經過淡路",
             "全程刷 ICOCA，不需買紙票",
@@ -211,15 +296,45 @@ export const TRIP_DATA = {
         {
           title: "回程路線：京都河原町 → 日本橋飯店",
           segments: [
-            { segment: 1, route: "阪急京都線特急（往大阪梅田）",              from: "[京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)",    to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",         duration: "約 35 分", cost: "",      note: "" },
-            { segment: 2, route: "阪急千里線 → 直通堺筋線（同車廂，坐著不動）", from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",          to: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）", duration: "約 20 分", cost: "",      note: "" },
-            { segment: 3, route: "步行",                                         from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）", to: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波", duration: "約 10 分", cost: "",      note: "吃晚餐逛街" },
-            { segment: 4, route: "步行",                                         from: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波", to: "[日本橋飯店](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8)",    duration: "約 8 分",  cost: "",      note: "逛完後步行回飯店" },
+            {
+              segment: 1,
+              route: "阪急京都線特急（往大阪梅田）",
+              from: "[京都河原町](https://maps.app.goo.gl/APvfnTQbSnzSSRsQA)",
+              to: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",
+              duration: "約 35 分",
+              cost: "",
+              note: "",
+            },
+            {
+              segment: 2,
+              route: "阪急千里線 → 直通堺筋線（同車廂，坐著不動）",
+              from: "[淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",
+              to: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）",
+              duration: "約 20 分",
+              cost: "",
+              note: "",
+            },
+            {
+              segment: 3,
+              route: "步行",
+              from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）",
+              to: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波",
+              duration: "約 10 分",
+              cost: "",
+              note: "吃晚餐逛街",
+            },
+            {
+              segment: 4,
+              route: "步行",
+              from: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波",
+              to: "[日本橋飯店](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8)",
+              duration: "約 8 分",
+              cost: "",
+              note: "逛完後步行回飯店",
+            },
           ],
           summary: "總計：約 55 分鐘（不含逛街）　換乘 1 次（淡路站換月台）",
-          tips: [
-            "全程刷 ICOCA，不需買紙票",
-          ],
+          tips: ["全程刷 ICOCA，不需買紙票"],
         },
       ],
     },
@@ -227,114 +342,155 @@ export const TRIP_DATA = {
     {
       day: 3,
       date: "6/20（六）",
-      theme: "南區掃街，機場過夜",
+      theme: "購物馬拉松：電電街 ➔ 百貨大採購",
       dateStr: "2026-06-20",
       events: [
         {
           time: "08:00",
           activity: "起床整理、打包行李",
-          notes: [
-            { type: "info", text: "整理行李，準備退房" },
-          ],
+          notes: [{ type: "info", text: "整理行李，準備退房" }],
           todo: null,
         },
         {
           time: "08:30",
           activity: "退房並寄放行李",
           notes: [
-            { type: "info", text: "辦理退房，行李寄放在「東橫INN 大阪日本橋文樂劇場前」櫃台" },
+            {
+              type: "info",
+              text: "辦理退房，行李寄放在「東橫INN 大阪日本橋文樂劇場前」櫃台",
+            },
+            { type: "warn", text: "⚠️ 需確認飯店同意寄放至 19:30" },
           ],
           todo: null,
         },
         {
-          time: "08:45–09:45",
+          time: "08:45–10:00",
           activity: "[黑門市場](https://maps.app.goo.gl/zKjNxecm8j4Rrny89)",
           notes: [
-            { type: "info", text: "步行約 2 分鐘即抵達。此時店家剛開門，人潮最少，可以更輕鬆地吃早午餐" },
+            {
+              type: "info",
+              text: "步行前往，完成早午餐；吃快一點就能收掉（ex: 明石燒）",
+            },
           ],
-          todo: "早午餐: 待選（邊走邊吃）",
+          todo: "早午餐：待選（邊走邊吃）",
         },
         {
-          time: "09:45",
+          time: "10:00",
           activity: "交通：黑門市場 ➞ 大阪城",
           notes: [
-            { type: "info", text: "堺筋線（日本橋 ➞ 堺筋本町）➞ 站內轉乘中央線（➞ 谷町四丁目）➞ 步行至大阪城（約 30 分，¥190）" },
+            {
+              type: "info",
+              text: "堺筋線（日本橋 ➞ 堺筋本町）➞ 站內轉乘中央線（➞ 谷町四丁目）➞ 步行至大阪城（約 30 分，¥190）",
+            },
           ],
           todo: "刷 ICOCA 即可",
         },
         {
-          time: "10:15–12:15",
+          time: "10:30–12:30",
           activity: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
           notes: [
-            { type: "ok",   text: "公園免費開放　天守閣 9:00–18:00（最晚入場 17:30）" },
-            { type: "info", text: "提早出發可避開中午最熱與最擠的登天守閣人潮；建議預先購買電子票" },
+            {
+              type: "ok",
+              text: "公園免費開放　天守閣 9:00–18:00（最晚入場 17:30）",
+            },
+            {
+              type: "info",
+              text: "跑完唯一較遠的景點；提早出發可避開中午最熱與最擠的登天守閣人潮",
+            },
           ],
           todo: null,
         },
         {
-          time: "12:15",
-          activity: "交通：大阪城 ➞ 通天閣",
+          time: "12:30",
+          activity: "交通：大阪城 ➞ 電器街",
           notes: [
-            { type: "info", text: "步行至森之宮站 ➞ 搭中央線（➞ 堺筋本町）➞ 站內轉乘堺筋線（➞ 惠美須町）➞ 步行至通天閣（約 36 分，¥240）" },
+            {
+              type: "info",
+              text: "步行至森之宮站 ➞ 搭中央線（➞ 堺筋本町）➞ 站內轉乘堺筋線（➞ 惠美須町）➞ 步行至電器街（約 37 分，¥240）",
+            },
           ],
           todo: "刷 ICOCA 即可",
         },
         {
-          time: "12:45–14:00",
-          activity: "[通天閣](https://maps.app.goo.gl/eFswsy7cd3cw8VyA9)（新世界）",
+          time: "13:00–15:00",
+          activity:
+            "[日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) / [千日前道具屋筋](https://maps.app.goo.gl/5gokAdbwdQ4Sp1gC6)",
           notes: [
-            { type: "ok",   text: "不需預約" },
-            { type: "info", text: "下車先往南走 5 分鐘去通天閣，收掉南端景點並吃串炸當午茶點心" },
-          ],
-          todo: "小食：新世界串炸（待選）",
-        },
-        {
-          time: "14:00–15:30",
-          activity: "[日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) / [千日前道具屋筋](https://maps.app.goo.gl/5gokAdbwdQ4Sp1gC6)",
-          notes: [
-            { type: "ok",   text: "不需預約" },
-            { type: "info", text: "從通天閣往北逛回惠美須町站，開始**一路向北**逛電器、模型。此路徑順向往飯店方向走" },
+            { type: "ok", text: "不需預約" },
+            {
+              type: "info",
+              text: "從惠美須町站出發，由南往北逛回飯店方向，採買模型或電器",
+            },
           ],
           todo: "逛街：電器 / 模型 / 廚具",
         },
         {
-          time: "15:45–18:00",
-          activity: "[心齋橋](https://maps.app.goo.gl/pRQToFCrVxBBiFHs7) / [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA)",
+          time: "15:00–18:00",
+          activity: "難波百貨大採購",
           notes: [
-            { type: "ok",   text: "不需預約" },
-            { type: "warn", text: "人潮極多；若腳痠可從惠美須町站搭一站地鐵回日本橋站（¥190）。此時段進行藥妝補貨與大阪最後晚餐" },
+            {
+              type: "info",
+              text: "步行至 [高島屋](https://maps.app.goo.gl/FZJJxx5jNE9AviDo6) 或 [Namba Parks](https://maps.app.goo.gl/ZfReR9W9E2CEvvZ2A)。此處為採購重心，專櫃退稅、日系服飾一站完成",
+            },
+            { type: "warn", text: "2026 年退稅人潮較多，請預留退稅手續時間" },
           ],
-          todo: "逛街：藥妝 / 雜貨 / 伴手禮\n晚餐：待選（大阪最後一頓正餐，建議吃好）",
+          todo: "專櫃退稅、日系服飾採購",
         },
         {
-          time: "18:00–18:30",
-          activity: "飯店取物並前往難波",
+          time: "18:00–19:30",
+          activity: "最後晚餐",
           notes: [
-            { type: "info", text: "回飯店拿行李，並步行至「南海難波站」。因為提早了，可以避開轉運站的深夜人潮" },
+            {
+              type: "info",
+              text: "於難波或 [道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 區域用餐，並進行藥妝最後補貨",
+            },
           ],
-          todo: null,
+          todo: "晚餐：待選（建議吃好）",
         },
         {
-          time: "18:30",
+          time: "19:30–20:00",
+          activity: "回飯店取行李",
+          notes: [
+            { type: "info", text: "從難波步行回飯店提領行李" },
+            {
+              type: "tip",
+              text: "建議在此處於飯店大廳將下午採購的戰利品塞入大行李箱",
+            },
+          ],
+          todo: "整理戰利品進大行李箱",
+        },
+        {
+          time: "20:00",
           activity: "交通：難波 ➞ 關西機場",
           notes: [
-            { type: "info", text: "從 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8) 搭乘南海電鐵空港急行（約 44 分鐘，¥970）前往關西機場" },
+            {
+              type: "info",
+              text: "從 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8) 搭乘南海電鐵空港急行（約 44 分鐘，¥970）前往關西機場",
+            },
           ],
           todo: "刷 ICOCA 即可",
         },
         {
-          time: "19:30 左右",
-          activity: "抵達 [關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 Aeroplaza",
+          time: "21:00 左右",
+          activity:
+            "抵達 [關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 Aeroplaza",
           notes: [
-            { type: "info", text: "關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA" },
+            {
+              type: "info",
+              text: "關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA",
+            },
           ],
           todo: null,
         },
         {
-          time: "20:00–05:15",
-          activity: "[NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7) 洗澡／休息／整理行李",
+          time: "21:00–05:15",
+          activity:
+            "[NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7) 洗澡／休息／整理行李",
           notes: [
-            { type: "tip", text: "**關鍵行動**：提早抵達 Aeroplaza 2F 的 NODOKA。這時段排隊洗澡的人較少，能大幅提高你搶到淋浴間與舒適休息位的機會" },
+            {
+              type: "tip",
+              text: "**關鍵行動**：抵達 Aeroplaza 2F 的 NODOKA，優先排隊洗澡並休息",
+            },
             { type: "warn", text: "24 小時營業，使用 ICOCA 或卡片付費" },
           ],
           todo: null,
@@ -344,12 +500,45 @@ export const TRIP_DATA = {
         {
           title: "交通路線：黑門市場 → 大阪城",
           segments: [
-            { segment: 1, route: "步行", from: "[黑門市場](https://maps.app.goo.gl/zKjNxecm8j4Rrny89)", to: "[日本橋站](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)", duration: "約 4 分 (220m)", cost: "", note: "" },
-            { segment: 2, route: "OsakaMetro 堺筋線普通（往北千里）", from: "[日本橋站](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台 (K17)", to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)", duration: "約 3 分 (2站)", cost: "¥190 (包含段次3)", note: "車站 ID：K17" },
-            { segment: 3, route: "站內轉乘中央線，搭乘中央線普通（往學研奈良登美丘）", from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (C17)", to: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)", duration: "約 1 分 (1站)", cost: "", note: "轉乘步行約 1 分" },
-            { segment: 4, route: "步行", from: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C18)", to: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (〒540-0002)", duration: "約 19 分 (1.3km)", cost: "", note: "" },
+            {
+              segment: 1,
+              route: "步行",
+              from: "[黑門市場](https://maps.app.goo.gl/zKjNxecm8j4Rrny89)",
+              to: "[日本橋站](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)",
+              duration: "約 4 分 (220m)",
+              cost: "",
+              note: "",
+            },
+            {
+              segment: 2,
+              route: "OsakaMetro 堺筋線普通（往北千里）",
+              from: "[日本橋站](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台 (K17)",
+              to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",
+              duration: "約 3 分 (2站)",
+              cost: "¥190 (包含段次3)",
+              note: "車站 ID：K17",
+            },
+            {
+              segment: 3,
+              route: "站內轉乘中央線，搭乘中央線普通（往學研奈良登美丘）",
+              from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (C17)",
+              to: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
+              duration: "約 1 分 (1站)",
+              cost: "",
+              note: "轉乘步行約 1 分",
+            },
+            {
+              segment: 4,
+              route: "步行",
+              from: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C18)",
+              to: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
+              duration: "約 19 分 (1.3km)",
+              cost: "",
+              note: "",
+            },
           ],
-          summary: "總計：約 30 分鐘（乘車 24 分鐘）　¥190　換乘 1 次（堺筋本町站站內轉乘）",
+          summary:
+            "總計：約 30 分鐘（乘車 24 分鐘）　¥190　換乘 1 次（堺筋本町站站內轉乘）",
           tips: [
             "黑門市場到地鐵站步行僅 220 公尺",
             "在堺筋本町站換乘中央線僅需步行約 1 分鐘，非常方便",
@@ -357,16 +546,49 @@ export const TRIP_DATA = {
           ],
         },
         {
-          title: "交通路線：大阪城 → 通天閣",
+          title: "交通路線：大阪城 → 電器街",
           segments: [
-            { segment: 1, route: "步行", from: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)", to: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C19)", duration: "約 19 分 (1.4km)", cost: "", note: "" },
-            { segment: 2, route: "OsakaMetro 中央線普通（往夢洲）", from: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) 3 番月台 (C19)", to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)", duration: "約 4 分 (2站)", cost: "¥240 (包含段次4)", note: "車站 ID：C19" },
-            { segment: 3, route: "站內轉乘堺筋線，搭乘堺筋線普通（往天下茶屋）", from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (K15)", to: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA)", duration: "約 5 分 (3站)", cost: "", note: "轉乘步行約 1 分" },
-            { segment: 4, route: "步行", from: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) (K18)", to: "[通天閣](https://maps.app.goo.gl/eFswsy7cd3cw8VyA9)", duration: "約 5 分 (400m)", cost: "", note: "" },
+            {
+              segment: 1,
+              route: "步行",
+              from: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
+              to: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C19)",
+              duration: "約 19 分 (1.4km)",
+              cost: "",
+              note: "",
+            },
+            {
+              segment: 2,
+              route: "OsakaMetro 中央線普通（往夢洲）",
+              from: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) 3 番月台 (C19)",
+              to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",
+              duration: "約 4 分 (2站)",
+              cost: "¥240 (包含段次4)",
+              note: "車站 ID：C19",
+            },
+            {
+              segment: 3,
+              route: "站內轉乘堺筋線，搭乘堺筋線普通（往天下茶屋）",
+              from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (K15)",
+              to: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA)",
+              duration: "約 5 分 (3站)",
+              cost: "",
+              note: "轉乘步行約 1 分",
+            },
+            {
+              segment: 4,
+              route: "步行",
+              from: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) (K18)",
+              to: "[日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA)",
+              duration: "約 6 分 (500m)",
+              cost: "",
+              note: "",
+            },
           ],
-          summary: "總計：約 36 分鐘（乘車 25 分鐘）　¥240　換乘 1 次（堺筋本町站站內轉乘）",
+          summary:
+            "總計：約 37 分鐘（乘車 26 分鐘）　¥240　換乘 1 次（堺筋本町站站內轉乘）",
           tips: [
-            "從大阪城天守閣步行至森之宮站約 1.4 公里，可沿途欣賞大阪城公園綠地",
+            "從大阪城天守閣步行至森之宮站約 1.4 公里，可沿途欣賞大阪城公園 green",
             "堺筋本町站轉乘僅需步行約 1 分鐘",
             "全程刷 ICOCA 即可",
           ],
@@ -390,28 +612,58 @@ export const TRIP_DATA = {
           time: "04:30–04:57",
           activity: "Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
           notes: [
-            { type: "info", text: "免費接駁車車程約 7 分鐘；出關西機場站驗票口右轉，穿過 Aeroplaza 下至 1F 前方" },
-            { type: "info", text: "4 時班次：04:00 / 04:50（搭 04:50 班，約 04:57 抵達 T2）" },
+            {
+              type: "info",
+              text: "免費接駁車車程約 7 分鐘；出關西機場站驗票口右轉，穿過 Aeroplaza 下至 1F 前方",
+            },
+            {
+              type: "info",
+              text: "4 時班次：04:00 / 04:50（搭 04:50 班，約 04:57 抵達 T2）",
+            },
           ],
           todo: null,
           images: [
-            { src: "images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png", alt: "Aeroplaza 1F / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處" },
-            { src: "images/Peach_接駁巴士乘車處指南.jpg", alt: "Peach 官方：前往 T2 接駁巴士乘車處指南" },
-            { src: "images/From Terminal 1, Aeroplaza → To Terminal 2 時刻表.png", alt: "第 1 航廈 / Aeroplaza → 第 2 航廈接駁巴士時刻表" },
+            {
+              src: "images/接駁巴士（免費）乘車處位置第1航廈、關西機場站→前往第2航廈.png",
+              alt: "Aeroplaza 1F / 關西機場站 ➞ 前往第 2 航廈接駁巴士乘車處",
+            },
+            {
+              src: "images/Peach_接駁巴士乘車處指南.jpg",
+              alt: "Peach 官方：前往 T2 接駁巴士乘車處指南",
+            },
+            {
+              src: "images/From Terminal 1, Aeroplaza → To Terminal 2 時刻表.png",
+              alt: "第 1 航廈 / Aeroplaza → 第 2 航廈接駁巴士時刻表",
+            },
           ],
         },
         {
           time: "05:00–07:00",
           activity: "第二航廈 T2 辦理 Peach 報到／託運行李／安檢前準備",
           notes: [
-            { type: "warn", text: "Peach 國際線報到時間為起飛前 120 至 50 分鐘，07:00 截止報到（極重要，逾時無法登機）" },
-            { type: "info", text: "報到櫃台：T2 1F，接駁車下車後左側入口進入。先至 BAGGAGE TAG KIOSK 列印行李條，再前往行李託運處辦理" },
-            { type: "warn", text: "安檢截止：起飛前 25 分鐘（07:25）前必須通過安全檢查" },
-            { type: "tip",  text: "約 05:00 抵達排隊，預留充足的託運與安檢時間" },
+            {
+              type: "warn",
+              text: "Peach 國際線報到時間為起飛前 120 至 50 分鐘，07:00 截止報到（極重要，逾時無法登機）",
+            },
+            {
+              type: "info",
+              text: "報到櫃台：T2 1F，接駁車下車後左側入口進入。先至 BAGGAGE TAG KIOSK 列印行李條，再前往行李託運處辦理",
+            },
+            {
+              type: "warn",
+              text: "安檢截止：起飛前 25 分鐘（07:25）前必須通過安全檢查",
+            },
+            {
+              type: "tip",
+              text: "約 05:00 抵達排隊，預留充足的託運與安檢時間",
+            },
           ],
           todo: "07:00 前完成報到手續",
           images: [
-            { src: "images/Peach_T2報到櫃台位置圖.png", alt: "Peach T2 報到櫃台位置圖（T2 1F，接駁車下車後左側入口）" },
+            {
+              src: "images/Peach_T2報到櫃台位置圖.png",
+              alt: "Peach T2 報到櫃台位置圖（T2 1F，接駁車下車後左側入口）",
+            },
           ],
         },
         {
@@ -425,10 +677,14 @@ export const TRIP_DATA = {
   ],
 
   requiredActions: [
-    { priority: "強烈建議",           action: "清水寺電子票（避免排隊）" },
-    { priority: "強烈建議",           action: "大阪城電子票（避免排隊）" },
-    { priority: "行為策略（最重要）", action: "NODOKA → 一到機場直接去排（這是唯一會真的影響你流程的點）" },
+    { priority: "強烈建議", action: "清水寺電子票（避免排隊）" },
+    { priority: "強烈建議", action: "大阪城電子票（避免排隊）" },
+    {
+      priority: "行為策略（最重要）",
+      action: "NODOKA → 一到機場直接去排（這是唯一會真的影響你流程的點）",
+    },
   ],
 
-  bottleneck: "唯一真正的 bottleneck 是「機場淋浴資源競爭」，其次才是「觀景台黃金時段流量控制」。",
+  bottleneck:
+    "唯一真正的 bottleneck 是「機場淋浴資源競爭」，其次才是「觀景台黃金時段流量控制」。",
 };
