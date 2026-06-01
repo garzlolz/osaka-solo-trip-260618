@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-01 15:54",
+    updatedAt: "2026-06-01 15:57",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -380,7 +380,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "info",
-              text: "堺筋線（日本橋 ➞ [堺筋本町](https://maps.app.goo.gl/qGbYpBdXChLRxotX9)）➞ 站內轉乘中央線（➞ [谷町四丁目](https://maps.app.goo.gl/wux2cBwcoCqNQr2C7) (9號出口)）➞ 步行至大阪城（約 30 分，¥190）",
+              text: "堺筋線（日本橋 ➞ [堺筋本町](https://maps.app.goo.gl/qGbYpBdXChLRxotX9)）➞ 站內轉乘中央線（➞ [谷町四丁目車站](https://maps.app.goo.gl/wux2cBwcoCqNQr2C7)（走樓梯 · 從9出站））➞ 步行至大阪城（約 30 分，¥190）",
             },
           ],
           todo: "刷 ICOCA 即可",
