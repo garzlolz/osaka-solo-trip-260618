@@ -11,15 +11,23 @@
 
 ## 開啟視覺化網頁
 
-專案使用 ES Modules，需透過本地伺服器開啟，不可直接雙擊 `index.html`。
+專案使用 Vite + Vue 3 開發，需透過 Vite 開發伺服器或編譯後預覽，不可直接使用一般的 static server（如 Live Server）開啟。
 
-**VS Code（推薦）**：安裝 [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 擴充功能，右鍵點選 `index.html` → **Open with Live Server**。
+**本地開發伺服器**：
 
-**Python**：
+安裝專案依賴套件，並啟動本地開發伺服器：
 
 ```bash
-python -m http.server 8080
-# 瀏覽器開啟 http://localhost:8080
+pnpm install
+pnpm dev
+# 瀏覽器開啟控制台輸出的本地網址（通常為 http://localhost:5173）
+```
+
+**生產環境編譯與預覽**：
+
+```bash
+pnpm build      # 編譯打包至 dist/ 目錄
+pnpm preview    # 本地預覽編譯後的靜態網頁（通常為 http://localhost:4173）
 ```
 
 ## 網頁功能
@@ -38,6 +46,6 @@ python -m http.server 8080
 
 ## 更新行程
 
-編輯 [public/journey.md](public/journey.md) 後，同步更新 [js/data.js](js/data.js) 中對應的資料。若要為某事件加入地圖或外部連結，可以直接在 `activity`、`notes` 或 `todo` 欄位中使用 Markdown 語法 `[名稱](連結)`。
+編輯 [public/journey.md](public/journey.md) 後，同步更新 [src/js/data.js](src/js/data.js) 中對應的資料。若要為某事件加入地圖或外部連結，可以直接在 `activity`、`notes` 或 `todo` 欄位中使用 Markdown 語法 `[名稱](連結)`。
 
 格式慣例詳見 [CLAUDE.md](CLAUDE.md)。
