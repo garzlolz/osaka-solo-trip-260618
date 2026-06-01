@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-01 15:15",
+    updatedAt: "2026-06-01 15:54",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -380,7 +380,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "info",
-              text: "堺筋線（日本橋 ➞ 堺筋本町）➞ 站內轉乘中央線（➞ 谷町四丁目）➞ 步行至大阪城（約 30 分，¥190）",
+              text: "堺筋線（日本橋 ➞ [堺筋本町](https://maps.app.goo.gl/qGbYpBdXChLRxotX9)）➞ 站內轉乘中央線（➞ [谷町四丁目](https://maps.app.goo.gl/wux2cBwcoCqNQr2C7) (9號出口)）➞ 步行至大阪城（約 30 分，¥190）",
             },
           ],
           todo: "刷 ICOCA 即可",
@@ -406,7 +406,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "info",
-              text: "步行至森之宮站 ➞ 搭中央線（➞ 堺筋本町）➞ 站內轉乘堺筋線（➞ 惠美須町）➞ 步行至電器街（約 37 分，¥240）",
+              text: "步行至 [森之宮](https://maps.app.goo.gl/diD9Mw19MSaHp5F78) ➞ 搭中央線（➞ [堺筋本町](https://maps.app.goo.gl/qGbYpBdXChLRxotX9)）➞ 站內轉乘堺筋線（➞ [惠美須町](https://maps.app.goo.gl/z8Et7FF39bbqNARg8)）➞ 步行至[電器街](https://maps.app.goo.gl/Vp8Szq7hudPXo1878)（約 37 分，¥240）",
             },
           ],
           todo: "刷 ICOCA 即可",
@@ -414,7 +414,7 @@ export const TRIP_DATA = {
         {
           time: "13:00–15:00",
           activity:
-            "[日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) / [千日前道具屋筋](https://maps.app.goo.gl/5gokAdbwdQ4Sp1gC6)",
+            "[日本橋電器街](https://maps.app.goo.gl/Vp8Szq7hudPXo1878) / [千日前道具屋筋](https://maps.app.goo.gl/5gokAdbwdQ4Sp1gC6)",
           notes: [
             { type: "ok", text: "不需預約" },
             {
@@ -513,7 +513,7 @@ export const TRIP_DATA = {
               segment: 2,
               route: "OsakaMetro 堺筋線普通（往北千里）",
               from: "[日本橋站](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台 (K17)",
-              to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",
+              to: "[堺筋本町站](https://maps.app.goo.gl/qGbYpBdXChLRxotX9)",
               duration: "約 3 分 (2站)",
               cost: "¥190 (包含段次3)",
               note: "車站 ID：K17",
@@ -521,8 +521,8 @@ export const TRIP_DATA = {
             {
               segment: 3,
               route: "站內轉乘中央線，搭乘中央線普通（往學研奈良登美丘）",
-              from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (C17)",
-              to: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
+              from: "[堺筋本町站](https://maps.app.goo.gl/qGbYpBdXChLRxotX9) 1 番月台 (C17)",
+              to: "[谷町四丁目站](https://maps.app.goo.gl/wux2cBwcoCqNQr2C7)",
               duration: "約 1 分 (1站)",
               cost: "",
               note: "轉乘步行約 1 分",
@@ -530,7 +530,7 @@ export const TRIP_DATA = {
             {
               segment: 4,
               route: "步行",
-              from: "[谷町四丁目站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C18)",
+              from: "[谷町四丁目站](https://maps.app.goo.gl/wux2cBwcoCqNQr2C7) (C18)",
               to: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
               duration: "約 19 分 (1.3km)",
               cost: "",
@@ -542,7 +542,7 @@ export const TRIP_DATA = {
           tips: [
             "黑門市場到地鐵站步行僅 220 公尺",
             "在堺筋本町站換乘中央線僅需步行約 1 分鐘，非常方便",
-            "從谷町四丁目站至大阪城天守閣步行約 19 分鐘 (約 1.3 公里)，全程刷 ICOCA 即可",
+            "從 [谷町四丁目站](https://maps.app.goo.gl/wux2cBwcoCqNQr2C7)（走樓梯 · 從9出站）至大阪城天守閣步行約 19 分鐘 (約 1.3 公里)，全程刷 ICOCA 即可",
           ],
         },
         {
@@ -552,7 +552,7 @@ export const TRIP_DATA = {
               segment: 1,
               route: "步行",
               from: "[大阪城](https://maps.app.goo.gl/tB9Agj857Rj2F3va7)",
-              to: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) (C19)",
+              to: "[森之宮站](https://maps.app.goo.gl/diD9Mw19MSaHp5F78) (C19)",
               duration: "約 19 分 (1.4km)",
               cost: "",
               note: "",
@@ -560,8 +560,8 @@ export const TRIP_DATA = {
             {
               segment: 2,
               route: "OsakaMetro 中央線普通（往夢洲）",
-              from: "[森之宮站](https://maps.app.goo.gl/tB9Agj857Rj2F3va7) 3 番月台 (C19)",
-              to: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941)",
+              from: "[森之宮站](https://maps.app.goo.gl/diD9Mw19MSaHp5F78) 3 番月台 (C19)",
+              to: "[堺筋本町站](https://maps.app.goo.gl/qGbYpBdXChLRxotX9)",
               duration: "約 4 分 (2站)",
               cost: "¥240 (包含段次4)",
               note: "車站 ID：C19",
@@ -569,8 +569,8 @@ export const TRIP_DATA = {
             {
               segment: 3,
               route: "站內轉乘堺筋線，搭乘堺筋線普通（往天下茶屋）",
-              from: "[堺筋本町站](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 1 番月台 (K15)",
-              to: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA)",
+              from: "[堺筋本町站](https://maps.app.goo.gl/qGbYpBdXChLRxotX9) 1 番月台 (K15)",
+              to: "[惠美須町站](https://maps.app.goo.gl/z8Et7FF39bbqNARg8)",
               duration: "約 5 分 (3站)",
               cost: "",
               note: "轉乘步行約 1 分",
@@ -578,8 +578,8 @@ export const TRIP_DATA = {
             {
               segment: 4,
               route: "步行",
-              from: "[惠美須町站](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA) (K18)",
-              to: "[日本橋電電街](https://maps.app.goo.gl/qzQ9jbrmuSyZkKLKA)",
+              from: "[惠美須町站](https://maps.app.goo.gl/z8Et7FF39bbqNARg8) (K18)",
+              to: "[日本橋電電街](https://maps.app.goo.gl/Vp8Szq7hudPXo1878)",
               duration: "約 6 分 (500m)",
               cost: "",
               note: "",
@@ -588,7 +588,7 @@ export const TRIP_DATA = {
           summary:
             "總計：約 37 分鐘（乘車 26 分鐘）　¥240　換乘 1 次（堺筋本町站站內轉乘）",
           tips: [
-            "從大阪城天守閣步行至森之宮站約 1.4 公里，可沿途欣賞大阪城公園 green",
+            "從大阪城天守閣步行至 [森之宮站](https://maps.app.goo.gl/diD9Mw19MSaHp5F78) 約 1.4 公里，可沿途欣賞大阪城公園 green",
             "堺筋本町站轉乘僅需步行約 1 分鐘",
             "全程刷 ICOCA 即可",
           ],
