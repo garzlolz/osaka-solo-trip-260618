@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-01 17:30",
+    updatedAt: "2026-06-04 22:05",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -28,7 +28,7 @@ export const TRIP_DATA = {
     { id: 9, text: "換日幣 / 確認海外刷卡手續費", done: false },
     { id: 10, text: "下載 Google Maps 大阪離線地圖", done: false },
     { id: 11, text: "下載 Google 翻譯日文離線包", done: false },
-    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡", done: false },
+    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）", done: false },
   ],
 
   itinerary: [
@@ -226,7 +226,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "warn",
-              text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至日本橋（K17）",
+              text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）",
             },
           ],
           todo: null,
@@ -318,7 +318,7 @@ export const TRIP_DATA = {
               segment: 3,
               route: "步行",
               from: "[日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）",
-              to: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波",
+              to: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / [難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA)",
               duration: "約 10 分",
               cost: "",
               note: "吃晚餐逛街",
@@ -326,7 +326,7 @@ export const TRIP_DATA = {
             {
               segment: 4,
               route: "步行",
-              from: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / 難波",
+              from: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) / [難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA)",
               to: "[日本橋飯店](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8)",
               duration: "約 8 分",
               cost: "",
@@ -426,7 +426,7 @@ export const TRIP_DATA = {
         },
         {
           time: "15:00–18:00",
-          activity: "難波百貨大採購",
+          activity: "[難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA)百貨大採購",
           notes: [
             {
               type: "info",
@@ -442,7 +442,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "info",
-              text: "於難波站周邊或百貨內用餐，避免人擠人，保存體力，且離飯店較近",
+              text: "於 [難波站](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA)周邊或百貨內用餐，避免人擠人，保存體力，且離飯店較近",
             },
           ],
           todo: "晚餐：待選（建議吃好）",
@@ -451,7 +451,7 @@ export const TRIP_DATA = {
           time: "19:15–19:30",
           activity: "回飯店取行李",
           notes: [
-            { type: "info", text: "從難波步行回飯店提領行李，確保在飯店櫃台要求的時間前領回" },
+            { type: "info", text: "從 [難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA) 步行回飯店提領行李，確保在飯店櫃台要求的時間前領回" },
           ],
           todo: "取回寄放行李",
         },
@@ -468,18 +468,18 @@ export const TRIP_DATA = {
         },
         {
           time: "19:50–20:10",
-          activity: "交通：前往南海難波站",
+          activity: "交通：前往 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)",
           notes: [
             {
               type: "info",
-              text: "從飯店步行前往南海難波站（約 1.1 公里，負重移動預留 20 分鐘以保安全）",
+              text: "從飯店步行前往 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)（約 1.1 公里，負重移動預留 20 分鐘以保安全）",
             },
           ],
-          todo: "步行前往南海難波站",
+          todo: "步行前往 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)",
         },
         {
           time: "20:10",
-          activity: "交通：難波 ➞ 關西機場",
+          activity: "交通：[難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA) ➞ 關西機場",
           notes: [
             {
               type: "info",
@@ -491,11 +491,11 @@ export const TRIP_DATA = {
         {
           time: "21:00 左右",
           activity:
-            "抵達 [關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 Aeroplaza",
+            "抵達 [關西機場站](https://maps.app.goo.gl/8zbuZeHNSWzNMvFZ6)，前往 [Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88)",
           notes: [
             {
               type: "info",
-              text: "關西機場站與 Aeroplaza 為相連動線，準備前往 2F NODOKA",
+              text: "關西機場站與 [Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 為相連動線，準備前往 2F NODOKA",
             },
           ],
           todo: null,
@@ -507,7 +507,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "tip",
-              text: "關鍵行動：抵達 Aeroplaza 2F 的 NODOKA，優先排隊洗澡並休息",
+              text: "關鍵行動：抵達 [Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 2F 的 NODOKA，優先排隊洗澡並休息",
             },
             { type: "warn", text: "24 小時營業，使用 ICOCA 或卡片付費" },
           ],
@@ -622,17 +622,17 @@ export const TRIP_DATA = {
       events: [
         {
           time: "04:15–04:30",
-          activity: "收拾、離開 NODOKA",
+          activity: "收拾、離開 [NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7)",
           notes: [],
           todo: "早餐：可在便利商店或 NODOKA 隨手帶解決",
         },
         {
           time: "04:30–04:57",
-          activity: "Aeroplaza 1F 搭免費接駁車前往第二航廈 T2",
+          activity: "[Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 1F 搭免費接駁車前往第二航廈 [T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9)",
           notes: [
             {
               type: "info",
-              text: "免費接駁車車程約 7 分鐘；出關西機場站驗票口右轉，穿過 Aeroplaza 下至 1F 前方",
+              text: "免費接駁車車程約 7 分鐘；出關西機場站驗票口右轉，穿過 [Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 下至 1F 前方",
             },
             {
               type: "info",
@@ -657,7 +657,7 @@ export const TRIP_DATA = {
         },
         {
           time: "05:00–07:00",
-          activity: "第二航廈 T2 辦理 Peach 報到／託運行李／安檢前準備",
+          activity: "第二航廈 [T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9) 辦理 Peach 報到／託運行李／安檢前準備",
           notes: [
             {
               type: "warn",
