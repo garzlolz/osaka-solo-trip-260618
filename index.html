@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2026 大阪獨旅 06/18 ~ 06/21</title>
 
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#F4874B" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          const base = window.location.pathname.endsWith('/') 
+            ? window.location.pathname 
+            : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
+          navigator.serviceWorker.register(`${base}sw.js`)
+            .then(reg => console.log('SW registered!', reg))
+            .catch(err => console.log('SW registration failed!', err));
+        });
+      }
+    </script>
+
+    <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -62,6 +79,42 @@
         color: #2C3E6B;
         min-height: 100vh;
         overflow-x: hidden;
+      }
+
+      /* 夜間模式全域樣式 */
+      .dark body {
+        background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 60%, #311042 100%) !important;
+        color: #f1f5f9 !important;
+      }
+      .dark ::-webkit-scrollbar-track { background: #1e293b; }
+      .dark ::-webkit-scrollbar-thumb { background: #475569; }
+      .dark ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+      /* Modal 動畫過渡 */
+      .modal-enter-active, .modal-leave-active {
+        transition: opacity 0.3s ease;
+      }
+      .modal-enter-active .modal-content, .modal-leave-active .modal-content {
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+      }
+      .modal-enter-from, .modal-leave-to {
+        opacity: 0;
+      }
+      .modal-enter-from .modal-content, .modal-leave-to .modal-content {
+        transform: translateY(40px) scale(0.95);
+        opacity: 0;
+      }
+
+      /* 地圖展開/收合動畫 */
+      .map-fade-enter-active, .map-fade-leave-active {
+        transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        max-height: 350px;
+        opacity: 1;
+        overflow: hidden;
+      }
+      .map-fade-enter-from, .map-fade-leave-to {
+        max-height: 0;
+        opacity: 0;
       }
 
       .animate-fade-in {

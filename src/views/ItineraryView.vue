@@ -31,6 +31,7 @@ const renderMarkdownLinks = (text) => {
     <div class="flex justify-center overflow-x-auto scrollbar-hide pb-3 mb-6">
       <div class="flex gap-2 w-max">
         <button
+          day="day"
           v-for="day in days"
           :key="day.day"
           @click="activeDay = day.day; isRouteModalOpen = false"
@@ -38,7 +39,7 @@ const renderMarkdownLinks = (text) => {
             'flex-shrink-0 flex flex-col items-center px-5 py-3 rounded-2xl border-2 text-sm font-bold transition-all',
             activeDay === day.day
               ? 'bg-osk-orange text-white border-osk-darkOrange shadow-card scale-105'
-              : 'bg-white/70 text-osk-navy/60 border-white hover:bg-white hover:text-osk-navy hover:-translate-y-0.5 hover:shadow-card-hover'
+              : 'bg-white/70 dark:bg-slate-800/70 text-osk-navy/60 dark:text-slate-300 border-white dark:border-slate-800 hover:bg-white dark:hover:bg-slate-700 hover:text-osk-navy dark:hover:text-slate-100 hover:-translate-y-0.5 hover:shadow-card-hover'
           ]"
         >
           <span class="text-[10px] uppercase opacity-70 tracking-wide">Day {{ day.day }}</span>
@@ -49,8 +50,8 @@ const renderMarkdownLinks = (text) => {
 
     <!-- 當日主題 -->
     <div class="text-center mb-6">
-      <div class="inline-flex items-center gap-3 bg-white/80 px-6 py-3 rounded-full border-2 border-white shadow-card">
-        <h2 class="text-xl font-black text-osk-navy">{{ currentDay.date }}</h2>
+      <div class="inline-flex items-center gap-3 bg-white/80 dark:bg-slate-900/80 px-6 py-3 rounded-full border-2 border-white dark:border-slate-800 shadow-card">
+        <h2 class="text-xl font-black text-osk-navy dark:text-slate-100">{{ currentDay.date }}</h2>
         <span class="text-sm font-bold text-osk-orange bg-osk-orange/10 px-3 py-1 rounded-full border border-osk-orange/20">
           {{ currentDay.theme }}
         </span>
@@ -85,30 +86,30 @@ const renderMarkdownLinks = (text) => {
         <div v-for="(section, si) in currentDay.subsections" :key="si" class="mb-6 ml-14">
 
           <!-- 圖片型 -->
-          <div v-if="section.type === 'images'" class="bg-white rounded-2xl border-2 border-white shadow-card p-5">
-            <h3 class="text-sm font-black text-osk-navy mb-3">{{ section.title }}</h3>
+          <div v-if="section.type === 'images'" class="bg-white dark:bg-slate-900 rounded-2xl border-2 border-white dark:border-slate-800 shadow-card p-5">
+            <h3 class="text-sm font-black text-osk-navy dark:text-slate-100 mb-3">{{ section.title }}</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div v-for="img in section.images" :key="img.src" class="rounded-xl overflow-hidden border border-gray-100">
+              <div v-for="img in section.images" :key="img.src" class="rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800">
                 <img
                   :src="img.src"
                   :alt="img.alt"
-                  class="w-full object-contain max-h-64 bg-gray-50"
+                  class="w-full object-contain max-h-64 bg-gray-50 dark:bg-slate-950"
                   loading="lazy"
                 />
-                <p class="text-[11px] text-osk-navy/50 px-3 py-2 leading-snug">{{ img.alt }}</p>
+                <p class="text-[11px] text-osk-navy/50 dark:text-slate-400 px-3 py-2 leading-snug">{{ img.alt }}</p>
               </div>
             </div>
           </div>
 
           <!-- 風險型 -->
-          <div v-else-if="section.type === 'risks'" class="bg-amber-50 rounded-2xl border-2 border-amber-200 p-5">
-            <h3 class="text-sm font-black text-amber-800 mb-3">{{ section.title }}</h3>
+          <div v-else-if="section.type === 'risks'" class="bg-amber-50 dark:bg-amber-950/20 rounded-2xl border-2 border-amber-200 dark:border-amber-900/40 p-5">
+            <h3 class="text-sm font-black text-amber-800 dark:text-amber-400 mb-3">{{ section.title }}</h3>
             <div class="space-y-3">
               <div v-for="(item, ri) in section.items" :key="ri" class="flex gap-3">
                 <span class="flex-shrink-0 w-5 h-5 mt-0.5 bg-osk-orange text-white text-xs font-black rounded-full flex items-center justify-center">{{ ri + 1 }}</span>
                 <div>
-                  <p class="text-sm font-bold text-amber-900">{{ item.title }}</p>
-                  <p class="text-xs text-amber-700 mt-0.5 leading-relaxed whitespace-pre-line" v-html="renderMarkdownLinks(item.detail)"></p>
+                  <p class="text-sm font-bold text-amber-900 dark:text-amber-300">{{ item.title }}</p>
+                  <p class="text-xs text-amber-700 dark:text-amber-400/90 mt-0.5 leading-relaxed whitespace-pre-line" v-html="renderMarkdownLinks(item.detail)"></p>
                 </div>
               </div>
             </div>
@@ -138,42 +139,44 @@ const renderMarkdownLinks = (text) => {
     </div>
 
     <!-- 交通與路線資訊彈窗 (Modal) -->
-    <div
-      v-if="isRouteModalOpen && currentDay.routes && currentDay.routes.length"
-      class="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fade-in"
-    >
-      <!-- 遮罩 -->
+    <Transition name="modal">
       <div
-        @click="isRouteModalOpen = false"
-        class="absolute inset-0 bg-osk-navy/40 backdrop-blur-sm"
-      ></div>
-
-      <!-- 內容卡片 -->
-      <div
-        class="relative bg-white/95 backdrop-blur-md rounded-3xl border-4 border-white shadow-2xl max-w-xl w-full max-h-[80vh] overflow-y-auto p-6 z-10"
+        v-if="isRouteModalOpen && currentDay.routes && currentDay.routes.length"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4"
       >
-        <button
+        <!-- 遮罩 -->
+        <div
           @click="isRouteModalOpen = false"
-          class="absolute top-4 right-4 text-sm font-black text-osk-navy/60 hover:text-osk-navy hover:scale-110 transition-transform"
-        >
-          <span class="material-icons text-xl leading-none">close</span>
-        </button>
-        
-        <div class="mb-4 pr-8">
-          <h3 class="text-base font-black text-osk-navy flex items-center gap-2">
-            <span class="material-icons text-base leading-none">directions_transit</span>
-            <span>Day {{ currentDay.day }} 交通與路線資訊</span>
-          </h3>
-        </div>
+          class="absolute inset-0 bg-osk-navy/40 backdrop-blur-sm"
+        ></div>
 
-        <div class="space-y-4">
-          <RouteTable
-            v-for="(route, ri) in currentDay.routes"
-            :key="ri"
-            :route="route"
-          />
+        <!-- 內容卡片 -->
+        <div
+          class="relative bg-white/95 dark:bg-slate-900/95 backdrop-blur-md rounded-3xl border-4 border-white dark:border-slate-800 shadow-2xl max-w-xl w-full max-h-[80vh] overflow-y-auto p-6 z-10 modal-content"
+        >
+          <button
+            @click="isRouteModalOpen = false"
+            class="absolute top-4 right-4 text-sm font-black text-osk-navy/60 dark:text-slate-400 hover:text-osk-navy dark:hover:text-slate-100 hover:scale-110 transition-transform"
+          >
+            <span class="material-icons text-xl leading-none">close</span>
+          </button>
+          
+          <div class="mb-4 pr-8">
+            <h3 class="text-base font-black text-osk-navy dark:text-slate-100 flex items-center gap-2">
+              <span class="material-icons text-base leading-none">directions_transit</span>
+              <span>Day {{ currentDay.day }} 交通與路線資訊</span>
+            </h3>
+          </div>
+
+          <div class="space-y-4">
+            <RouteTable
+              v-for="(route, ri) in currentDay.routes"
+              :key="ri"
+              :route="route"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>

@@ -7,10 +7,10 @@ const props = defineProps({
 });
 
 const NOTE_STYLE = {
-  warn: { bg: "bg-amber-50",   border: "border-amber-200",   text: "text-amber-800",   icon: "warning" },
-  ok:   { bg: "bg-gray-50",    border: "border-gray-200",    text: "text-gray-600",    icon: "cancel" },
-  tip:  { bg: "bg-green-50",   border: "border-green-200",   text: "text-green-700",   icon: "check_circle" },
-  info: { bg: "bg-blue-50/60", border: "border-blue-100",    text: "text-blue-700",    icon: "info" },
+  warn: { bg: "bg-amber-50 dark:bg-amber-950/30",   border: "border-amber-200 dark:border-amber-900/50",   text: "text-amber-800 dark:text-amber-300",   icon: "warning" },
+  ok:   { bg: "bg-gray-50 dark:bg-slate-800/50",    border: "border-gray-200 dark:border-slate-700/50",    text: "text-gray-600 dark:text-slate-400",    icon: "cancel" },
+  tip:  { bg: "bg-green-50 dark:bg-emerald-950/30",   border: "border-green-200 dark:border-emerald-900/50",   text: "text-green-700 dark:text-emerald-300",   icon: "check_circle" },
+  info: { bg: "bg-blue-50/60 dark:bg-blue-950/30", border: "border-blue-100 dark:border-blue-900/50",    text: "text-blue-700 dark:text-blue-300",    icon: "info" },
 };
 
 const renderMarkdownLinks = (text) => {
@@ -24,6 +24,7 @@ const renderMarkdownLinks = (text) => {
 const noteStyle = (type) => NOTE_STYLE[type] || NOTE_STYLE.info;
 const isMapVisible = ref(false);
 const activeMapIdx = ref(0);
+const isMapLoading = ref(true);
 
 // 從文字中解析提取地圖連結
 const maps = computed(() => {
@@ -89,9 +90,14 @@ const toggleMap = (idx) => {
   if (isMapVisible.value && activeMapIdx.value === idx) {
     isMapVisible.value = false;
   } else {
+    isMapLoading.value = true;
     activeMapIdx.value = idx;
     isMapVisible.value = true;
   }
+};
+
+const handleMapLoaded = () => {
+  isMapLoading.value = false;
 };
 
 const currentMap = computed(() => maps.value[activeMapIdx.value] || null);
@@ -112,17 +118,17 @@ const mapEmbedUrl = computed(() => {
 
     <!-- 卡片 -->
     <div class="flex-1 mb-4">
-      <div class="bg-white rounded-2xl border-2 border-white shadow-card hover:border-osk-orange/20 hover:shadow-card-hover transition-all p-4">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border-2 border-white dark:border-slate-800 shadow-card hover:border-osk-orange/20 dark:hover:border-osk-orange/40 hover:shadow-card-hover transition-all p-4">
 
         <!-- 時間標籤 -->
         <div class="mb-2">
-          <span class="text-xs font-black text-osk-orange bg-osk-orange/10 border border-osk-orange/20 px-2.5 py-0.5 rounded-full">
+          <span class="text-xs font-black text-osk-orange bg-osk-orange/10 dark:bg-osk-orange/20 border border-osk-orange/20 px-2.5 py-0.5 rounded-full">
             {{ event.time }}
           </span>
         </div>
 
         <!-- 活動名稱 -->
-        <p class="font-bold text-osk-navy text-sm sm:text-base leading-snug mb-2" v-html="renderMarkdownLinks(event.activity)"></p>
+        <p class="font-bold text-osk-navy dark:text-slate-100 text-sm sm:text-base leading-snug mb-2" v-html="renderMarkdownLinks(event.activity)"></p>
 
         <!-- 備註 -->
         <div v-if="event.notes && event.notes.length" class="space-y-1.5 mb-2">
@@ -137,11 +143,11 @@ const mapEmbedUrl = computed(() => {
         </div>
 
         <!-- 待辦 -->
-        <div v-if="event.todo" class="mt-2 pt-2 border-t border-dashed border-osk-amber/40">
+        <div v-if="event.todo" class="mt-2 pt-2 border-t border-dashed border-osk-amber/40 dark:border-slate-800">
           <p
             v-for="(line, i) in event.todo.split('\\n')"
             :key="i"
-            class="text-xs font-semibold text-osk-darkOrange flex items-start gap-1"
+            class="text-xs font-semibold text-osk-darkOrange dark:text-amber-500 flex items-start gap-1"
           >
             <span class="material-icons shrink-0 text-sm leading-none">push_pin</span>
             <span v-html="renderMarkdownLinks(line)"></span>
@@ -161,28 +167,41 @@ const mapEmbedUrl = computed(() => {
         </div>
 
         <!-- 地圖 iframe -->
-        <div v-show="isMapVisible" class="mt-3 rounded-xl overflow-hidden border-2 border-osk-teal/20">
-          <iframe
-            v-if="isMapVisible"
-            :src="mapEmbedUrl"
-            width="100%"
-            height="240"
-            frameborder="0"
-            scrolling="no"
-            loading="lazy"
-            class="w-full block"
-            :title="currentMap ? currentMap.name : ''"
-          ></iframe>
-          <div class="bg-osk-sand py-2 px-3 text-xs flex justify-end border-t border-osk-teal/10">
-            <a
-              v-if="currentMap"
-              :href="currentMap.link"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-osk-teal font-bold hover:text-osk-navy transition-colors"
-            >開啟 {{ currentMap.name }} Google Maps →</a>
+        <Transition name="map-fade">
+          <div v-show="isMapVisible" class="mt-3 rounded-xl overflow-hidden border-2 border-osk-teal/20 relative bg-gray-50 dark:bg-slate-950">
+            <!-- Map Skeleton Loader -->
+            <div
+              v-if="isMapLoading"
+              class="absolute inset-0 bg-slate-100 dark:bg-slate-800 flex flex-col items-center justify-center gap-2 animate-pulse z-20"
+              style="height: 240px;"
+            >
+              <span class="material-icons text-osk-teal text-3xl animate-bounce">map</span>
+              <span class="text-xs font-bold text-osk-navy/40 dark:text-slate-400">載入 Google 地圖中...</span>
+            </div>
+
+            <iframe
+              v-show="isMapVisible"
+              :src="mapEmbedUrl"
+              width="100%"
+              height="240"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy"
+              class="w-full block relative z-10"
+              :title="currentMap ? currentMap.name : ''"
+              @load="handleMapLoaded"
+            ></iframe>
+            <div class="bg-osk-sand dark:bg-slate-900 py-2 px-3 text-xs flex justify-end border-t border-osk-teal/10 dark:border-slate-800 relative z-10">
+              <a
+                v-if="currentMap"
+                :href="currentMap.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-osk-teal font-bold hover:text-osk-navy dark:hover:text-slate-100 transition-colors"
+              >開啟 {{ currentMap.name }} Google Maps →</a>
+            </div>
           </div>
-        </div>
+        </Transition>
 
         <!-- 地圖按鈕群 (標籤) -->
         <div v-if="maps.length" class="mt-3 flex flex-wrap gap-1.5 justify-end">
@@ -194,7 +213,7 @@ const mapEmbedUrl = computed(() => {
               'flex items-center gap-1 text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full border-2 transition-all',
               isMapVisible && activeMapIdx === idx
                 ? 'bg-osk-teal text-white border-osk-teal shadow-sm scale-102'
-                : 'bg-white text-osk-teal border-osk-teal/30 hover:border-osk-teal hover:bg-osk-teal/5'
+                : 'bg-white dark:bg-slate-800 text-osk-teal border-osk-teal/30 dark:border-osk-teal/50 hover:border-osk-teal hover:bg-osk-teal/5 dark:hover:bg-osk-teal/10'
             ]"
           >
             <span class="material-icons text-sm leading-none">map</span>
