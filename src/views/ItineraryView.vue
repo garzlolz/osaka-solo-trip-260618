@@ -14,6 +14,14 @@ const isRouteModalOpen = ref(false);
 const currentDay = computed(() => {
   return props.days.find((d) => d.day === activeDay.value) || props.days[0];
 });
+
+const renderMarkdownLinks = (text) => {
+  if (!text) return "";
+  return text.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s\)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-osk-teal hover:underline font-bold">$1</a>'
+  );
+};
 </script>
 
 <template>
@@ -100,7 +108,7 @@ const currentDay = computed(() => {
                 <span class="flex-shrink-0 w-5 h-5 mt-0.5 bg-osk-orange text-white text-xs font-black rounded-full flex items-center justify-center">{{ ri + 1 }}</span>
                 <div>
                   <p class="text-sm font-bold text-amber-900">{{ item.title }}</p>
-                  <p class="text-xs text-amber-700 mt-0.5 leading-relaxed">{{ item.detail }}</p>
+                  <p class="text-xs text-amber-700 mt-0.5 leading-relaxed whitespace-pre-line" v-html="renderMarkdownLinks(item.detail)"></p>
                 </div>
               </div>
             </div>

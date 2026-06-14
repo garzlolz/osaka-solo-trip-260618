@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-04 22:05",
+    updatedAt: "2026-06-14 18:48",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -23,8 +23,8 @@ export const TRIP_DATA = {
     { id: 4, text: "辦理 e-SIM", done: false },
     { id: 5, text: "購買清水寺電子票", done: false },
     { id: 6, text: "購買大阪城電子票", done: false },
-    { id: 7, text: "確認 INNN 接駁車訂單（2026-1588178）", done: false },
-    { id: 8, text: "確認 Peach MM028 電子登機證", done: false },
+    { id: 7, text: "確認 INNN 接駁車訂單（2026-1588***）", done: false },
+    { id: 8, text: "確認 Peach MM028 & MM023 電子登機證", done: false },
     { id: 9, text: "換日幣 / 確認海外刷卡手續費", done: false },
     { id: 10, text: "下載 Google Maps 大阪離線地圖", done: false },
     { id: 11, text: "下載 Google 翻譯日文離線包", done: false },
@@ -42,7 +42,7 @@ export const TRIP_DATA = {
           time: "18:15",
           activity:
             "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
-          notes: [],
+          notes: [{ type: "info", text: "航班：MM028 (樂桃) T1 | 預訂編號：KTK***" }],
           todo: null,
         },
         {
@@ -59,7 +59,7 @@ export const TRIP_DATA = {
         },
         {
           time: "22:30 左右",
-          activity: "INNN 接駁專車（訂單 2026-1588178）→ 前往市區",
+          activity: "INNN 接駁專車（訂單 2026-1588***）→ 前往市區",
           notes: [
             {
               type: "info",
@@ -68,6 +68,10 @@ export const TRIP_DATA = {
             {
               type: "warn",
               text: "若錯過會順延至下一班；櫃台營業：07:00–00:10",
+            },
+            {
+              type: "ok",
+              text: "系統單號：P2026031318****** (施*勲 / 1人)",
             },
           ],
           todo: null,
@@ -86,7 +90,10 @@ export const TRIP_DATA = {
           time: "23:30 左右",
           activity:
             "抵達 [東橫INN大阪日本橋文樂劇場前](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8) 辦理入住",
-          notes: [{ type: "info", text: "視出關與等車時間而定" }],
+          notes: [
+            { type: "info", text: "視出關與等車時間而定" },
+            { type: "ok", text: "預訂確認碼：5581.***.*** (PIN: ****)" }
+          ],
           todo: null,
         },
         {
@@ -97,6 +104,83 @@ export const TRIP_DATA = {
         },
       ],
       subsections: [
+        {
+          type: "risks",
+          title: "🏨 住宿確認資訊（已去識別化）",
+          items: [
+            {
+              title: "飯店與聯絡資訊",
+              detail:
+                "東橫INN 大阪日本橋文樂劇場前 (東横INN大阪日本橋文楽劇場前)\n地址：[Chuo-ku Nipponbashi 1-13-2, Chuo Ward, Osaka, 542-0073, 日本](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8)\n電話：+81 6 7668 4045",
+            },
+            {
+              title: "入住與退房時間",
+              detail:
+                "入住：6/18（四）15:00 起\n退房：6/20（六）10:00 前（共 2 晚）\n⚠️ 特殊要求：已向飯店告知預計於 23:00~00:00 (深夜 0 點) 之間辦理入住",
+            },
+            {
+              title: "房型與費用",
+              detail:
+                "雙人房－禁菸 (1 間客房，房價包含早餐)\n現場付款金額：JPY 15,978 (約 TWD 3,153，不含城市稅)",
+            },
+            {
+              title: "預訂與個人資訊 (去識別化)",
+              detail:
+                "預訂確認碼：5581.***.*** / PIN 碼：****\n住客姓名：S*** H*** H*** / 電子信箱：o***@gmail.com",
+            },
+          ],
+        },
+        {
+          type: "risks",
+          title: "✈️ 機票確認資訊（已去識別化）",
+          items: [
+            {
+              title: "航空公司與預訂編號",
+              detail: "樂桃航空 (Peach)\n預訂編號：KTK***",
+            },
+            {
+              title: "航班細節",
+              detail:
+                "去程 (MM028)：6/18（四）18:15 台北桃園 (T1) ➔ 22:00 大阪關西 (T2)\n回程 (MM023)：6/21（日）07:50 大阪關西 (T2) ➔ 09:55 台北桃園 (T1)",
+            },
+            {
+              title: "旅客與行李 (去識別化)",
+              detail:
+                "乘客人數：2 人訂單，但**僅限 S*** H******* 獨自出發** (另一旅客 H*** Y******* 未同行)\n託運行李：1 件 (S*** H******* 加購 1 件)",
+            },
+            {
+              title: "聯絡人資訊 (去識別化)",
+              detail:
+                "聯絡人：H*** Y******* / 信箱：i***@gmail.com / 電話：0928***397",
+            },
+          ],
+        },
+        {
+          type: "risks",
+          title: "🚗 接機服務確認資訊（已去識別化）",
+          items: [
+            {
+              title: "服務項目",
+              detail:
+                "日本-INNN機場交通 | 關西機場往返大阪市區 (單程接機)",
+            },
+            {
+              title: "訂單編號",
+              detail:
+                "訂單編號：2026-1588***\n系統單號：P2026031318******",
+            },
+            {
+              title: "乘客與航班資訊 (去識別化)",
+              detail:
+                "乘客：施*勲 (1人)\n對應航班：6/18（四）22:00 抵達之 MM028 班機",
+            },
+            {
+              title: "乘車指引與行李限制",
+              detail:
+                "1. 出關後前往 **T2 國際線到達口左側黃色沙發區** 的 INNN 櫃台核對資訊。\n2. 出示訂購憑證之 QR Code 進行核銷乘車。\n3. 行李限制：免費攜帶 1 件 32 吋行李箱 (三邊和 < 170cm) 與 1 件 20 吋登機箱 (三邊和 < 115cm)。\n4. 下車地點：東橫INN大阪日本橋文樂劇場前",
+            },
+          ],
+        },
         {
           type: "risks",
           title: "INNN 接駁風險與應對",
@@ -187,11 +271,15 @@ export const TRIP_DATA = {
         {
           time: "13:40",
           activity:
-            "祇園散步吃東西：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6?q=35.0036644,135.7762665) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8?q=35.003997,135.772745) ➞ [京都漢堡排 Conel](https://maps.app.goo.gl/227vkH3jeeyYBCiL8?q=35.0042233,135.7706292)",
+            "祇園散步吃東西：[GION GOZU 四条店](https://maps.app.goo.gl/ZwnESJTGKBdykDGY6?q=35.0036644,135.7762665) ➞ [鳴門鯛燒本舖](https://maps.app.goo.gl/wLq1fBpu3CZv3WiE8?q=35.003997,135.772745) ➞ [京都漢堡排 Conel（已更名：京都ハンバーグ食堂 コネル）](https://maps.app.goo.gl/227vkH3jeeyYBCiL8?q=35.0042233,135.7706292)",
           notes: [
             {
               type: "info",
               text: "從八坂神社往西（往鴨川/車站方向）沿著四條通走，順路吃回車站：布丁 ➞ 鯛魚燒 ➞ 漢堡排，完全不走回頭路",
+            },
+            {
+              type: "info",
+              text: "京都漢堡排 Conel 已於 2026 年 2 月更名為「京都ハンバーグ食堂 コネル」並重新裝修開幕，主打 100% 牛肉漢堡排",
             },
           ],
           todo: "點心：布丁、鯛魚燒\n下午餐：漢堡排",
@@ -636,7 +724,7 @@ export const TRIP_DATA = {
             },
             {
               type: "info",
-              text: "4 時班次：04:00 / 04:50（搭 04:50 班，約 04:57 抵達 T2）",
+              text: "接駁巴士為 24 小時免費運行，清晨班次約 10–20 分鐘一班（原規畫 04:50 班次，約 04:57 抵達 T2，時間非常充裕安全）",
             },
           ],
           todo: null,
@@ -675,6 +763,10 @@ export const TRIP_DATA = {
               type: "tip",
               text: "約 05:00 抵達排隊，預留充足的託運與安檢時間",
             },
+            {
+              type: "ok",
+              text: "航班：MM023 (樂桃) T2 | 預訂編號：KTK*** | 託運行李：1 件",
+            },
           ],
           todo: "07:00 前完成報到手續",
           images: [
@@ -687,7 +779,7 @@ export const TRIP_DATA = {
         {
           time: "07:50",
           activity: "起飛",
-          notes: [],
+          notes: [{ type: "info", text: "抵達台北桃園 T1 (09:55)" }],
           todo: null,
         },
       ],
