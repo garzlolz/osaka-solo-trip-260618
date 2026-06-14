@@ -1,5 +1,5 @@
 <script setup>
-import { CalendarIcon, CheckSquareIcon, StarIcon } from "./Icons.js";
+import { CalendarIcon, CheckSquareIcon, StarIcon, BriefcaseIcon } from "./Icons.js";
 
 defineProps({
   activeTab: { type: String, required: true },
@@ -10,6 +10,7 @@ defineEmits(["tab-change"]);
 const tabs = [
   { id: "itinerary",  label: "行程",    icon: CalendarIcon    },
   { id: "checklist",  label: "準備清單", icon: CheckSquareIcon },
+  { id: "packing",    label: "攜帶物品", icon: BriefcaseIcon   },
   { id: "actions",    label: "必要行動", icon: StarIcon        },
 ];
 </script>

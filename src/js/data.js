@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-14 18:48",
+    updatedAt: "2026-06-14 19:08",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -797,4 +797,19 @@ export const TRIP_DATA = {
 
   bottleneck:
     "唯一真正的 bottleneck 是「機場淋浴資源競爭」，其次才是「觀景台黃金時段流量控制」。",
+
+  packing: [
+    { id: 101, category: "🛂 證件與貴重物品", text: "護照正本（確認效期）", done: false },
+    { id: 102, category: "🛂 證件與貴重物品", text: "日幣現金 & 海外刷卡信用卡", done: false },
+    { id: 103, category: "🛂 證件與貴重物品", text: "機票、飯店與接送確認單（紙本或存手機）", done: false },
+    { id: 104, category: "🔋 3C 與隨身電器", text: "手機與充電線", done: false },
+    { id: 105, category: "🔋 3C 與隨身電器", text: "行動電源 (必須隨身登機)", done: false },
+    { id: 106, category: "🔋 3C 與隨身電器", text: "e-SIM QR Code 或安裝說明", done: false },
+    { id: 107, category: "👕 衣物盥洗與生活", text: "換洗衣物 (短袖、內著、襪子等)", done: false },
+    { id: 108, category: "👕 衣物盥洗與生活", text: "折疊雨傘 (6月梅雨季必備)", done: false },
+    { id: 109, category: "👕 衣物盥洗與生活", text: "個人盥洗用品與小保養品", done: false },
+    { id: 110, category: "💊 常用藥品與雜物", text: "常備藥品 (感冒、止痛、腸胃藥、防蚊液)", done: false },
+    { id: 111, category: "💊 常用藥品與雜物", text: "環保袋 / 塑膠袋 (裝戰利品與髒衣物)", done: false },
+    { id: 112, category: "💊 常用藥品與雜物", text: "面紙 / 濕紙巾", done: false },
+  ],
 };

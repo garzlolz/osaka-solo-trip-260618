@@ -7,6 +7,7 @@ import Tabs from "./components/Tabs.vue";
 import ChecklistView from "./views/ChecklistView.vue";
 import ItineraryView from "./views/ItineraryView.vue";
 import ActionsView from "./views/ActionsView.vue";
+import PackingView from "./views/PackingView.vue";
 
 const activeTab = ref("itinerary");
 
@@ -117,6 +118,7 @@ onUnmounted(() => clearInterval(timer));
       <div class="animate-fade-in" :key="activeTab">
         <ItineraryView  v-if="activeTab === 'itinerary'"  :days="TRIP_DATA.itinerary" :bottleneck="TRIP_DATA.bottleneck" />
         <ChecklistView  v-if="activeTab === 'checklist'"  :items="TRIP_DATA.checklist" />
+        <PackingView    v-if="activeTab === 'packing'"    :items="TRIP_DATA.packing" />
         <ActionsView    v-if="activeTab === 'actions'"    :actions="TRIP_DATA.requiredActions" />
       </div>
     </div>
