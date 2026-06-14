@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-14 19:52",
+    updatedAt: "2026-06-14 19:56",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -21,7 +21,7 @@ export const TRIP_DATA = {
       url: "https://www.boca.gov.tw/sp-abre-main-1.html",
     },
     { id: 4, text: "辦理 e-SIM", done: true },
-    { id: 5, text: "購買清水寺電子票", done: false },
+    { id: 5, text: "準備清水寺門票現金 (500日圓)", done: false },
     { id: 6, text: "購買大阪城電子票", done: false },
     { id: 7, text: "確認 INNN 接駁車訂單（2026-1588***）", done: true },
     { id: 8, text: "確認 Peach MM028 & MM023 電子登機證", done: true },

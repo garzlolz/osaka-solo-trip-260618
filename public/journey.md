@@ -1,6 +1,6 @@
 # 2026 大阪獨旅 06/18 ~ 06/21
 
-> 更新日期: 2026-06-14 19:52
+> 更新日期: 2026-06-14 19:56
 
 ---
 
@@ -10,7 +10,8 @@
 - [x] [Visit Japan Web](https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/)
 - [x] [出國登錄](https://www.boca.gov.tw/sp-abre-main-1.html)
 - [x] 辦理 e-SIM
-- [ ] 購買清水寺電子票
+- [ ] 準備清水寺門票現金 (500日圓)
+
 - [ ] 購買大阪城電子票
 - [x] 確認 INNN 接駁車訂單（2026-1588***）
 - [x] 確認 Peach MM028 電子登機證
