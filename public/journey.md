@@ -1,23 +1,24 @@
 # 2026 大阪獨旅 06/18 ~ 06/21
 
-> 更新日期: 2026-06-14 19:26
+> 更新日期: 2026-06-14 19:52
 
 ---
 
 ## 出發前待辦清單
 
 - [ ] 手機辦好 ICOCA 卡
-- [ ] [Visit Japan Web](https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/)
-- [ ] [出國登錄](https://www.boca.gov.tw/sp-abre-main-1.html)
-- [ ] 辦理 e-SIM
+- [x] [Visit Japan Web](https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/)
+- [x] [出國登錄](https://www.boca.gov.tw/sp-abre-main-1.html)
+- [x] 辦理 e-SIM
 - [ ] 購買清水寺電子票
 - [ ] 購買大阪城電子票
-- [ ] 確認 INNN 接駁車訂單（2026-1588***）
-- [ ] 確認 Peach MM028 電子登機證
-- [ ] 換日幣 / 確認海外刷卡手續費
-- [ ] 下載 Google Maps 大阪離線地圖
-- [ ] 下載 Google 翻譯日文離線包
-- [ ] 下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）
+- [x] 確認 INNN 接駁車訂單（2026-1588***）
+- [x] 確認 Peach MM028 電子登機證
+- [x] 換日幣 / 確認海外刷卡手續費
+- [x] 下載 Google Maps 大阪離線地圖
+- [x] 下載 Google 翻譯日文離線包
+- [x] 下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）
+
 
 ## Day 1：6/18（四）—— 深夜抵達
 

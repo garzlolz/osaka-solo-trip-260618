@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-14 19:26",
+    updatedAt: "2026-06-14 19:52",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -11,24 +11,24 @@ export const TRIP_DATA = {
     {
       id: 2,
       text: "Visit Japan Web 登錄",
-      done: false,
+      done: true,
       url: "https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/",
     },
     {
       id: 3,
       text: "出國登錄（外交部）",
-      done: false,
+      done: true,
       url: "https://www.boca.gov.tw/sp-abre-main-1.html",
     },
-    { id: 4, text: "辦理 e-SIM", done: false },
+    { id: 4, text: "辦理 e-SIM", done: true },
     { id: 5, text: "購買清水寺電子票", done: false },
     { id: 6, text: "購買大阪城電子票", done: false },
-    { id: 7, text: "確認 INNN 接駁車訂單（2026-1588***）", done: false },
-    { id: 8, text: "確認 Peach MM028 & MM023 電子登機證", done: false },
-    { id: 9, text: "換日幣 / 確認海外刷卡手續費", done: false },
-    { id: 10, text: "下載 Google Maps 大阪離線地圖", done: false },
-    { id: 11, text: "下載 Google 翻譯日文離線包", done: false },
-    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）", done: false },
+    { id: 7, text: "確認 INNN 接駁車訂單（2026-1588***）", done: true },
+    { id: 8, text: "確認 Peach MM028 & MM023 電子登機證", done: true },
+    { id: 9, text: "換日幣 / 確認海外刷卡手續費", done: true },
+    { id: 10, text: "下載 Google Maps 大阪離線地圖", done: true },
+    { id: 11, text: "下載 Google 翻譯日文離線包", done: true },
+    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）", done: true },
   ],
 
   itinerary: [
