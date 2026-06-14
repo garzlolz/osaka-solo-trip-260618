@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-14 19:08",
+    updatedAt: "2026-06-14 19:26",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -805,11 +805,13 @@ export const TRIP_DATA = {
     { id: 104, category: "🔋 3C 與隨身電器", text: "手機與充電線", done: false },
     { id: 105, category: "🔋 3C 與隨身電器", text: "行動電源 (必須隨身登機)", done: false },
     { id: 106, category: "🔋 3C 與隨身電器", text: "e-SIM QR Code 或安裝說明", done: false },
-    { id: 107, category: "👕 衣物盥洗與生活", text: "換洗衣物 (短袖、內著、襪子等)", done: false },
+    { id: 107, category: "👕 衣物盥洗與生活", text: "換洗衣物兩天份 (短袖、內著、襪子等)", done: false },
     { id: 108, category: "👕 衣物盥洗與生活", text: "折疊雨傘 (6月梅雨季必備)", done: false },
     { id: 109, category: "👕 衣物盥洗與生活", text: "個人盥洗用品與小保養品", done: false },
-    { id: 110, category: "💊 常用藥品與雜物", text: "常備藥品 (感冒、止痛、腸胃藥、防蚊液)", done: false },
-    { id: 111, category: "💊 常用藥品與雜物", text: "環保袋 / 塑膠袋 (裝戰利品與髒衣物)", done: false },
-    { id: 112, category: "💊 常用藥品與雜物", text: "面紙 / 濕紙巾", done: false },
+    { id: 113, category: "👕 衣物盥洗與生活", text: "電動刮鬍刀", done: false },
+    { id: 114, category: "👕 衣物盥洗與生活", text: "乳液", done: false },
+    { id: 110, category: "💊 常用藥品與雜物", text: "安眠藥", done: false },
+    { id: 112, category: "💊 常用藥品與雜物", text: "衛生紙", done: false },
+    { id: 115, category: "💊 常用藥品與雜物", text: "打火機 (⚠️ 僅限隨身攜帶 1 個)", done: false },
   ],
 };
