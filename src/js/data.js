@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-14 20:02",
+    updatedAt: "2026-06-14 20:13",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -787,8 +787,8 @@ export const TRIP_DATA = {
   ],
 
   requiredActions: [
-    { priority: "強烈建議", action: "清水寺電子票（避免排隊）" },
-    { priority: "強烈建議", action: "大阪城電子票（避免排隊）" },
+    { priority: "強烈建議", action: "準備清水寺門票現金 (500日圓，現場購票)" },
+    { priority: "強烈建議 (已完成)", action: "大阪城電子票 (已透過 Trip.com 購買)" },
     {
       priority: "行為策略（最重要）",
       action: "NODOKA → 一到機場直接去排（這是唯一會真的影響你流程的點）",
