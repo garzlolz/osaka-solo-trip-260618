@@ -1,9 +1,8 @@
-# CLAUDE.md
+# ANTIGRAVITY.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Antigravity when working with code in this repository.
 > [!IMPORTANT]
-> 如果您更新了本文件，請務必同時更新 [ANTIGRAVITY.md](file:///c:/Users/admin/Documents/github/osaka-solo-trip-260618/ANTIGRAVITY.md)。
-
+> 如果您更新了本文件，請務必同時更新 [CLAUDE.md](file:///c:/Users/admin/Documents/github/osaka-solo-trip-260618/CLAUDE.md)。
 
 ## 專案簡介
 
@@ -77,7 +76,7 @@ src/
    - 點擊該按鈕會以毛玻璃背景的 Modal 彈窗呈現該日的路線表（`RouteTable.vue`）。
 
 4. **Bottleneck 提醒**：
-   - 移除原先的 Bottleneck 獨立分頁，將瓶頸提示改為在 Day 4（6/21）的行程時間軸最上方，以紅色警告卡片（Alert Card）形式顯眼呈现。
+   - 移除原先 the Bottleneck 獨立分頁，將瓶頸提示改為在 Day 4（6/21）的行程時間軸最上方，以紅色警告卡片（Alert Card）形式顯眼呈现。
 
 ### data.js 事件欄位
 
