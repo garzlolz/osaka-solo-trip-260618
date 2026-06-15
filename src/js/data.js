@@ -804,7 +804,7 @@ export const TRIP_DATA = {
     },
     {
       priority: "行為策略（最重要）",
-      action: "NODOKA → 一到機場直接去排（這是唯一會真的影響你流程的點）",
+      action: "NODOKA → 一到機場直接去排",
     },
   ],
 
