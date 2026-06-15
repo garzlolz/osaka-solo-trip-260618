@@ -28,7 +28,11 @@ export const TRIP_DATA = {
     { id: 9, text: "換日幣 / 確認海外刷卡手續費", done: true },
     { id: 10, text: "下載 Google Maps 大阪離線地圖", done: true },
     { id: 11, text: "下載 Google 翻譯日文離線包", done: true },
-    { id: 12, text: "下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）", done: true },
+    {
+      id: 12,
+      text: "下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）",
+      done: true,
+    },
   ],
 
   itinerary: [
@@ -42,7 +46,9 @@ export const TRIP_DATA = {
           time: "18:15",
           activity:
             "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
-          notes: [{ type: "info", text: "航班：MM028 (樂桃) T1 | 預訂編號：KTK***" }],
+          notes: [
+            { type: "info", text: "航班：MM028 (樂桃) T1 | 預訂編號：KTK***" },
+          ],
           todo: null,
         },
         {
@@ -92,7 +98,7 @@ export const TRIP_DATA = {
             "抵達 [東橫INN大阪日本橋文樂劇場前](https://maps.app.goo.gl/fTt5JfTcHRqiNL1A8) 辦理入住",
           notes: [
             { type: "info", text: "視出關與等車時間而定" },
-            { type: "ok", text: "預訂確認碼：5581.***.*** (PIN: ****)" }
+            { type: "ok", text: "預訂確認碼：5581.***.*** (PIN: ****)" },
           ],
           todo: null,
         },
@@ -143,16 +149,6 @@ export const TRIP_DATA = {
               detail:
                 "去程 (MM028)：6/18（四）18:15 台北桃園 (T1) ➔ 22:00 大阪關西 (T2)\n回程 (MM023)：6/21（日）07:50 大阪關西 (T2) ➔ 09:55 台北桃園 (T1)",
             },
-            {
-              title: "旅客與行李",
-              detail:
-                "乘客人數：2 人訂單，但**僅限 S*** H******* 獨自出發** (另一旅客 H*** Y******* 未同行)\n託運行微：1 件 (S*** H******* 加購 1 件)",
-            },
-            {
-              title: "聯絡人資訊",
-              detail:
-                "聯絡人：H*** Y******* / 信箱：i***@gmail.com / 電話：0928***397",
-            },
           ],
         },
         {
@@ -161,13 +157,11 @@ export const TRIP_DATA = {
           items: [
             {
               title: "服務項目",
-              detail:
-                "日本-INNN機場交通 | 關西機場往返大阪市區 (單程接機)",
+              detail: "日本-INNN機場交通 | 關西機場往返大阪市區 (單程接機)",
             },
             {
               title: "訂單編號",
-              detail:
-                "訂單編號：2026-1588***\n系統單號：P2026031318******",
+              detail: "訂單編號：2026-1588***\n系統單號：P2026031318******",
             },
             {
               title: "乘客與航班資訊",
@@ -514,7 +508,8 @@ export const TRIP_DATA = {
         },
         {
           time: "15:00–18:00",
-          activity: "[難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA)百貨大採購",
+          activity:
+            "[難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA)百貨大採購",
           notes: [
             {
               type: "info",
@@ -539,7 +534,10 @@ export const TRIP_DATA = {
           time: "19:15–19:30",
           activity: "回飯店取行李",
           notes: [
-            { type: "info", text: "從 [難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA) 步行回飯店提領行李，確保在飯店櫃台要求的時間前領回" },
+            {
+              type: "info",
+              text: "從 [難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA) 步行回飯店提領行李，確保在飯店櫃台要求的時間前領回",
+            },
           ],
           todo: "取回寄放行李",
         },
@@ -556,7 +554,8 @@ export const TRIP_DATA = {
         },
         {
           time: "19:50–20:10",
-          activity: "交通：前往 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)",
+          activity:
+            "交通：前往 [南海難波站](https://maps.app.goo.gl/VDgx7G3ZTtAmHUNN8)",
           notes: [
             {
               type: "info",
@@ -567,7 +566,8 @@ export const TRIP_DATA = {
         },
         {
           time: "20:10",
-          activity: "交通：[難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA) ➞ 關西機場",
+          activity:
+            "交通：[難波](https://maps.app.goo.gl/6BJv4MGhXyZNv2daA) ➞ 關西機場",
           notes: [
             {
               type: "info",
@@ -597,8 +597,14 @@ export const TRIP_DATA = {
               type: "tip",
               text: "關鍵行動：抵達 [Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 2F 的 NODOKA，優先排隊洗澡並休息",
             },
-            { type: "warn", text: "24 小時營業，使用 ICOCA 或卡片付費（淋浴 40 分鐘 1,500 日圓，毛巾另購 ¥440）" },
-            { type: "tip", text: "持有 Priority Pass、LoungeKey 或指定 JCB 金卡以上，可享免費 2-3 小時休息，部分卡片亦能折抵淋浴費" },
+            {
+              type: "warn",
+              text: "24 小時營業，使用 ICOCA 或卡片付費（淋浴 40 分鐘 1,500 日圓，毛巾另購 ¥440）",
+            },
+            {
+              type: "tip",
+              text: "持有 Priority Pass、LoungeKey 或指定 JCB 金卡以上，可享免費 2-3 小時休息，部分卡片亦能折抵淋浴費",
+            },
           ],
           todo: null,
         },
@@ -711,13 +717,15 @@ export const TRIP_DATA = {
       events: [
         {
           time: "04:15–04:30",
-          activity: "收拾、離開 [NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7)",
+          activity:
+            "收拾、離開 [NODOKA](https://maps.app.goo.gl/QWkiNYRwmSsQ7LHn7)",
           notes: [],
           todo: "早餐：可在便利商店或 NODOKA 隨手帶解決",
         },
         {
           time: "04:30–04:57",
-          activity: "[Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 1F 搭免費接駁車前往第二航廈 [T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9)",
+          activity:
+            "[Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 1F 搭免費接駁車前往第二航廈 [T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9)",
           notes: [
             {
               type: "info",
@@ -746,7 +754,8 @@ export const TRIP_DATA = {
         },
         {
           time: "05:00–07:00",
-          activity: "第二航廈 [T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9) 辦理 Peach 報到／託運行李／安檢前準備",
+          activity:
+            "第二航廈 [T2](https://maps.app.goo.gl/5Zq5tejrX3wrYNDW9) 辦理 Peach 報到／託運行李／安檢前準備",
           notes: [
             {
               type: "warn",
@@ -789,7 +798,10 @@ export const TRIP_DATA = {
 
   requiredActions: [
     { priority: "強烈建議", action: "準備清水寺門票現金 (500日圓，現場購票)" },
-    { priority: "強烈建議 (已完成)", action: "大阪城電子票 (已透過 Trip.com 購買)" },
+    {
+      priority: "強烈建議 (已完成)",
+      action: "大阪城電子票 (已透過 Trip.com 購買)",
+    },
     {
       priority: "行為策略（最重要）",
       action: "NODOKA → 一到機場直接去排（這是唯一會真的影響你流程的點）",
@@ -800,19 +812,69 @@ export const TRIP_DATA = {
     "唯一真正的 bottleneck 是「機場淋浴資源競爭」，其次才是「觀景台黃金時段流量控制」。",
 
   packing: [
-    { id: 101, category: "🛂 證件與貴重物品", text: "護照正本（確認效期）", done: false },
-    { id: 102, category: "🛂 證件與貴重物品", text: "日幣現金 & 海外刷卡信用卡", done: false },
-    { id: 103, category: "🛂 證件與貴重物品", text: "機票、飯店與接送確認單（紙本或存手機）", done: false },
-    { id: 104, category: "🔋 3C 與隨身電器", text: "手機與充電線", done: false },
-    { id: 105, category: "🔋 3C 與隨身電器", text: "行動電源 (必須隨身登機)", done: false },
-    { id: 106, category: "🔋 3C 與隨身電器", text: "e-SIM QR Code 或安裝說明", done: false },
-    { id: 107, category: "👕 衣物盥洗與生活", text: "換洗衣物兩天份 (短袖、內著、襪子等)", done: false },
-    { id: 108, category: "👕 衣物盥洗與生活", text: "折疊雨傘 (6月梅雨季必備)", done: false },
-    { id: 109, category: "👕 衣物盥洗與生活", text: "個人盥洗用品與小保養品", done: false },
+    {
+      id: 101,
+      category: "🛂 證件與貴重物品",
+      text: "護照正本（確認效期）",
+      done: false,
+    },
+    {
+      id: 102,
+      category: "🛂 證件與貴重物品",
+      text: "日幣現金 & 海外刷卡信用卡",
+      done: false,
+    },
+    {
+      id: 103,
+      category: "🛂 證件與貴重物品",
+      text: "機票、飯店與接送確認單（紙本或存手機）",
+      done: false,
+    },
+    {
+      id: 104,
+      category: "🔋 3C 與隨身電器",
+      text: "手機與充電線",
+      done: false,
+    },
+    {
+      id: 105,
+      category: "🔋 3C 與隨身電器",
+      text: "行動電源 (必須隨身登機)",
+      done: false,
+    },
+    {
+      id: 106,
+      category: "🔋 3C 與隨身電器",
+      text: "e-SIM QR Code 或安裝說明",
+      done: false,
+    },
+    {
+      id: 107,
+      category: "👕 衣物盥洗與生活",
+      text: "換洗衣物兩天份 (短袖、內著、襪子等)",
+      done: false,
+    },
+    {
+      id: 108,
+      category: "👕 衣物盥洗與生活",
+      text: "折疊雨傘 (6月梅雨季必備)",
+      done: false,
+    },
+    {
+      id: 109,
+      category: "👕 衣物盥洗與生活",
+      text: "個人盥洗用品與小保養品",
+      done: false,
+    },
     { id: 113, category: "👕 衣物盥洗與生活", text: "電動刮鬍刀", done: false },
     { id: 114, category: "👕 衣物盥洗與生活", text: "乳液", done: false },
     { id: 110, category: "💊 常用藥品與雜物", text: "安眠藥", done: false },
     { id: 112, category: "💊 常用藥品與雜物", text: "衛生紙", done: false },
-    { id: 115, category: "💊 常用藥品與雜物", text: "打火機 (⚠️ 僅限隨身攜帶 1 個)", done: false },
+    {
+      id: 115,
+      category: "💊 常用藥品與雜物",
+      text: "打火機 (⚠️ 僅限隨身攜帶 1 個)",
+      done: false,
+    },
   ],
 };
