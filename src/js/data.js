@@ -242,7 +242,7 @@ export const TRIP_DATA = {
               text: "趁人少；選「二年坂往上拍」清水舞台視角最佳",
             },
           ],
-          todo: "可提前購買電子票避免排隊",
+          todo: "現場售票處排隊購買，僅收現金（成人 500 日圓）",
         },
         {
           time: "11:00",
@@ -597,7 +597,8 @@ export const TRIP_DATA = {
               type: "tip",
               text: "關鍵行動：抵達 [Aeroplaza](https://maps.app.goo.gl/ppZCDxsuGTNFmJL88) 2F 的 NODOKA，優先排隊洗澡並休息",
             },
-            { type: "warn", text: "24 小時營業，使用 ICOCA 或卡片付費" },
+            { type: "warn", text: "24 小時營業，使用 ICOCA 或卡片付費（淋浴 40 分鐘 1,500 日圓，毛巾另購 ¥440）" },
+            { type: "tip", text: "持有 Priority Pass、LoungeKey 或指定 JCB 金卡以上，可享免費 2-3 小時休息，部分卡片亦能折抵淋浴費" },
           ],
           todo: null,
         },
