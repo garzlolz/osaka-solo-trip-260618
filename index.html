@@ -2,11 +2,16 @@
 <html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
     <title>2026 大阪獨旅 06/18 ~ 06/21</title>
 
+    <!-- PWA & iOS -->
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#F4874B" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="大阪獨旅" />
+    <meta name="mobile-web-app-capable" content="yes" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -74,11 +79,26 @@
       ::-webkit-scrollbar-thumb { background: #F4874B; border-radius: 8px; }
       ::-webkit-scrollbar-thumb:hover { background: #D96B28; }
 
+      /* 行動版隱藏滾動條 */
+      @media (max-width: 767px) {
+        ::-webkit-scrollbar { display: none; }
+        html { scrollbar-width: none; }
+      }
+
+      html {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        scroll-behavior: smooth;
+      }
+
       body {
         background: linear-gradient(160deg, #FFF3E8 0%, #FFE5CC 60%, #FFDDB5 100%);
         color: #2C3E6B;
         min-height: 100vh;
+        min-height: 100dvh;
         overflow-x: hidden;
+        padding-top: env(safe-area-inset-top);
+        -webkit-overflow-scrolling: touch;
       }
 
       /* 夜間模式全域樣式 */
@@ -103,6 +123,20 @@
       .modal-enter-from .modal-content, .modal-leave-to .modal-content {
         transform: translateY(40px) scale(0.95);
         opacity: 0;
+      }
+
+      /* Bottom Sheet 動畫（手機版） */
+      .sheet-enter-active, .sheet-leave-active {
+        transition: opacity 0.3s ease;
+      }
+      .sheet-enter-active .sheet-content, .sheet-leave-active .sheet-content {
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .sheet-enter-from, .sheet-leave-to {
+        opacity: 0;
+      }
+      .sheet-enter-from .sheet-content, .sheet-leave-to .sheet-content {
+        transform: translateY(100%);
       }
 
       /* 地圖展開/收合動畫 */
@@ -135,6 +169,21 @@
         pointer-events: none;
         user-select: none;
         opacity: 0.18;
+      }
+
+      /* 觸控友善：所有按鈕和連結的最小觸控區域 */
+      @media (max-width: 767px) {
+        button, a, [role="button"] {
+          min-height: 44px;
+          min-width: 44px;
+        }
+      }
+
+      /* 底部導覽列佔位空間 */
+      @media (max-width: 767px) {
+        .bottom-nav-spacer {
+          padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+        }
       }
     </style>
   </head>

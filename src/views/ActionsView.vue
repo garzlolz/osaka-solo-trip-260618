@@ -5,10 +5,10 @@ defineProps({
 </script>
 
 <template>
-  <div class="px-4 max-w-2xl mx-auto space-y-6">
+  <div class="px-3 sm:px-4 max-w-2xl mx-auto space-y-4 sm:space-y-6">
 
     <!-- 必要行動 -->
-    <div class="bg-white dark:bg-slate-900 rounded-3xl border-2 border-white dark:border-slate-800 shadow-card p-6">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl border-2 border-white dark:border-slate-800 shadow-card p-4 sm:p-6">
       <h2 class="text-lg font-black text-osk-navy dark:text-slate-100 mb-5 flex items-center gap-2">
         <span class="material-icons text-xl leading-none">push_pin</span>
         必要行動

@@ -72,10 +72,10 @@ const resetAll = () => {
 </script>
 
 <template>
-  <div class="px-4 max-w-2xl mx-auto">
+  <div class="px-3 sm:px-4 max-w-2xl mx-auto">
 
     <!-- 進度卡 -->
-    <div class="bg-white dark:bg-slate-900 rounded-3xl border-2 border-white dark:border-slate-800 shadow-card p-6 mb-6">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl border-2 border-white dark:border-slate-800 shadow-card p-4 sm:p-6 mb-4 sm:mb-6">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-lg font-black text-osk-navy dark:text-slate-100">出發前待辦清單</h2>
         <button
@@ -110,7 +110,7 @@ const resetAll = () => {
       <div
         v-for="group in groupedItems"
         :key="group.name"
-        class="bg-white/40 dark:bg-slate-900/40 backdrop-blur-sm rounded-3xl border-2 border-white/50 dark:border-slate-800/50 p-5 shadow-sm"
+        class="bg-white/40 dark:bg-slate-900/40 backdrop-blur-sm rounded-2xl sm:rounded-3xl border-2 border-white/50 dark:border-slate-800/50 p-3.5 sm:p-5 shadow-sm"
       >
         <!-- 分組標題與分組進度條 -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
@@ -140,7 +140,7 @@ const resetAll = () => {
             v-for="item in group.items"
             :key="item.id"
             @click="toggle(item.id)"
-            class="flex items-center gap-4 bg-white dark:bg-slate-900/70 rounded-2xl border-2 px-5 py-4 cursor-pointer transition-all duration-200 select-none group"
+            class="flex items-center gap-3 sm:gap-4 bg-white dark:bg-slate-900/70 rounded-xl sm:rounded-2xl border-2 px-3.5 sm:px-5 py-3.5 sm:py-4 cursor-pointer transition-all duration-200 select-none group active:scale-[0.98]"
             :class="checked[item.id]
               ? 'border-osk-green/30 dark:border-osk-green/20 bg-osk-green/5 dark:bg-osk-green/10'
               : 'border-white dark:border-slate-800 hover:border-osk-orange/30 dark:hover:border-osk-orange/40 hover:shadow-card-hover'"
@@ -170,8 +170,8 @@ const resetAll = () => {
               target="_blank"
               rel="noopener noreferrer"
               @click.stop
-              class="text-xs font-bold text-osk-teal hover:text-osk-navy dark:hover:text-slate-100 bg-osk-teal/10 hover:bg-osk-teal/20 px-2.5 py-1 rounded-lg transition-colors shrink-0"
-            >前往 →</a>
+              class="text-xs font-bold text-osk-teal hover:text-osk-navy dark:hover:text-slate-100 bg-osk-teal/10 hover:bg-osk-teal/20 px-3 py-1.5 rounded-lg transition-colors shrink-0 flex items-center gap-1"
+            ><span class="material-icons text-sm leading-none">open_in_new</span>前往</a>
           </div>
         </div>
       </div>

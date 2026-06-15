@@ -2,10 +2,13 @@
   "name": "2026 大阪獨旅行程表",
   "short_name": "大阪獨旅",
   "start_url": "/osaka-solo-trip-260618/",
+  "scope": "/osaka-solo-trip-260618/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#FFF3E8",
   "theme_color": "#F4874B",
   "description": "2026 大阪獨旅 06/18 ~ 06/21 行程規劃",
+  "categories": ["travel", "lifestyle"],
   "icons": [
     {
       "src": "images/icon-192.png",

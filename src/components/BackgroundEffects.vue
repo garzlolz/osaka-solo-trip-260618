@@ -3,14 +3,25 @@ import { ref, onMounted, onUnmounted } from "vue";
 
 const takoEls = ref([]);
 
-const configs = [
+const allConfigs = [
   { vx:  1.4, vy:  0.9, rotV:  0.5, size: 90,  img: "章魚燒2.png", opacity: 0.55 },
   { vx: -1.1, vy:  1.3, rotV: -0.7, size: 70,  img: "章魚燒2.png", opacity: 0.50 },
   { vx:  1.7, vy: -1.0, rotV:  0.8, size: 110, img: "章魚燒1.png", opacity: 0.52 },
   { vx: -1.3, vy: -1.2, rotV: -0.5, size: 75,  img: "章魚燒2.png", opacity: 0.48 },
 ];
 
-const state = configs.map(c => ({
+// 手機版：只保留 2 顆較小的章魚燒
+const isMobile = ref(window.innerWidth < 768);
+const configs = ref(
+  isMobile.value
+    ? [
+        { vx: 1.0, vy: 0.7, rotV: 0.4, size: 55, img: "章魚燒2.png", opacity: 0.35 },
+        { vx: -0.8, vy: -0.9, rotV: -0.5, size: 65, img: "章魚燒1.png", opacity: 0.32 },
+      ]
+    : allConfigs
+);
+
+const state = configs.value.map(c => ({
   ...c,
   x: 0,
   y: 0,
@@ -61,17 +72,17 @@ onUnmounted(() => {
 
 <template>
   <div aria-hidden="true">
-    <!-- 大圓形裝飾 -->
+    <!-- 大圓形裝飾（手機上隱藏部分） -->
     <div class="bg-decor animate-float-slow"   style="top:8vh;  left:3vw;  width:120px; height:120px; border-radius:50%; background:radial-gradient(circle, #F4874B44, #F4874B11);"></div>
-    <div class="bg-decor animate-float-medium" style="top:30vh; right:4vw; width:80px;  height:80px;  border-radius:50%; background:radial-gradient(circle, #F7C94844, #F7C94811);"></div>
-    <div class="bg-decor animate-float-fast"   style="top:65vh; left:6vw;  width:60px;  height:60px;  border-radius:50%; background:radial-gradient(circle, #3AAFB944, #3AAFB911);"></div>
+    <div class="bg-decor animate-float-medium hidden sm:block" style="top:30vh; right:4vw; width:80px;  height:80px;  border-radius:50%; background:radial-gradient(circle, #F7C94844, #F7C94811);"></div>
+    <div class="bg-decor animate-float-fast hidden sm:block"   style="top:65vh; left:6vw;  width:60px;  height:60px;  border-radius:50%; background:radial-gradient(circle, #3AAFB944, #3AAFB911);"></div>
     <div class="bg-decor animate-float-slow"   style="top:80vh; right:8vw; width:100px; height:100px; border-radius:50%; background:radial-gradient(circle, #F4874B33, transparent);"></div>
 
-    <!-- 旋轉方塊 -->
-    <div class="bg-decor animate-spin-slow"    style="top:50vh; left:1vw;  width:40px; height:40px; border-radius:8px;  background:#F4874B18; transform-origin:center;"></div>
-    <div class="bg-decor animate-spin-reverse" style="top:20vh; right:2vw; width:50px; height:50px; border-radius:12px; background:#F7C94822; transform-origin:center;"></div>
+    <!-- 旋轉方塊（手機上隱藏） -->
+    <div class="bg-decor animate-spin-slow hidden sm:block"    style="top:50vh; left:1vw;  width:40px; height:40px; border-radius:8px;  background:#F4874B18; transform-origin:center;"></div>
+    <div class="bg-decor animate-spin-reverse hidden sm:block" style="top:20vh; right:2vw; width:50px; height:50px; border-radius:12px; background:#F7C94822; transform-origin:center;"></div>
 
-    <!-- 章魚燒：JS 驅動反彈 -->
+    <!-- 章魚燒：JS 驅動反彈（手機上減量） -->
     <div
       v-for="(c, i) in configs"
       :key="i"

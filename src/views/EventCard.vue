@@ -109,16 +109,16 @@ const mapEmbedUrl = computed(() => {
 </script>
 
 <template>
-  <div class="relative flex gap-4">
+  <div class="relative flex gap-2 sm:gap-4">
     <!-- 時間軸線 -->
-    <div class="flex flex-col items-center flex-shrink-0 w-10">
-      <div class="w-3 h-3 rounded-full bg-osk-orange border-2 border-white shadow-sm mt-5 flex-shrink-0 z-10"></div>
+    <div class="flex flex-col items-center flex-shrink-0 w-6 sm:w-10">
+      <div class="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-osk-orange border-2 border-white shadow-sm mt-5 flex-shrink-0 z-10"></div>
       <div v-if="!isLast" class="w-0.5 flex-1 bg-osk-orange/20 mt-1"></div>
     </div>
 
     <!-- 卡片 -->
-    <div class="flex-1 mb-4">
-      <div class="bg-white dark:bg-slate-900 rounded-2xl border-2 border-white dark:border-slate-800 shadow-card hover:border-osk-orange/20 dark:hover:border-osk-orange/40 hover:shadow-card-hover transition-all p-4">
+    <div class="flex-1 mb-3 sm:mb-4 min-w-0">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border-2 border-white dark:border-slate-800 shadow-card hover:border-osk-orange/20 dark:hover:border-osk-orange/40 hover:shadow-card-hover transition-all p-3 sm:p-4">
 
         <!-- 時間標籤 -->
         <div class="mb-2">
@@ -128,14 +128,14 @@ const mapEmbedUrl = computed(() => {
         </div>
 
         <!-- 活動名稱 -->
-        <p class="font-bold text-osk-navy dark:text-slate-100 text-sm sm:text-base leading-snug mb-2" v-html="renderMarkdownLinks(event.activity)"></p>
+        <p class="font-bold text-osk-navy dark:text-slate-100 text-sm leading-snug mb-2" v-html="renderMarkdownLinks(event.activity)"></p>
 
         <!-- 備註 -->
         <div v-if="event.notes && event.notes.length" class="space-y-1.5 mb-2">
           <div
             v-for="(note, i) in event.notes"
             :key="i"
-            :class="['flex items-start gap-1.5 text-xs rounded-xl px-3 py-2 border', noteStyle(note.type).bg, noteStyle(note.type).border, noteStyle(note.type).text]"
+            :class="['flex items-start gap-1.5 text-xs rounded-xl px-2.5 sm:px-3 py-2 border', noteStyle(note.type).bg, noteStyle(note.type).border, noteStyle(note.type).text]"
           >
             <span class="material-icons flex-shrink-0 mt-px text-base leading-none">{{ noteStyle(note.type).icon }}</span>
             <span class="font-medium leading-snug" v-html="renderMarkdownLinks(note.text)"></span>
@@ -173,7 +173,7 @@ const mapEmbedUrl = computed(() => {
             <div
               v-if="isMapLoading"
               class="absolute inset-0 bg-slate-100 dark:bg-slate-800 flex flex-col items-center justify-center gap-2 animate-pulse z-20"
-              style="height: 240px;"
+              style="height: 200px;"
             >
               <span class="material-icons text-osk-teal text-3xl animate-bounce">map</span>
               <span class="text-xs font-bold text-osk-navy/40 dark:text-slate-400">載入 Google 地圖中...</span>
@@ -183,7 +183,7 @@ const mapEmbedUrl = computed(() => {
               v-show="isMapVisible"
               :src="mapEmbedUrl"
               width="100%"
-              height="240"
+              height="200"
               frameborder="0"
               scrolling="no"
               loading="lazy"
@@ -204,13 +204,13 @@ const mapEmbedUrl = computed(() => {
         </Transition>
 
         <!-- 地圖按鈕群 (標籤) -->
-        <div v-if="maps.length" class="mt-3 flex flex-wrap gap-1.5 justify-end">
+        <div v-if="maps.length" class="mt-3 flex flex-wrap gap-2 justify-end">
           <button
             v-for="(map, idx) in maps"
             :key="idx"
             @click="toggleMap(idx)"
             :class="[
-              'flex items-center gap-1 text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full border-2 transition-all',
+              'flex items-center gap-1 text-[11px] sm:text-xs font-bold px-3 py-1.5 rounded-full border-2 transition-all',
               isMapVisible && activeMapIdx === idx
                 ? 'bg-osk-teal text-white border-osk-teal shadow-sm scale-102'
                 : 'bg-white dark:bg-slate-800 text-osk-teal border-osk-teal/30 dark:border-osk-teal/50 hover:border-osk-teal hover:bg-osk-teal/5 dark:hover:bg-osk-teal/10'
