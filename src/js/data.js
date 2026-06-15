@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-14 20:13",
+    updatedAt: "2026-06-15 23:25",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -209,7 +209,12 @@ export const TRIP_DATA = {
           time: "07:00",
           activity:
             "從 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197) 2 番月台搭堺筋線（往北千里）→ [淡路](https://maps.app.goo.gl/vTQwZzBUuwFVaGxd9?q=34.7393654,135.5169941) 換阪急京都線特急 → [烏丸](https://www.google.com/maps/search/?api=1&query=烏丸站&q=35.0036744,135.7605895)（約 55 分，¥650）",
-          notes: [{ type: "info", text: "刷 ICOCA 即可，無需買紙票" }],
+          notes: [
+            {
+              type: "info",
+              text: "刷 ICOCA 即可，無需買紙票（搭乘一般自由座車廂即可，第 4 節為 PRiVACE 指定席，其餘車廂皆為自由座）",
+            },
+          ],
           todo: "前往京都並在烏丸下車，步行 10 分鐘至咖啡廳",
         },
         {
@@ -308,7 +313,7 @@ export const TRIP_DATA = {
           notes: [
             {
               type: "warn",
-              text: "預留 5–10 分鐘容錯緩衝；從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）",
+              text: "預留 5–10 分鐘容錯緩衝；直接刷 ICOCA 進出站即可，無須買紙票（搭乘一般自由座車廂即可，第 6 節為 Premium Car 指定席，其餘車廂皆為自由座）。從 [伏見稻荷站](https://maps.app.goo.gl/4V97VPTXq3NBCk2A8?q=34.9687187,135.7693455)（京阪本線普通/準急）→ [丹波橋站](https://maps.app.goo.gl/EytrhYxPTbmms9tP8)內換乘同線特急列車（往大阪方向）→ [北濱站](https://maps.app.goo.gl/ZHWQPQmYiGVjqgau7)下車，站內轉乘地鐵堺筋線（北濱 K14）→ 搭至 [日本橋](https://maps.app.goo.gl/kCabn4TkMCpc28f2A?q=34.6669677,135.5061197)（K17）",
             },
           ],
           todo: null,
@@ -322,26 +327,19 @@ export const TRIP_DATA = {
         },
         {
           time: "19:00",
-          activity: "[道頓堀](https://maps.app.goo.gl/JfTtUShoXsFDNsLaA) 晚餐",
+          activity:
+            "[國產牛燒肉 炙屋 千日前店](https://maps.app.goo.gl/AYEhoJYJF8h29Pf29) 晚餐",
           notes: [
             {
-              type: "info",
-              text: "[千代松勝蓋飯](https://maps.app.goo.gl/KyAtYvBUzZ43kCRS6)（特厚切豬排蓋飯，千日前）",
+              type: "warn",
+              text: "熱門排隊店且無法線上單人預約。建議 18:30 抵達日本橋後，先步行前往餐廳（難波3-4-16 ECS第32大樓4F）登記候位或抽號碼牌，再回飯店放行李休息，避免現場站立久候。",
             },
             {
-              type: "info",
-              text: "[吉次牛舌](https://maps.app.goo.gl/o8NTGnrBovVjvsgE7)（炭火燒牛舌，心齋橋）",
-            },
-            {
-              type: "info",
-              text: "[大阪鐵板燒居酒屋 Dorajyu](https://maps.app.goo.gl/CPbFXVQtjxGGDVzeA)（大阪燒/鐵板燒）",
-            },
-            {
-              type: "info",
-              text: "[新宿燒肉 牛舌的檸檬 大阪本店](https://maps.app.goo.gl/WTQmxqLaD7CFb2Cq9)（極厚切牛舌）",
+              type: "ok",
+              text: "現場可點「國產牛吃到飽方案」",
             },
           ],
-          todo: "晚餐：待選",
+          todo: "晚餐：國產牛燒肉 炙屋（現場排隊）",
         },
       ],
       routes: [
@@ -372,7 +370,7 @@ export const TRIP_DATA = {
             "總計：約 55 分鐘（不含步行）　¥650　換乘 1 次（淡路站換月台）",
           tips: [
             "上車前確認車頭方向牌寫「北千里」或「高槻市」，兩個都會經過淡路",
-            "全程刷 ICOCA，不需買紙票",
+            "全程刷 ICOCA，不需買紙票（搭乘自由座車廂即可，不需預約指定席。第 4 節為 PRiVACE 指定席，其餘車廂均為自由座）",
           ],
         },
         {
@@ -416,7 +414,9 @@ export const TRIP_DATA = {
             },
           ],
           summary: "總計：約 55 分鐘（不含逛街）　換乘 1 次（淡路站換月台）",
-          tips: ["全程刷 ICOCA，不需買紙票"],
+          tips: [
+            "全程刷 ICOCA，不需買紙票（搭乘自由座車廂即可，不需預約指定席。第 4 節為 PRiVACE 指定席，其餘車廂均為自由座）",
+          ],
         },
       ],
     },
