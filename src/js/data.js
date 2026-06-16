@@ -2,7 +2,7 @@ export const TRIP_DATA = {
   meta: {
     title: "2026 大阪獨旅",
     dateRange: "06/18 ~ 06/21",
-    updatedAt: "2026-06-15 23:28",
+    updatedAt: "2026-06-16 21:00",
     departureDate: "2026-06-18T18:15:00",
   },
 
@@ -47,7 +47,8 @@ export const TRIP_DATA = {
           activity:
             "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
           notes: [
-            { type: "info", text: "航班：MM028 (樂桃) T1 | 預訂編號：KTK***" },
+            { type: "info", text: "航班：MM028 (樂桃) T1 | 預訂編號：KTKRN9" },
+            { type: "warn", text: "報到時間：15:45~17:25 臨櫃辦理 (逾時不候)" },
           ],
           todo: null,
         },
@@ -142,12 +143,12 @@ export const TRIP_DATA = {
           items: [
             {
               title: "航空公司與預訂編號",
-              detail: "樂桃航空 (Peach)\n預訂編號：KTK***",
+              detail: "樂桃航空 (Peach)\n預訂編號：KTKRN9\n乘客：施*勲 (HONG YUANTING 未同行)",
             },
             {
-              title: "航班細節",
+              title: "航班細節與報到指引",
               detail:
-                "去程 (MM028)：6/18（四）18:15 台北桃園 (T1) ➔ 22:00 大阪關西 (T2)\n回程 (MM023)：6/21（日）07:50 大阪關西 (T2) ➔ 09:55 台北桃園 (T1)",
+                "去程 (MM028)：6/18（四）18:15 台北桃園 (T1) ➔ 22:00 大阪關西 (T2)\n👉 報到：15:45~17:25 桃園 T1 臨櫃辦理\n\n回程 (MM023)：6/21（日）07:50 大阪關西 (T2) ➔ 09:55 台北桃園 (T1)\n👉 報到：05:50~07:00 關西 T2 自助 Kiosk 辦理 (07:25 前需過安檢)",
             },
           ],
         },
