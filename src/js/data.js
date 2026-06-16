@@ -49,6 +49,23 @@ export const TRIP_DATA = {
       dateStr: "2026-06-18",
       events: [
         {
+          time: "12:01",
+          activity:
+            "從 [統聯客運朝馬站](https://maps.app.goo.gl/QYXHeC3rHQKL43y69) 搭乘 1623 直達 [桃園第一航廈](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6)",
+          notes: [
+            { type: "info", text: "統聯客運 1623 路線 (朝馬 ➔ 桃園機場)" },
+            { type: "tip", text: "發車時間：12:01 | 預估車程約 2 ~ 2.5 小時" },
+            { type: "ok", text: "預計 14:00 ~ 14:30 抵達 T1 ( MM028 最早報到時間為 15:45 )" }
+          ],
+          todo: "搭乘 12:01 的 1623 客運",
+          images: [
+            {
+              src: "images/ubus_1623_timetable.png",
+              alt: "統聯客運 1623 路線時刻表"
+            }
+          ],
+        },
+        {
           time: "18:15",
           activity:
             "[桃園 T1](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) 搭乘 MM028 起飛",
@@ -843,9 +860,26 @@ export const TRIP_DATA = {
         },
         {
           time: "07:50",
-          activity: "起飛",
-          notes: [{ type: "info", text: "抵達台北桃園 T1 (09:55)" }],
+          activity: "搭乘 MM023 起飛 ➔ 預計 09:55 抵達桃園 T1",
+          notes: [{ type: "info", text: "抵達後辦理入境與領取行李" }],
           todo: null,
+        },
+        {
+          time: "10:30 左右",
+          activity:
+            "抵達 [桃園第一航廈](https://maps.app.goo.gl/dzmAMSbdhjswSMUd6) ➔ 搭乘 1623 客運返回 [台中朝馬](https://maps.app.goo.gl/QYXHeC3rHQKL43y69)",
+          notes: [
+            { type: "info", text: "統聯客運 1623 路線 (桃園機場 ➔ 朝馬 ➔ 台中)" },
+            { type: "tip", text: "建議搭乘班次：10:31 (#主)、11:01 (主)、12:01 (主)" },
+            { type: "ok", text: "車程約 2 ~ 2.5 小時" }
+          ],
+          todo: "購買車票並搭客運返回台中",
+          images: [
+            {
+              src: "images/ubus_1623_timetable.png",
+              alt: "統聯客運 1623 路線時刻表"
+            }
+          ],
         },
       ],
     },
