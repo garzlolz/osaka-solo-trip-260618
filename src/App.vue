@@ -94,6 +94,19 @@ onUnmounted(() => clearInterval(timer));
           </div>
 
           <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+            <!-- CLUB JT 抽菸地圖按鈕 -->
+            <a
+              href="https://www.clubjt.jp/map/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl border border-gray-200 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 flex items-center justify-center text-osk-navy/60 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+              title="CLUB JT 日本吸菸區地圖"
+            >
+              <span class="material-icons text-base sm:text-lg leading-none text-osk-orange">
+                smoking_rooms
+              </span>
+            </a>
+
             <!-- 主題切換按鈕 -->
             <button
               @click="toggleDark"

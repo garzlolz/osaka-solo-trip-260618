@@ -33,6 +33,12 @@ export const TRIP_DATA = {
       text: "下載日本計程車 GO App 並綁定信用卡（清水寺備用方案）",
       done: true,
     },
+    {
+      id: 13,
+      text: "日本吸菸室查詢：CLUB JT 抽菸地圖",
+      done: false,
+      url: "https://www.clubjt.jp/map/",
+    },
   ],
 
   itinerary: [
