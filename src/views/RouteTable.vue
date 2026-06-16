@@ -17,6 +17,17 @@ const isMobile = ref(window.innerWidth < 768);
 const handleResize = () => { isMobile.value = window.innerWidth < 768; };
 onMounted(() => window.addEventListener("resize", handleResize));
 onUnmounted(() => window.removeEventListener("resize", handleResize));
+
+// Lightbox state & methods
+const activeLightboxImage = ref(null);
+const openLightbox = (img) => {
+  activeLightboxImage.value = img;
+  document.body.style.overflow = "hidden";
+};
+const closeLightbox = () => {
+  activeLightboxImage.value = null;
+  document.body.style.overflow = "";
+};
 </script>
 
 <template>
@@ -62,6 +73,19 @@ onUnmounted(() => window.removeEventListener("resize", handleResize));
 
         <!-- 備註 -->
         <div v-if="seg.note" class="pl-8 text-[11px] text-osk-navy/50 dark:text-slate-500 leading-snug" v-html="renderMarkdownLinks(seg.note)"></div>
+
+        <!-- 示意圖按鈕 (手機版) -->
+        <div v-if="seg.images && seg.images.length" class="mt-2 pl-8 flex flex-wrap gap-2">
+          <button
+            v-for="(img, idx) in seg.images"
+            :key="idx"
+            @click="openLightbox(img)"
+            class="flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-xl bg-osk-teal/10 dark:bg-osk-teal/20 text-osk-teal border border-osk-teal/20 hover:bg-osk-teal/20 active:scale-98 transition-all"
+          >
+            <span class="material-icons text-xs leading-none">map</span>
+            <span>查看示意圖: {{ img.alt }}</span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -91,7 +115,22 @@ onUnmounted(() => window.removeEventListener("resize", handleResize));
             <td class="py-2.5 px-2 text-osk-navy/70 dark:text-slate-400 whitespace-nowrap" v-html="renderMarkdownLinks(seg.to)"></td>
             <td class="py-2.5 px-2 text-osk-teal font-bold whitespace-nowrap">{{ seg.duration }}</td>
             <td class="py-2.5 px-2 text-osk-darkOrange font-bold whitespace-nowrap">{{ seg.cost || '—' }}</td>
-            <td class="py-2.5 px-2 text-osk-navy/50 dark:text-slate-500" v-html="renderMarkdownLinks(seg.note)"></td>
+            <td class="py-2.5 px-2 text-osk-navy/50 dark:text-slate-500">
+              <div v-html="renderMarkdownLinks(seg.note)"></div>
+              <!-- 示意圖按鈕 (桌面版) -->
+              <div v-if="seg.images && seg.images.length" class="mt-1 flex flex-wrap gap-1">
+                <button
+                  v-for="(img, idx) in seg.images"
+                  :key="idx"
+                  @click="openLightbox(img)"
+                  class="flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-lg bg-osk-teal/10 dark:bg-osk-teal/20 text-osk-teal border border-osk-teal/20 hover:bg-osk-teal/20 transition-all animate-fade-in"
+                  :title="img.alt"
+                >
+                  <span class="material-icons text-[11px] leading-none">map</span>
+                  <span>{{ img.alt }}</span>
+                </button>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -114,4 +153,49 @@ onUnmounted(() => window.removeEventListener("resize", handleResize));
       </p>
     </div>
   </div>
+
+  <!-- Lightbox Modal -->
+  <Transition name="lightbox-fade">
+    <div
+      v-if="activeLightboxImage"
+      class="fixed inset-0 z-50 bg-black/90 flex flex-col justify-center items-center p-4 cursor-zoom-out"
+      @click="closeLightbox"
+    >
+      <!-- 頂部關閉與描述 -->
+      <div class="absolute top-0 inset-x-0 bg-gradient-to-b from-black/60 to-transparent p-4 flex justify-between items-center z-10">
+        <p class="text-white text-xs sm:text-sm font-bold truncate pr-4">{{ activeLightboxImage.alt }}</p>
+        <button
+          @click.stop="closeLightbox"
+          class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors focus:outline-none"
+        >
+          <span class="material-icons text-base">close</span>
+        </button>
+      </div>
+
+      <!-- 圖片本體 -->
+      <div class="max-w-full max-h-[80vh] flex items-center justify-center relative select-none">
+        <img
+          :src="activeLightboxImage.src"
+          :alt="activeLightboxImage.alt"
+          class="max-w-full max-h-[80vh] object-contain rounded shadow-2xl transition-transform duration-300"
+          @click.stop
+        />
+      </div>
+
+      <!-- 提示字樣 -->
+      <p class="text-white/40 text-[10px] mt-4 font-semibold select-none">點擊任意空白處關閉圖片</p>
+    </div>
+  </Transition>
 </template>
+
+<style scoped>
+.lightbox-fade-enter-active,
+.lightbox-fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+.lightbox-fade-enter-from,
+.lightbox-fade-leave-to {
+  opacity: 0;
+}
+</style>
+

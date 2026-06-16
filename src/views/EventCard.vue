@@ -106,6 +106,17 @@ const mapEmbedUrl = computed(() => {
   const map = currentMap.value;
   return map ? `https://maps.google.com/maps?q=${encodeURIComponent(map.query)}&t=&z=15&ie=UTF8&iwloc=&output=embed` : null;
 });
+
+// Lightbox state & methods
+const activeLightboxImage = ref(null);
+const openLightbox = (img) => {
+  activeLightboxImage.value = img;
+  document.body.style.overflow = "hidden";
+};
+const closeLightbox = () => {
+  activeLightboxImage.value = null;
+  document.body.style.overflow = "";
+};
 </script>
 
 <template>
@@ -154,14 +165,19 @@ const mapEmbedUrl = computed(() => {
           </p>
         </div>
 
-        <!-- 附圖（直接展開） -->
+        <!-- 附圖（點擊放大） -->
         <div v-if="event.images && event.images.length" class="mt-3 space-y-2">
           <div
             v-for="img in event.images"
             :key="img.src"
-            class="rounded-xl overflow-hidden border border-gray-100"
+            class="rounded-xl overflow-hidden border border-gray-100 cursor-zoom-in group relative"
+            @click="openLightbox(img)"
           >
-            <img :src="img.src" :alt="img.alt" class="w-full object-contain max-h-64 bg-gray-50" loading="lazy" />
+            <img :src="img.src" :alt="img.alt" class="w-full object-contain max-h-64 bg-gray-50 group-hover:opacity-95 transition-opacity" loading="lazy" />
+            <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-icons text-[10px] leading-none">zoom_in</span>
+              <span>點擊放大</span>
+            </div>
             <p class="text-[11px] text-osk-navy/50 px-3 py-2 leading-snug">{{ img.alt }}</p>
           </div>
         </div>
@@ -224,4 +240,49 @@ const mapEmbedUrl = computed(() => {
       </div>
     </div>
   </div>
+
+  <!-- Lightbox Modal -->
+  <Transition name="lightbox-fade">
+    <div
+      v-if="activeLightboxImage"
+      class="fixed inset-0 z-50 bg-black/90 flex flex-col justify-center items-center p-4 cursor-zoom-out"
+      @click="closeLightbox"
+    >
+      <!-- 頂部關閉與描述 -->
+      <div class="absolute top-0 inset-x-0 bg-gradient-to-b from-black/60 to-transparent p-4 flex justify-between items-center z-10">
+        <p class="text-white text-xs sm:text-sm font-bold truncate pr-4">{{ activeLightboxImage.alt }}</p>
+        <button
+          @click.stop="closeLightbox"
+          class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors focus:outline-none"
+        >
+          <span class="material-icons text-base">close</span>
+        </button>
+      </div>
+
+      <!-- 圖片本體 -->
+      <div class="max-w-full max-h-[80vh] flex items-center justify-center relative select-none">
+        <img
+          :src="activeLightboxImage.src"
+          :alt="activeLightboxImage.alt"
+          class="max-w-full max-h-[80vh] object-contain rounded shadow-2xl transition-transform duration-300"
+          @click.stop
+        />
+      </div>
+
+      <!-- 提示字樣 -->
+      <p class="text-white/40 text-[10px] mt-4 font-semibold select-none">點擊任意空白處關閉圖片</p>
+    </div>
+  </Transition>
 </template>
+
+<style scoped>
+.lightbox-fade-enter-active,
+.lightbox-fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+.lightbox-fade-enter-from,
+.lightbox-fade-leave-to {
+  opacity: 0;
+}
+</style>
+

@@ -317,6 +317,20 @@ export const TRIP_DATA = {
             },
           ],
           todo: null,
+          images: [
+            {
+              src: "images/station_fushimi_inari.png",
+              alt: "京阪 伏見稻荷站構內與出入口地圖"
+            },
+            {
+              src: "images/station_tanwabashi.png",
+              alt: "京阪 丹波橋站島式月台同月台轉乘特急"
+            },
+            {
+              src: "images/station_kitahama.png",
+              alt: "北濱站京阪電鐵轉地鐵堺筋線聯絡通道"
+            }
+          ],
         },
         {
           time: "18:30",
@@ -355,6 +369,12 @@ export const TRIP_DATA = {
               duration: "約 17 分",
               cost: "¥240",
               note: "",
+              images: [
+                {
+                  src: "images/station_nipponbashi.png",
+                  alt: "日本橋站構內圖與堺筋線 2 番月台"
+                }
+              ]
             },
             {
               segment: 2,
@@ -364,6 +384,16 @@ export const TRIP_DATA = {
               duration: "約 30 分",
               cost: "¥410",
               note: "",
+              images: [
+                {
+                  src: "images/station_awaji.png",
+                  alt: "淡路站島式月台同月台轉乘京都線特急"
+                },
+                {
+                  src: "images/station_karasuma.png",
+                  alt: "烏丸站站內改札與出口地圖"
+                }
+              ]
             },
           ],
           summary:
@@ -575,6 +605,12 @@ export const TRIP_DATA = {
             },
           ],
           todo: "刷 ICOCA 即可",
+          images: [
+            {
+              src: "images/station_nankai_namba.png",
+              alt: "南海難波站 3F北改札口大廳與月台示意圖"
+            }
+          ],
         },
         {
           time: "21:00 左右",
@@ -630,6 +666,12 @@ export const TRIP_DATA = {
               duration: "約 3 分 (2站)",
               cost: "¥190 (包含段次3)",
               note: "車站 ID：K17",
+              images: [
+                {
+                  src: "images/station_sakaisujihonmachi.png",
+                  alt: "堺筋本町站 堺筋線轉中央線站內地圖"
+                }
+              ]
             },
             {
               segment: 3,
@@ -639,6 +681,12 @@ export const TRIP_DATA = {
               duration: "約 1 分 (1站)",
               cost: "",
               note: "轉乘步行約 1 分",
+              images: [
+                {
+                  src: "images/station_tanimachi_4chome.png",
+                  alt: "谷町四丁目站 9 號出口出站往大阪城步行示意圖"
+                }
+              ]
             },
             {
               segment: 4,
